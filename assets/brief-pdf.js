@@ -165,6 +165,21 @@ function buildBriefPdf(jsPDF, b){
     ]}], {pad: 7, after: 0});
   }
 
+  // Sources utilisées pour construire le brief
+  const consulted = arr(b.consulted).filter(s => s && s.name);
+  const used = consulted.length ? consulted : src;
+  if (used.length){
+    yy += 6;
+    const items = [textRows('Sources utilisées pour ce brief', {size: 8, style: 'bold', color: C.mute, upper: true, cs: 0.5, after: 2.2})];
+    if (!consulted.length) items.push(textRows("La liste complète des sources consultées n'a pas été conservée pour ce brief : seules les sources citées sont indiquées.", {size: 8.4, style: 'italic', color: C.soft, after: 2}));
+    used.forEach((s, i) => {
+      const ok = /^https:\/\//.test(s.url || '');
+      items.push(textRows((i + 1) + '. ' + s.name, {size: 8.8, color: ok ? C.navy : C.ink, link: ok ? s.url : null, after: ok ? 0 : 1.6}));
+      if (ok) items.push(textRows(s.url, {size: 7.4, color: C.mute, link: s.url, after: 1.6}));
+    });
+    flow([{x: ML, w: CW, items}], {pad: 0, after: 0});
+  }
+
   const n = doc.getNumberOfPages();
   for (let i = 1; i <= n; i++){
     doc.setPage(i);

@@ -183,6 +183,26 @@ def render_brief(b, prev_b, next_b):
     if b.get("question"):
         out.append(f'<section class="question"><h2 class="kicker">Pour se faire un avis</h2><p>{e(b["question"])}</p></section>')
 
+    consulted = [s for s in lst(b.get("consulted")) if isinstance(s, dict) and s.get("name")]
+    used, note = consulted, ""
+    if not used:
+        used = sources
+        note = ("La liste complète des sources consultées n'a pas été conservée pour ce brief, publié avant "
+                "l'ajout de cette rubrique : seules les sources citées plus haut sont indiquées.")
+    if used:
+        items = []
+        for s in used:
+            label = e(s["name"])
+            if is_https(s.get("url")):
+                host = re.sub(r"^https://(www\.)?", "", s["url"]).split("/")[0]
+                items.append(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{label}</a> <span class="h">{e(host)}</span></li>')
+            else:
+                items.append(f"<li>{label}</li>")
+        out.append('<section class="used"><h2 class="kicker">Sources utilisées pour ce brief</h2>'
+                   + (f'<p class="note">{e(note)}</p>' if note else
+                      '<p class="note">Toutes les pages consultées pour construire ce brief, y compris celles qui ne sont pas citées plus haut.</p>')
+                   + '<ol>' + "".join(items) + '</ol></section>')
+
     nav = []
     if next_b:
         nav.append(f'<a class="nav-prev" href="{prefix}{next_b["id"]}/"><span>Brief suivant</span>{e(next_b["title"])}</a>')

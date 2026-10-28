@@ -157,3 +157,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .hosts .h{overflow-wrap:anywhere}
 .hosts .c{font-variant-numeric:tabular-nums;color:var(--mute);font-weight:700}
 .refgroup p{margin:0;color:var(--soft);font-size:15px;line-height:1.5}
+
+/* Sources utilisées, en fin d'article */
+.used{border-top:1px solid var(--line);padding-top:22px}
+.used .note{margin:0 0 12px;color:var(--soft);font-size:14.5px;max-width:70ch}
+.used ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.used li{overflow-wrap:anywhere}
+.used li::marker{color:var(--mute);font-variant-numeric:tabular-nums}
+.used a{color:var(--ink);text-decoration-color:var(--line)}
+.used a:hover{color:var(--accent)}
+.used .h{color:var(--mute);font-size:13px}

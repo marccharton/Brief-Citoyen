@@ -21,5 +21,12 @@ Ajouter un brief : déposer son JSON dans `data/briefs/`, lancer `python3 script
  "pro": {"label": "Pour", "who": "...", "args": ["..."]},
  "con": {"label": "Contre", "who": "...", "args": ["..."]},
  "local": ["..."], "sources": [{"lean": "Plutôt à gauche", "name": "...", "url": "https://...", "note": "..."}],
- "question": "...", "generated": "AAAA-MM-JJ"}
+ "question": "...",
+ "consulted": [{"name": "...", "url": "https://..."}],
+ "generated": "AAAA-MM-JJ"}
+```
+
+`sources` : les 3 ou 4 sources mises en avant (« Sources à creuser »). `consulted` : toutes les pages consultées pour construire le brief, affichées en fin d'article.
+
+```text
 ```
