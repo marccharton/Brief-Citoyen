@@ -123,3 +123,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .body .t{font-size:19px}
 }
 @media (prefers-reduced-motion:no-preference){.item a,.pager a{transition:background .12s,border-color .12s}}
+
+/* Page « Comment c'est fait » */
+.howto{margin:4px 0 0;font-weight:700;font-size:15px}
+.howto a{color:var(--navy-ink);text-decoration-color:var(--navy-soft)}
+.howto a:hover{color:var(--navy-soft)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;display:grid;gap:12px}
+.steps li{counter-increment:step;position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px 16px 64px;max-width:none}
+.steps li::before{content:counter(step);position:absolute;left:18px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font:650 16px/30px var(--f-display);text-align:center}
+.steps strong{color:var(--ink)}
+.cta{display:inline-block;margin-top:18px;font:700 15px var(--f-body);color:var(--navy);background:var(--navy-ink);border-radius:8px;padding:10px 16px;text-decoration:none}
+.cta:hover{background:var(--navy-soft)}
+.credit{color:var(--soft);font-size:15px;margin:0}
+@media (max-width:760px){.steps li{padding-left:58px}.steps li::before{left:14px}}

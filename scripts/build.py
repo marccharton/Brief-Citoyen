@@ -101,8 +101,8 @@ def head(title, desc, url, prefix, og_type="website"):
 
 
 FOOT = """<footer class="foot"><div class="wrap">
-<p>Brief citoyen est rédigé chaque matin avec l'aide d'une intelligence artificielle, à partir de sources publiques citées dans chaque brief. Il vise à présenter les arguments des différents camps de façon équilibrée : en cas de doute, les sources font foi.</p>
-<p><a href="{prefix}">Tous les briefs</a> · <a href="{prefix}feed.xml">Flux RSS</a> · <a href="https://marccharton.github.io/">Marc Charton</a></p>
+<p>Brief citoyen est entièrement rédigé par une intelligence artificielle, à partir de sources publiques citées dans chaque brief. C'est un outil de vulgarisation : il peut contenir des imprécisions, et les sources font foi.</p>
+<p><a href="{prefix}">Tous les briefs</a> · <a href="{prefix}comment-c-est-fait/">Comment c'est fait</a> · <a href="{prefix}feed.xml">Flux RSS</a> · <a href="https://marccharton.github.io/">Marc Charton</a></p>
 </div></footer>
 </body>
 </html>
@@ -211,6 +211,7 @@ def render_index(briefs):
 <p class="eyebrow"><span>Politique française</span><span class="dot">·</span><span>{len(briefs)} brief{'s' if len(briefs) > 1 else ''}</span></p>
 <h1>{SITE_NAME}</h1>
 <p class="subject">{e(SITE_DESC)}</p>
+<p class="howto"><a href="comment-c-est-fait/">Comment c'est fait, et ses limites →</a></p>
 </div></header>
 <main class="wrap">
 {f'<div class="filters" id="filters"><button class="chip" type="button" data-theme="" aria-pressed="true">Tous</button>{chips}</div>' if len(themes) > 1 else ''}
@@ -264,6 +265,88 @@ def render_feed(briefs):
 """
 
 
+def render_about():
+    prefix = "../"
+    url = f"{SITE_URL}comment-c-est-fait/"
+    desc = ("Comment Brief citoyen est fabriqué : une intelligence artificielle, des sources publiques, "
+            "des sujets plutôt que des partis. Et les limites de l'exercice.")
+    out = [head(f"Comment c'est fait · {SITE_NAME}", desc, url, prefix)]
+    out.append(f"""<header class="band"><div class="wrap">
+<a class="back" href="{prefix}">← Tous les briefs</a>
+<p class="eyebrow"><span>Brief citoyen</span><span class="dot">·</span><span>À propos</span></p>
+<h1>Comment c'est fait</h1>
+<p class="subject">Une idée simple : comprendre un sujet avant de savoir qui le défend.</p>
+</div></header>
+<main class="wrap article about">
+
+<section class="basics with-terms">
+<div class="prose">
+<h2 class="kicker">L'intention</h2>
+<p>La politique arrive souvent par les partis, les personnalités et les petites phrases. Brief citoyen fait le chemin inverse : il part d'un sujet concret (un budget, une loi, une réforme, une institution) et l'explique depuis le début.</p>
+<p>Chaque brief s'adresse à quelqu'un qui n'y connaît rien. Pas de prérequis, pas de sigle sans explication : le contexte d'abord, les mots ensuite, puis ce qui se joue vraiment.</p>
+<p>Les arguments sont présentés pour ce qu'ils disent, pas pour le camp qui les porte. L'idée est de pouvoir se faire un avis sur une idée, une posture, une mesure, avant de la ranger quelque part sur l'échiquier politique ou de la rattacher à un parti. La politique vient après.</p>
+</div>
+<aside class="terms">
+<h2 class="kicker">En trois principes</h2>
+<dl>
+<div><dt>Des sujets, pas des partis</dt><dd>On part d'une question concrète qui touche la vie quotidienne, pas d'une étiquette.</dd></div>
+<div><dt>Partir de zéro</dt><dd>Chaque brief explique les bases et définit ses mots, pour que tout le monde puisse suivre.</dd></div>
+<div><dt>Se faire un avis d'abord</dt><dd>Les arguments des deux côtés, à égalité. Qui les porte n'est indiqué qu'en second, pour situer.</dd></div>
+</dl>
+</aside>
+</section>
+
+<section class="box stakes">
+<h2 class="kicker">Entièrement rédigé par une IA</h2>
+<p>Les briefs sont écrits par Claude, une intelligence artificielle développée par Anthropic. Une tâche automatique se lance chaque matin de semaine : elle choisit un sujet, fait ses recherches, rédige le brief et le publie ici. Aucun humain ne relit chaque brief avant sa publication.</p>
+</section>
+
+<section>
+<h2 class="kicker">Le processus, en cinq étapes</h2>
+<ol class="steps">
+<li><strong>Choisir un sujet.</strong> Le lundi, le mercredi et le vendredi, un sujet d'actualité des derniers jours, en variant les thèmes et en évitant ceux déjà traités. Le mardi et le jeudi, un « Éclairage Institutions » qui explique une notion de base : la Constitution, le 49-3, le Sénat…</li>
+<li><strong>Se documenter.</strong> L'IA lit des articles de presse de sensibilités différentes et des sources institutionnelles comme Vie publique.</li>
+<li><strong>Rédiger.</strong> Les bases, les mots à connaître, ce qui se joue, les arguments pour et contre avec ceux qui les portent, un angle local sur Toulouse et l'Occitanie quand c'est pertinent, des sources pour creuser et une question ouverte.</li>
+<li><strong>Contrôler la forme.</strong> Des vérifications automatiques portent sur le format, l'orthographe et le ton neutre. Elles ne vérifient pas les faits.</li>
+<li><strong>Publier.</strong> Le brief arrive sur ce site vers 8 h, avec son propre lien et une version PDF à partager.</li>
+</ol>
+</section>
+
+<section class="sides limits">
+<div class="side con">
+<h2>Les limites</h2>
+<p class="who">À garder en tête en lisant un brief</p>
+<ul>
+<li>Une IA peut se tromper : un chiffre inexact, une date, une citation approximative, une position attribuée à la mauvaise personne.</li>
+<li>Elle peut mal résumer une source, ou simplifier au point de perdre une nuance importante.</li>
+<li>L'actualité bouge vite : un brief peut être dépassé quelques jours après sa publication.</li>
+<li>L'équilibre entre « pour » et « contre » est un effort de présentation, pas une mesure objective de qui a raison.</li>
+</ul>
+</div>
+<div class="side pro">
+<h2>Le bon usage</h2>
+<p class="who">Ce que Brief citoyen est, et n'est pas</p>
+<ul>
+<li>Un point de départ pour comprendre un sujet, pas une source de référence.</li>
+<li>Les sources citées font foi : pour un chiffre ou une citation, c'est elles qu'il faut lire.</li>
+<li>Il ne remplace pas le travail des journalistes, qui enquêtent, recoupent et vérifient.</li>
+<li>Il ne donne pas de consigne de vote et ne défend aucun parti.</li>
+</ul>
+</div>
+</section>
+
+<section class="question">
+<h2 class="kicker">Une erreur, un oubli ?</h2>
+<p>Les signalements sont bienvenus : ils permettent de corriger le brief concerné.</p>
+<a class="cta" href="https://github.com/marccharton/Brief-Citoyen/issues/new" target="_blank" rel="noopener">Signaler une erreur sur GitHub</a>
+</section>
+
+<p class="credit">Brief citoyen est un projet personnel de <a href="https://marccharton.github.io/">Marc Charton</a>, à Toulouse. Le code du site est public sur <a href="https://github.com/marccharton/Brief-Citoyen">GitHub</a>.</p>
+</main>""")
+    out.append(FOOT.format(prefix=prefix))
+    return "\n".join(out)
+
+
 def main():
     briefs = load()
     if not briefs:
@@ -284,6 +367,9 @@ def main():
         page.write_text(render_brief(b, prv, nxt), encoding="utf-8")
     (ROOT / "index.html").write_text(render_index(briefs), encoding="utf-8")
     (ROOT / "feed.xml").write_text(render_feed(briefs), encoding="utf-8")
+    about = ROOT / "comment-c-est-fait" / "index.html"
+    about.parent.mkdir(exist_ok=True)
+    about.write_text(render_about(), encoding="utf-8")
     print(f"{len(briefs)} briefs construits.")
 
 
