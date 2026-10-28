@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brief citoyen</title>
-  <meta name="description" content="Un sujet de politique française chaque matin, expliqué depuis les bases.">
-  <style>
-    :root{--bg:#F3F5F7;--ink:#1B2430;--soft:#55606D;--accent:#2E5C8A}
-    @media (prefers-color-scheme: dark){:root{--bg:#12171D;--ink:#E4E9EF;--soft:#A6B0BC;--accent:#86B2DE;color-scheme:dark}}
-    body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,serif}
-    main{max-width:640px;margin:0 auto;padding:72px 20px}
-    p.e{font:700 12px system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0}
-    h1{font-size:40px;margin:6px 0 10px}
-    p{color:var(--soft)}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief citoyen · un sujet politique expliqué chaque matin</title>
+<meta name="description" content="Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.">
+<link rel="canonical" href="https://marccharton.github.io/Brief-Citoyen/">
+<meta property="og:site_name" content="Brief citoyen">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brief citoyen · un sujet politique expliqué chaque matin">
+<meta property="og:description" content="Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.">
+<meta property="og:url" content="https://marccharton.github.io/Brief-Citoyen/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" title="Brief citoyen" href="feed.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A2B42'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h9' stroke='%23B0C4DE' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,650;1,7..72,500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <main>
-    <p class="e">Bientôt</p>
-    <h1>Brief citoyen</h1>
-    <p>Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.</p>
-  </main>
+<header class="band home"><div class="wrap">
+<p class="eyebrow"><span>Politique française</span><span class="dot">·</span><span>8 briefs</span></p>
+<h1>Brief citoyen</h1>
+<p class="subject">Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.</p>
+</div></header>
+<main class="wrap">
+<div class="filters" id="filters"><button class="chip" type="button" data-theme="" aria-pressed="true">Tous</button><button class="chip" type="button" data-theme="Institutions" aria-pressed="false">Institutions</button><button class="chip" type="button" data-theme="National" aria-pressed="false">National</button><button class="chip" type="button" data-theme="Social" aria-pressed="false">Social</button><button class="chip" type="button" data-theme="Économie" aria-pressed="false">Économie</button></div>
+<ol class="list" id="list">
+<li class="month">Octobre 2026</li>
+<li class="item" data-theme="National"><a href="2026-10-28/">
+<span class="when"><span class="d">mer.</span><span class="n">28</span></span>
+<span class="body"><span class="theme">National</span><span class="t">La loi casseurs payeurs</span><span class="s">Le Sénat a adopté le 28 octobre 2026 un projet de loi prévu pour mieux sanctionner les violences en manifestation, comportant trois nouvelles mesures : la saisie possible des prestations sociales, l&#x27;élargissement des interdictions de manifester et la faculté de bloquer temporairement des réseaux sociaux.</span></span>
+</a></li>
+<li class="item" data-theme="Institutions"><a href="2026-10-27/">
+<span class="when"><span class="d">mar.</span><span class="n">27</span></span>
+<span class="body"><span class="theme">Institutions</span><span class="t">Glucksmann et la primaire de la gauche</span><span class="s">Raphaël Glucksmann a remporté la primaire de la gauche unitaire le 11 octobre 2026 avec 66 % des voix, se positionnant comme candidat de la gauche non-insoumise pour l&#x27;élection présidentielle de 2027.</span></span>
+</a></li>
+<li class="item" data-theme="Social"><a href="2026-10-26/">
+<span class="when"><span class="d">lun.</span><span class="n">26</span></span>
+<span class="body"><span class="theme">Social</span><span class="t">La retraite à 64 ans suspendue</span><span class="s">La réforme des retraites de 2023, qui avait repoussé l&#x27;âge légal de départ à 64 ans, a été suspendue par le gouvernement Bayrou en 2026, sans que la question du financement du système soit résolue.</span></span>
+</a></li>
+<li class="item" data-theme="Social"><a href="2026-10-23/">
+<span class="when"><span class="d">ven.</span><span class="n">23</span></span>
+<span class="body"><span class="theme">Social</span><span class="t">Le budget de la Sécurité sociale 2027</span><span class="s">L&#x27;Assemblée nationale examine le projet de loi de financement de la Sécurité sociale pour 2027, qui prévoit de réduire de moitié le déficit en limitant la hausse des pensions de retraite et certaines prestations familiales.</span></span>
+</a></li>
+<li class="item" data-theme="Économie"><a href="2026-10-22/">
+<span class="when"><span class="d">jeu.</span><span class="n">22</span></span>
+<span class="body"><span class="theme">Économie</span><span class="t">Le budget 2027 en débat à l&#x27;Assemblée</span><span class="s">Le projet de loi de finances pour 2027 est examiné à l&#x27;Assemblée nationale depuis début octobre 2026, avec un effort budgétaire de 54 milliards d&#x27;euros pour réduire le déficit public.</span></span>
+</a></li>
+<li class="item" data-theme="Économie"><a href="2026-10-19-b/">
+<span class="when"><span class="d">lun.</span><span class="n">19</span></span>
+<span class="body"><span class="theme">Économie</span><span class="t">Qui doit financer les transports en commun ?</span><span class="s">Les réseaux de transports en commun des grandes agglomérations françaises font face à une crise de financement : les coûts augmentent, les collectivités locales peinent à suivre, et le débat sur la répartition de l&#x27;effort entre usagers, employeurs, collectivités et État est relancé.</span></span>
+</a></li>
+<li class="item" data-theme="Social"><a href="2026-10-19/">
+<span class="when"><span class="d">lun.</span><span class="n">19</span></span>
+<span class="body"><span class="theme">Social</span><span class="t">La mobilisation « vie chère » du 17 octobre</span><span class="s">Le samedi 17 octobre, des cortèges ont défilé dans toute la France contre la hausse du coût de la vie, et la journée a été marquée par des violences dans plusieurs villes.</span></span>
+</a></li>
+<li class="item" data-theme="Social"><a href="2026-10-16/">
+<span class="when"><span class="d">ven.</span><span class="n">16</span></span>
+<span class="body"><span class="theme">Social</span><span class="t">Budget 2027 : retraites, arrêts maladie et APL dans la balance</span><span class="s">Le gouvernement présente son projet de budget pour 2027 avec des mesures concrètes sur les pensions de retraite, les indemnités en cas d&#x27;arrêt maladie et les aides au logement, ce qui ouvre un débat sur la répartition des efforts.</span></span>
+</a></li>
+</ol>
+</main>
+<script>
+(function(){
+  var box = document.getElementById('filters'); if (!box) return;
+  box.addEventListener('click', function(ev){
+    var c = ev.target.closest('.chip'); if (!c) return;
+    var t = c.getAttribute('data-theme');
+    box.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+    var items = document.querySelectorAll('#list .item'), last = null;
+    items.forEach(function(it){ it.hidden = !!t && it.getAttribute('data-theme') !== t; });
+    document.querySelectorAll('#list .month').forEach(function(mo){
+      var n = mo.nextElementSibling, any = false;
+      while (n && !n.classList.contains('month')){ if (!n.hidden) any = true; n = n.nextElementSibling; }
+      mo.hidden = !any;
+    });
+  });
+})();
+</script>
+<footer class="foot"><div class="wrap">
+<p>Brief citoyen est rédigé chaque matin avec l'aide d'une intelligence artificielle, à partir de sources publiques citées dans chaque brief. Il vise à présenter les arguments des différents camps de façon équilibrée : en cas de doute, les sources font foi.</p>
+<p><a href="">Tous les briefs</a> · <a href="feed.xml">Flux RSS</a> · <a href="https://marccharton.github.io/">Marc Charton</a></p>
+</div></footer>
 </body>
 </html>
