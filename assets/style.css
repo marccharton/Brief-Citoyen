@@ -139,7 +139,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* Sources de référence et sources citées */
 .refs{display:flex;flex-direction:column;gap:14px}
-.refgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.refgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
 .refgroup{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--pro);border-radius:10px;padding:14px 18px}
 .refgroup.l{border-top-color:var(--con)} .refgroup.r{border-top-color:var(--accent)}
 .refgroup h3{margin:0 0 8px;font:700 12px var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--pro)}
@@ -156,3 +156,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .hosts li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px;min-width:0}
 .hosts .h{overflow-wrap:anywhere}
 .hosts .c{font-variant-numeric:tabular-nums;color:var(--mute);font-weight:700}
+.refgroup p{margin:0;color:var(--soft);font-size:15px;line-height:1.5}

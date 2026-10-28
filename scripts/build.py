@@ -265,28 +265,15 @@ def render_feed(briefs):
 """
 
 
-REF_SOURCES = [
-    ("Institutions et données publiques", "n", [
-        ("Vie publique", "https://www.vie-publique.fr/"), ("Assemblée nationale", "https://www.assemblee-nationale.fr/"),
-        ("Sénat", "https://www.senat.fr/"), ("Légifrance", "https://www.legifrance.gouv.fr/"),
-        ("Conseil constitutionnel", "https://www.conseil-constitutionnel.fr/"), ("Insee", "https://www.insee.fr/"),
-        ("Cour des comptes", "https://www.ccomptes.fr/"), ("Toute l'Europe", "https://www.touteleurope.eu/")]),
-    ("Information générale et vérification", "n", [
-        ("Franceinfo", "https://www.francetvinfo.fr/"), ("Le Monde, Les Décodeurs", "https://www.lemonde.fr/les-decodeurs/"),
-        ("AFP Factuel", "https://factuel.afp.com/"), ("Public Sénat", "https://www.publicsenat.fr/"),
-        ("LCP", "https://lcp.fr/"), ("La Finance pour tous", "https://www.lafinancepourtous.com/")]),
-    ("Plutôt à gauche", "l", [
-        ("Libération", "https://www.liberation.fr/"), ("Mediapart", "https://www.mediapart.fr/"),
-        ("L'Humanité", "https://www.humanite.fr/"), ("Politis", "https://www.politis.fr/"),
-        ("Alternatives économiques", "https://www.alternatives-economiques.fr/"), ("Reporterre", "https://reporterre.net/")]),
-    ("Plutôt à droite", "r", [
-        ("Le Figaro", "https://www.lefigaro.fr/"), ("Les Échos", "https://www.lesechos.fr/"),
-        ("L'Opinion", "https://www.lopinion.fr/"), ("Le Point", "https://www.lepoint.fr/"),
-        ("Contrepoints", "https://www.contrepoints.org/"), ("Valeurs actuelles", "https://www.valeursactuelles.com/")]),
-    ("Toulouse et Occitanie", "n", [
-        ("La Dépêche du Midi", "https://www.ladepeche.fr/"), ("Actu Toulouse", "https://actu.fr/toulouse/"),
-        ("ici Occitanie", "https://www.francebleu.fr/occitanie"), ("Toulouse Métropole", "https://www.toulouse-metropole.fr/"),
-        ("Région Occitanie", "https://www.laregion.fr/")]),
+SOURCE_RULES = [
+    ("n", "Les sources primaires d'abord",
+     "Quand elles existent : le texte de loi, le rapport officiel, les données publiques, le communiqué de l'organisation concernée. C'est la base la plus sûre pour un chiffre ou une citation."),
+    ("n", "Des médias identifiés",
+     "Pour la presse, des médias avec une rédaction et une ligne éditoriale connues. Pas de réseaux sociaux, de blogs anonymes ni de sites sans auteur."),
+    ("n", "Plusieurs sensibilités",
+     "Chaque brief cite au moins une source perçue plutôt à gauche, une plutôt à droite et une neutre ou institutionnelle."),
+    ("n", "Vérifiable par tous",
+     "Chaque source citée a un lien vers l'article ou le document lui-même, pour que chacun puisse aller lire."),
 ]
 
 
@@ -295,10 +282,7 @@ def host_of(u):
 
 
 def sources_block(briefs):
-    groups = []
-    for title, cls, items in REF_SOURCES:
-        links = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a></li>' for n, u in items)
-        groups.append(f'<div class="refgroup {cls}"><h3>{e(title)}</h3><ul>{links}</ul></div>')
+    groups = [f'<div class="refgroup {cls}"><h3>{e(t)}</h3><p>{e(d)}</p></div>' for cls, t, d in SOURCE_RULES]
     counts, leans, total = {}, {"l": 0, "r": 0, "n": 0}, 0
     for b in briefs:
         for src in lst(b.get("sources")):
@@ -320,7 +304,7 @@ def sources_block(briefs):
            f'<span class="r">Plutôt à droite : {leans["r"]} ({pct(leans["r"])} %)</span></p>')
     return f"""<section class="refs">
 <h2 class="kicker">Où l'IA cherche ses informations</h2>
-<div class="prose"><p>Il n'y a pas de liste fermée : chaque matin, l'IA fait des recherches sur le web à partir de l'actualité. Elle a pour consigne de privilégier les sources ci-dessous, et de citer dans chaque brief au moins une source plutôt à gauche, une plutôt à droite et une neutre. Le classement à gauche ou à droite est indicatif : il reprend la perception courante de la ligne éditoriale de chaque média.</p></div>
+<div class="prose"><p>Il n'y a pas de liste de médias choisis à l'avance : chaque matin, l'IA fait des recherches sur le web à partir de l'actualité. Plutôt qu'une liste, elle suit des règles. Le classement d'une source à gauche ou à droite est indicatif : il reprend la perception courante de sa ligne éditoriale.</p></div>
 <div class="refgrid">{''.join(groups)}</div>
 </section>
 
@@ -373,7 +357,7 @@ def render_about(briefs):
 <h2 class="kicker">Le processus, en cinq étapes</h2>
 <ol class="steps">
 <li><strong>Choisir un sujet.</strong> Le lundi, le mercredi et le vendredi, un sujet d'actualité des derniers jours, en variant les thèmes et en évitant ceux déjà traités. Le mardi et le jeudi, un « Éclairage Institutions » qui explique une notion de base : la Constitution, le 49-3, le Sénat…</li>
-<li><strong>Se documenter.</strong> L'IA fait des recherches sur le web, en privilégiant les sources de référence listées plus bas, et lit des articles de sensibilités différentes. Pour le contexte général (comment fonctionne une institution, l'histoire d'une réforme), elle s'appuie aussi sur ses propres connaissances, apprises avant sa mise en service : cette partie-là n'est pas sourcée article par article.</li>
+<li><strong>Se documenter.</strong> L'IA fait des recherches sur le web en suivant les règles décrites plus bas : sources primaires d'abord, médias identifiés, plusieurs sensibilités. Pour le contexte général (comment fonctionne une institution, l'histoire d'une réforme), elle s'appuie aussi sur ses propres connaissances, apprises avant sa mise en service : cette partie-là n'est pas sourcée article par article.</li>
 <li><strong>Rédiger.</strong> Les bases, les mots à connaître, ce qui se joue, les arguments pour et contre avec ceux qui les portent, un angle local sur Toulouse et l'Occitanie quand c'est pertinent, des sources pour creuser et une question ouverte.</li>
 <li><strong>Contrôler la forme.</strong> Des vérifications automatiques portent sur le format, l'orthographe et le ton neutre. Elles ne vérifient pas les faits.</li>
 <li><strong>Publier.</strong> Le brief arrive sur ce site vers 8 h, avec son propre lien et une version PDF à partager.</li>
