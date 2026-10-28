@@ -265,7 +265,75 @@ def render_feed(briefs):
 """
 
 
-def render_about():
+REF_SOURCES = [
+    ("Institutions et données publiques", "n", [
+        ("Vie publique", "https://www.vie-publique.fr/"), ("Assemblée nationale", "https://www.assemblee-nationale.fr/"),
+        ("Sénat", "https://www.senat.fr/"), ("Légifrance", "https://www.legifrance.gouv.fr/"),
+        ("Conseil constitutionnel", "https://www.conseil-constitutionnel.fr/"), ("Insee", "https://www.insee.fr/"),
+        ("Cour des comptes", "https://www.ccomptes.fr/"), ("Toute l'Europe", "https://www.touteleurope.eu/")]),
+    ("Information générale et vérification", "n", [
+        ("Franceinfo", "https://www.francetvinfo.fr/"), ("Le Monde, Les Décodeurs", "https://www.lemonde.fr/les-decodeurs/"),
+        ("AFP Factuel", "https://factuel.afp.com/"), ("Public Sénat", "https://www.publicsenat.fr/"),
+        ("LCP", "https://lcp.fr/"), ("La Finance pour tous", "https://www.lafinancepourtous.com/")]),
+    ("Plutôt à gauche", "l", [
+        ("Libération", "https://www.liberation.fr/"), ("Mediapart", "https://www.mediapart.fr/"),
+        ("L'Humanité", "https://www.humanite.fr/"), ("Politis", "https://www.politis.fr/"),
+        ("Alternatives économiques", "https://www.alternatives-economiques.fr/"), ("Reporterre", "https://reporterre.net/")]),
+    ("Plutôt à droite", "r", [
+        ("Le Figaro", "https://www.lefigaro.fr/"), ("Les Échos", "https://www.lesechos.fr/"),
+        ("L'Opinion", "https://www.lopinion.fr/"), ("Le Point", "https://www.lepoint.fr/"),
+        ("Contrepoints", "https://www.contrepoints.org/"), ("Valeurs actuelles", "https://www.valeursactuelles.com/")]),
+    ("Toulouse et Occitanie", "n", [
+        ("La Dépêche du Midi", "https://www.ladepeche.fr/"), ("Actu Toulouse", "https://actu.fr/toulouse/"),
+        ("ici Occitanie", "https://www.francebleu.fr/occitanie"), ("Toulouse Métropole", "https://www.toulouse-metropole.fr/"),
+        ("Région Occitanie", "https://www.laregion.fr/")]),
+]
+
+
+def host_of(u):
+    return re.sub(r"^https://(www\.)?", "", u).split("/")[0] if is_https(u) else ""
+
+
+def sources_block(briefs):
+    groups = []
+    for title, cls, items in REF_SOURCES:
+        links = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a></li>' for n, u in items)
+        groups.append(f'<div class="refgroup {cls}"><h3>{e(title)}</h3><ul>{links}</ul></div>')
+    counts, leans, total = {}, {"l": 0, "r": 0, "n": 0}, 0
+    for b in briefs:
+        for src in lst(b.get("sources")):
+            if not isinstance(src, dict) or not src.get("name"):
+                continue
+            total += 1
+            lean = str(src.get("lean") or "").lower()
+            leans["l" if "gauche" in lean else "r" if "droite" in lean else "n"] += 1
+            h = host_of(src.get("url")) or "sans lien"
+            counts[h] = counts.get(h, 0) + 1
+    rows = "".join(f'<li><span class="h">{e(h)}</span><span class="c">{c}</span></li>'
+                   for h, c in sorted(counts.items(), key=lambda x: (-x[1], x[0])))
+    def pct(n):
+        return round(100 * n / total) if total else 0
+    bar = (f'<div class="leanbar" role="img" aria-label="{leans["l"]} sources plutôt à gauche, {leans["n"]} neutres ou institutionnelles, {leans["r"]} plutôt à droite">'
+           f'<span class="l" style="flex:{leans["l"] or 0.0001}"></span><span class="n" style="flex:{leans["n"] or 0.0001}"></span><span class="r" style="flex:{leans["r"] or 0.0001}"></span></div>'
+           f'<p class="leanlegend"><span class="l">Plutôt à gauche : {leans["l"]} ({pct(leans["l"])} %)</span>'
+           f'<span class="n">Neutres ou institutionnelles : {leans["n"]} ({pct(leans["n"])} %)</span>'
+           f'<span class="r">Plutôt à droite : {leans["r"]} ({pct(leans["r"])} %)</span></p>')
+    return f"""<section class="refs">
+<h2 class="kicker">Où l'IA cherche ses informations</h2>
+<div class="prose"><p>Il n'y a pas de liste fermée : chaque matin, l'IA fait des recherches sur le web à partir de l'actualité. Elle a pour consigne de privilégier les sources ci-dessous, et de citer dans chaque brief au moins une source plutôt à gauche, une plutôt à droite et une neutre. Le classement à gauche ou à droite est indicatif : il reprend la perception courante de la ligne éditoriale de chaque média.</p></div>
+<div class="refgrid">{''.join(groups)}</div>
+</section>
+
+<section class="refs used">
+<h2 class="kicker">Les sources réellement citées</h2>
+<div class="prose"><p>Calculé automatiquement à partir des {len(briefs)} briefs publiés : {total} sources citées au total. Ce décompte se met à jour à chaque nouveau brief.</p></div>
+{bar}
+<ul class="hosts">{rows}</ul>
+</section>
+"""
+
+
+def render_about(briefs):
     prefix = "../"
     url = f"{SITE_URL}comment-c-est-fait/"
     desc = ("Comment Brief citoyen est fabriqué : une intelligence artificielle, des sources publiques, "
@@ -305,13 +373,14 @@ def render_about():
 <h2 class="kicker">Le processus, en cinq étapes</h2>
 <ol class="steps">
 <li><strong>Choisir un sujet.</strong> Le lundi, le mercredi et le vendredi, un sujet d'actualité des derniers jours, en variant les thèmes et en évitant ceux déjà traités. Le mardi et le jeudi, un « Éclairage Institutions » qui explique une notion de base : la Constitution, le 49-3, le Sénat…</li>
-<li><strong>Se documenter.</strong> L'IA lit des articles de presse de sensibilités différentes et des sources institutionnelles comme Vie publique.</li>
+<li><strong>Se documenter.</strong> L'IA fait des recherches sur le web, en privilégiant les sources de référence listées plus bas, et lit des articles de sensibilités différentes. Pour le contexte général (comment fonctionne une institution, l'histoire d'une réforme), elle s'appuie aussi sur ses propres connaissances, apprises avant sa mise en service : cette partie-là n'est pas sourcée article par article.</li>
 <li><strong>Rédiger.</strong> Les bases, les mots à connaître, ce qui se joue, les arguments pour et contre avec ceux qui les portent, un angle local sur Toulouse et l'Occitanie quand c'est pertinent, des sources pour creuser et une question ouverte.</li>
 <li><strong>Contrôler la forme.</strong> Des vérifications automatiques portent sur le format, l'orthographe et le ton neutre. Elles ne vérifient pas les faits.</li>
 <li><strong>Publier.</strong> Le brief arrive sur ce site vers 8 h, avec son propre lien et une version PDF à partager.</li>
 </ol>
 </section>
 
+{sources_block(briefs)}
 <section class="sides limits">
 <div class="side con">
 <h2>Les limites</h2>
@@ -369,7 +438,7 @@ def main():
     (ROOT / "feed.xml").write_text(render_feed(briefs), encoding="utf-8")
     about = ROOT / "comment-c-est-fait" / "index.html"
     about.parent.mkdir(exist_ok=True)
-    about.write_text(render_about(), encoding="utf-8")
+    about.write_text(render_about(briefs), encoding="utf-8")
     print(f"{len(briefs)} briefs construits.")
 
 

@@ -136,3 +136,23 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .cta:hover{background:var(--navy-soft)}
 .credit{color:var(--soft);font-size:15px;margin:0}
 @media (max-width:760px){.steps li{padding-left:58px}.steps li::before{left:14px}}
+
+/* Sources de référence et sources citées */
+.refs{display:flex;flex-direction:column;gap:14px}
+.refgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.refgroup{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--pro);border-radius:10px;padding:14px 18px}
+.refgroup.l{border-top-color:var(--con)} .refgroup.r{border-top-color:var(--accent)}
+.refgroup h3{margin:0 0 8px;font:700 12px var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--pro)}
+.refgroup.l h3{color:var(--con)} .refgroup.r h3{color:var(--accent)}
+.refgroup ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:15.5px}
+.refgroup a{color:var(--ink);text-decoration-color:var(--line)}
+.refgroup a:hover{color:var(--accent)}
+.leanbar{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px;max-width:640px}
+.leanbar .l{background:var(--con)} .leanbar .n{background:var(--pro)} .leanbar .r{background:var(--accent)}
+.leanlegend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;font-size:14px;color:var(--soft)}
+.leanlegend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.leanlegend .l::before{background:var(--con)} .leanlegend .n::before{background:var(--pro)} .leanlegend .r::before{background:var(--accent)}
+.hosts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0 24px;max-width:860px}
+.hosts li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px;min-width:0}
+.hosts .h{overflow-wrap:anywhere}
+.hosts .c{font-variant-numeric:tabular-nums;color:var(--mute);font-weight:700}
