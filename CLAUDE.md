@@ -7,8 +7,8 @@ Un sujet de politique française chaque matin de semaine, expliqué depuis les b
 
 Ce fichier est public : il ne contient que la partie technique. L'intention du projet, l'historique et les décisions sont dans le Google Drive pro de Marc (connecteur Google Drive) :
 
-- Dossier : `Outils / Claude / Mémoire globale / Dépôt · Brief-Citoyen`
-- Document à lire : « Contexte : Brief citoyen »
+- Document à lire en premier : `Outils / Claude / Mémoire globale / Dépôt · Brief-Citoyen / Contexte : Brief citoyen`
+- Puis, pour le contexte général de Marc : `Outils / Claude / Mémoire globale / Mémoire globale (export)`, copie de sa mémoire Claude régénérée chaque nuit
 - Convention générale : `Outils / Claude / Lisez-moi : organisation du contexte Claude`
 
 Si le connecteur Drive n'est pas disponible, le signaler à Marc avant de prendre une décision éditoriale.
