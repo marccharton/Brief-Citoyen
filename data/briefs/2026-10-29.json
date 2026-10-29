@@ -1,0 +1,38 @@
+{
+ "date": "2026-10-29",
+ "theme": "Institutions",
+ "title": "La Constitution : le texte fondamental",
+ "subject": "La Constitution française, adoptée le 4 octobre 1958, est le texte de loi suprême qui organise les institutions de la République et garantit les droits fondamentaux.",
+ "basics": [
+  "On peut imaginer le règlement intérieur d'une grande association : il fixe qui prend les décisions, comment elles sont prises, et quels droits ont les membres. Pour un pays, ce règlement s'appelle la Constitution. En France, la Constitution en vigueur a été adoptée le 4 octobre 1958, lors de la fondation de la Ve République. Elle avait été approuvée par référendum quelques jours avant, le 28 septembre 1958, avec 79,3 % de oui en France métropolitaine (82,6 % en comptant l'outre-mer et les territoires de l'époque).",
+  "Concrètement, la Constitution organise les grands pouvoirs de l'État. Elle précise qui vote les lois (le Parlement), qui les applique (le Gouvernement), et qui représente la France à l'étranger (le Président de la République). Elle indique aussi comment ces institutions se contrôlent les unes les autres, pour éviter que toute la puissance se concentre dans une seule main.",
+  "La Constitution est la norme suprême : il n'existe aucune règle au-dessus d'elle en droit français. Cela signifie qu'une loi votée par le Parlement doit lui être conforme. Si elle la contredit, elle peut être censurée par le Conseil constitutionnel, qui joue le rôle d'arbitre. Son préambule renvoie à trois textes fondamentaux qui font eux aussi partie du droit constitutionnel : la Déclaration des droits de l'homme et du citoyen de 1789, le préambule de la Constitution de 1946 (qui proclame des droits économiques et sociaux), et la Charte de l'environnement de 2004.",
+  "Modifier la Constitution est volontairement difficile. La procédure de révision, prévue à l'article 89, impose que les deux chambres du Parlement (l'Assemblée nationale et le Sénat) votent le même texte, puis que ce texte soit approuvé soit par référendum, soit par le Congrès (les deux chambres réunies à Versailles) à la majorité des trois cinquièmes des suffrages exprimés. Une seule limite absolue existe : la forme républicaine du Gouvernement ne peut jamais être remise en cause. Depuis 1958, la Constitution a été révisée 25 fois. La dernière révision, le 8 mars 2024, a inscrit dans le texte la liberté de recourir à l'interruption volontaire de grossesse."
+ ],
+ "terms": [
+  {"term": "Norme suprême", "def": "La règle de droit la plus haute dans un système juridique. Toutes les autres règles (lois, décrets, arrêtés) doivent s'y conformer. En France, la Constitution est la norme suprême : aucune loi ne peut lui être contraire."},
+  {"term": "Préambule", "def": "Introduction d'un texte officiel, qui pose les principes fondateurs. Le préambule de la Constitution de 1958 a une valeur juridique : il fait partie intégrante de la Constitution et s'impose comme le reste du texte."},
+  {"term": "Bloc de constitutionnalité", "def": "Ensemble des textes qui ont valeur constitutionnelle en France : la Constitution de 1958, la Déclaration des droits de l'homme et du citoyen de 1789, le préambule de la Constitution de 1946 et la Charte de l'environnement de 2004."},
+  {"term": "Congrès", "def": "Réunion de l'Assemblée nationale et du Sénat en une seule assemblée, à Versailles. Il est convoqué notamment pour approuver les révisions de la Constitution, à la majorité des trois cinquièmes des suffrages exprimés."}
+ ],
+ "stakes": [
+  "Comprendre ce qu'est la Constitution aide à suivre les débats sur les réformes institutionnelles qui reviennent dans l'actualité : faut-il inscrire de nouveaux droits dans le texte ? Faut-il modifier les pouvoirs du Président ou du Parlement ? Ces discussions portent toujours sur ce même texte fondamental, adopté en 1958."
+ ],
+ "pro": {"label": "", "who": "", "args": []},
+ "con": {"label": "", "who": "", "args": []},
+ "local": [],
+ "sources": [
+  {"lean": "Neutre / fact-check", "name": "Assemblée nationale : texte de la Constitution du 4 octobre 1958 (version consolidée)", "url": "https://www.assemblee-nationale.fr/dyn/16/divers/texte_reference/01_constitution.pdf", "note": "le texte intégral, source primaire"},
+  {"lean": "Neutre / fact-check", "name": "Assemblée nationale : fiche sur la révision de la Constitution (article 89)", "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629140/file/Fiche%2055%20-%20R%C3%A9vision%20constitution.pdf", "note": "la procédure de révision expliquée"},
+  {"lean": "Neutre / fact-check", "name": "Vie publique : la Constitution de 1958 (édition mise à jour en 2024)", "url": "https://vie-publique.fr/files/2024-04/604240050_INT_Constitution-1958_Maj-2024_Web_Extrait.pdf", "note": "référence institutionnelle officielle"}
+ ],
+ "question": "La Constitution doit-elle être facile ou difficile à modifier pour qu'une démocratie fonctionne bien ?",
+ "consulted": [
+  {"name": "Assemblée nationale : texte de la Constitution du 4 octobre 1958 (version consolidée)", "url": "https://www.assemblee-nationale.fr/dyn/16/divers/texte_reference/01_constitution.pdf"},
+  {"name": "Assemblée nationale : fiche sur la révision de la Constitution (article 89)", "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629140/file/Fiche%2055%20-%20R%C3%A9vision%20constitution.pdf"},
+  {"name": "Vie publique : la Constitution de 1958 (édition mise à jour en 2024)", "url": "https://vie-publique.fr/files/2024-04/604240050_INT_Constitution-1958_Maj-2024_Web_Extrait.pdf"},
+  {"name": "Wikipédia (en) : référendum constitutionnel français de 1958, résultats", "url": "https://en.wikipedia.org/wiki/1958_French_constitutional_referendum"},
+  {"name": "Le Club des juristes : la Constitution de la Ve République a 66 ans", "url": "https://www.leclubdesjuristes.com/en-bref/la-constitution-de-la-ve-republique-a-66-ans-7188/"}
+ ],
+ "generated": "2026-10-29"
+}
