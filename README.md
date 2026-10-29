@@ -16,7 +16,8 @@ Ajouter un brief : déposer son JSON dans `data/briefs/`, lancer `python3 script
 ## Format d'un brief
 
 ```json
-{"date": "AAAA-MM-JJ", "theme": "Social", "title": "...", "subject": "...",
+{"date": "AAAA-MM-JJ", "type": "actualite", "categories": ["Économie et budget"],
+ "title": "...", "subject": "...",
  "basics": ["..."], "terms": [{"term": "...", "def": "..."}], "stakes": ["..."],
  "pro": {"label": "Pour", "who": "...", "args": ["..."]},
  "con": {"label": "Contre", "who": "...", "args": ["..."]},
@@ -27,3 +28,6 @@ Ajouter un brief : déposer son JSON dans `data/briefs/`, lancer `python3 script
 ```
 
 `sources` : les 3 ou 4 sources mises en avant (« Sources à creuser »). `consulted` : toutes les pages consultées pour construire le brief, affichées en fin d'article.
+
+`type` : « actualite » (lundi, mercredi, vendredi) ou « institutions » (mardi, jeudi).
+`categories` : 1 à 3 valeurs, uniquement dans cette liste fermée (définie dans `scripts/build.py`, 10 au maximum) : Économie et budget, Protection sociale, Vie démocratique, Justice et sécurité, Environnement et énergie, Territoires et quotidien, Europe et international, Éducation et culture, Société.

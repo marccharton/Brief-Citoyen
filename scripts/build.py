@@ -25,6 +25,36 @@ MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 ID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}(-[a-z0-9]+)?$")
 
+# Type d'un brief et liste fermée des catégories (10 au maximum, 1 à 3 par brief)
+TYPES = {"actualite": "Actualité", "institutions": "Comprendre les institutions"}
+CATEGORIES = [
+    ("Économie et budget", "Finances publiques, impôts, pouvoir d'achat, entreprises, emploi."),
+    ("Protection sociale", "Retraites, santé, Sécurité sociale, chômage, aides sociales."),
+    ("Vie démocratique", "Élections, partis, Parlement, Constitution, fonctionnement des institutions."),
+    ("Justice et sécurité", "Justice, police, ordre public, libertés publiques."),
+    ("Environnement et énergie", "Climat, biodiversité, énergie, agriculture."),
+    ("Territoires et quotidien", "Collectivités locales, transports, logement, Toulouse et Occitanie."),
+    ("Europe et international", "Union européenne, relations internationales, défense."),
+    ("Éducation et culture", "École, université, recherche, culture, médias."),
+    ("Société", "Mobilisations, égalité, immigration, numérique, vie quotidienne."),
+]
+CATEGORY_NAMES = [c for c, _ in CATEGORIES]
+LEGACY_THEMES = {"Économie": ["Économie et budget"], "Economie": ["Économie et budget"], "Social": ["Protection sociale"],
+                 "Institutions": ["Vie démocratique"], "National": ["Vie démocratique"], "Local": ["Territoires et quotidien"],
+                 "Environnement": ["Environnement et énergie"], "Europe": ["Europe et international"]}
+
+
+def btype(b):
+    t = b.get("type")
+    if t in TYPES:
+        return t
+    return "institutions" if b.get("theme") == "Institutions" and not lst((b.get("pro") or {}).get("args")) else "actualite"
+
+
+def bcats(b):
+    cats = [c for c in lst(b.get("categories")) if c in CATEGORY_NAMES][:3]
+    return cats or LEGACY_THEMES.get(b.get("theme"), [])
+
 
 def e(s):
     return html.escape(str(s if s is not None else ""), quote=True)
@@ -112,11 +142,11 @@ FOOT = """<footer class="foot"><div class="wrap">
 def render_brief(b, prev_b, next_b):
     prefix = "../"
     url = f"{SITE_URL}{b['id']}/"
-    is_inst = b.get("theme") == "Institutions" and not lst((b.get("pro") or {}).get("args"))
+    is_inst = btype(b) == "institutions"
     title = f"{b['title']} · {SITE_NAME}"
     out = [head(title, b.get("subject") or SITE_DESC, url, prefix, "article")]
 
-    theme = f'<span class="dot">·</span><span>{e(b["theme"])}</span>' if b.get("theme") else ""
+    theme = f'<span class="dot">·</span><span>{e(TYPES[btype(b)])}</span>' + "".join(f'<span class="dot">·</span><span>{e(c)}</span>' for c in bcats(b))
     out.append(f"""<header class="band"><div class="wrap">
 <a class="back" href="{prefix}">← Tous les briefs</a>
 <p class="eyebrow"><span>Brief citoyen</span><span class="dot">·</span><time datetime="{e(b['date'])}">{e(date_long(b['date']))}</time>{theme}</p>
@@ -225,8 +255,10 @@ def render_brief(b, prev_b, next_b):
 def render_index(briefs):
     prefix = ""
     out = [head(f"{SITE_NAME} · un sujet politique expliqué chaque matin", SITE_DESC, SITE_URL, prefix)]
-    themes = sorted({b["theme"] for b in briefs if b.get("theme")})
-    chips = "".join(f'<button class="chip" type="button" data-theme="{e(t)}" aria-pressed="false">{e(t)}</button>' for t in themes)
+    used = {c for b in briefs for c in bcats(b)}
+    cats = [c for c in CATEGORY_NAMES if c in used]
+    type_chips = "".join(f'<button class="chip" type="button" data-type="{k}" aria-pressed="false">{e(v)}</button>' for k, v in TYPES.items())
+    cat_chips = "".join(f'<button class="chip" type="button" data-cat="{e(c)}" aria-pressed="false">{e(c)}</button>' for c in cats)
     out.append(f"""<header class="band home"><div class="wrap">
 <p class="eyebrow"><span>Politique française</span><span class="dot">·</span><span>{len(briefs)} brief{'s' if len(briefs) > 1 else ''}</span></p>
 <h1>{SITE_NAME}</h1>
@@ -234,7 +266,10 @@ def render_index(briefs):
 <p class="howto"><a href="comment-c-est-fait/">Comment c'est fait, et ses limites →</a></p>
 </div></header>
 <main class="wrap">
-{f'<div class="filters" id="filters"><button class="chip" type="button" data-theme="" aria-pressed="true">Tous</button>{chips}</div>' if len(themes) > 1 else ''}
+<div class="filters" id="filters">
+<div class="frow" data-group="type"><span class="flabel">Type</span><button class="chip" type="button" data-type="" aria-pressed="true">Tous</button>{type_chips}</div>
+<div class="frow" data-group="cat"><span class="flabel">Catégorie</span><button class="chip" type="button" data-cat="" aria-pressed="true">Toutes</button>{cat_chips}</div>
+</div>
 <ol class="list" id="list">""")
     month = None
     for b in briefs:
@@ -243,21 +278,26 @@ def render_index(briefs):
         if m != month:
             out.append(f'<li class="month">{e(m)}</li>')
             month = m
-        out.append(f"""<li class="item" data-theme="{e(b.get('theme', ''))}"><a href="{b['id']}/">
+        out.append(f"""<li class="item" data-type="{btype(b)}" data-cats="{e('|'.join(bcats(b)))}"><a href="{b['id']}/">
 <span class="when"><span class="d">{JOURS[d.weekday()][:3]}.</span><span class="n">{d.day}</span></span>
-<span class="body">{f'<span class="theme">{e(b["theme"])}</span>' if b.get('theme') else ''}<span class="t">{e(b['title'])}</span><span class="s">{e(b.get('subject', ''))}</span></span>
+<span class="body"><span class="meta"><span class="type {btype(b)}">{e(TYPES[btype(b)])}</span>{''.join(f'<span class="cat">{e(c)}</span>' for c in bcats(b))}</span><span class="t">{e(b['title'])}</span><span class="s">{e(b.get('subject', ''))}</span></span>
 </a></li>""")
     out.append("""</ol>
 </main>
 <script>
 (function(){
   var box = document.getElementById('filters'); if (!box) return;
+  var sel = {type: '', cat: ''};
   box.addEventListener('click', function(ev){
     var c = ev.target.closest('.chip'); if (!c) return;
-    var t = c.getAttribute('data-theme');
-    box.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
-    var items = document.querySelectorAll('#list .item'), last = null;
-    items.forEach(function(it){ it.hidden = !!t && it.getAttribute('data-theme') !== t; });
+    var row = c.closest('.frow'), g = row.getAttribute('data-group');
+    sel[g] = c.getAttribute(g === 'type' ? 'data-type' : 'data-cat');
+    row.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+    document.querySelectorAll('#list .item').forEach(function(it){
+      var okT = !sel.type || it.getAttribute('data-type') === sel.type;
+      var okC = !sel.cat || it.getAttribute('data-cats').split('|').indexOf(sel.cat) >= 0;
+      it.hidden = !(okT && okC);
+    });
     document.querySelectorAll('#list .month').forEach(function(mo){
       var n = mo.nextElementSibling, any = false;
       while (n && !n.classList.contains('month')){ if (!n.hidden) any = true; n = n.nextElementSibling; }
@@ -276,7 +316,7 @@ def render_feed(briefs):
         d = parse_date(b["date"]).replace(hour=7, minute=47, tzinfo=timezone.utc)
         items.append(f"""<item><title>{e(b['title'])}</title><link>{SITE_URL}{b['id']}/</link>
 <guid isPermaLink="true">{SITE_URL}{b['id']}/</guid><pubDate>{format_datetime(d)}</pubDate>
-<description>{e(b.get('subject', ''))}</description>{f"<category>{e(b['theme'])}</category>" if b.get('theme') else ''}</item>""")
+<description>{e(b.get('subject', ''))}</description>{''.join(f"<category>{e(c)}</category>" for c in bcats(b))}</item>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>{SITE_NAME}</title><link>{SITE_URL}</link>
 <description>{e(SITE_DESC)}</description><language>fr-FR</language>
@@ -299,6 +339,20 @@ SOURCE_RULES = [
 
 def host_of(u):
     return re.sub(r"^https://(www\.)?", "", u).split("/")[0] if is_https(u) else ""
+
+
+def classif_block():
+    cats = "".join(f'<div><dt>{e(c)}</dt><dd>{e(d)}</dd></div>' for c, d in CATEGORIES)
+    return f"""<section class="basics with-terms">
+<div class="prose">
+<h2 class="kicker">Deux types de briefs</h2>
+<p><strong>Actualité</strong> (lundi, mercredi, vendredi) : un sujet du moment, expliqué depuis les bases, avec les arguments des deux côtés.</p>
+<p><strong>Comprendre les institutions</strong> (mardi, jeudi) : une notion du fonctionnement de la Ve République expliquée simplement, de la Constitution au 49-3, sans débat pour ou contre.</p>
+<p>Chaque brief est rangé dans une à trois catégories, choisies dans une liste courte et stable, pour retrouver facilement tout ce qui touche à un même domaine.</p>
+</div>
+<aside class="terms"><h2 class="kicker">Les catégories</h2><dl>{cats}</dl></aside>
+</section>
+"""
 
 
 def sources_block(briefs):
@@ -384,6 +438,7 @@ def render_about(briefs):
 </ol>
 </section>
 
+{classif_block()}
 {sources_block(briefs)}
 <section class="sides limits">
 <div class="side con">

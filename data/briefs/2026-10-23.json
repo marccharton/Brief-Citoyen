@@ -1,104 +1,108 @@
 {
-  "basics": [
-    "La Sécurité sociale est le système français qui finance la santé (remboursements chez le médecin, médicaments, hôpitaux), les retraites de base, les allocations familiales versées par la CAF, et les indemnités en cas d'accident du travail. Tout salarié verse chaque mois une part de son salaire pour alimenter ce système, ce qu'on appelle les cotisations sociales. En échange, tout le monde peut y accéder, quelle que soit sa situation.",
-    "Chaque automne, le gouvernement présente un Projet de Loi de Financement de la Sécurité Sociale, abrégé PLFSS. Ce texte fixe combien la Sécu va dépenser l'année suivante et comment elle va se financer. C'est un moment politique majeur car il touche directement à des dépenses qui concernent l'ensemble des Français.",
-    "En 2026, la Sécurité sociale dépense environ 18 milliards d'euros de plus qu'elle ne reçoit. Ce déficit s'accumule depuis des années et s'ajoute à la dette de l'État. Le gouvernement Lecornu s'est fixé l'objectif de le diviser par deux dès 2027, sans augmenter les impôts ni les cotisations.",
-    "Pour y arriver, le PLFSS 2027 prévoit principalement deux mesures d'économies : une désindexation partielle des retraites de base (les pensions n'augmenteront pas autant que les prix) et un durcissement des conditions d'accès à certaines aides de la CAF. Du côté de la santé, l'objectif de progression des dépenses hospitalières est fixé à un niveau que plusieurs acteurs jugent insuffisant par rapport aux besoins réels."
+ "basics": [
+  "La Sécurité sociale est le système français qui finance la santé (remboursements chez le médecin, médicaments, hôpitaux), les retraites de base, les allocations familiales versées par la CAF, et les indemnités en cas d'accident du travail. Tout salarié verse chaque mois une part de son salaire pour alimenter ce système, ce qu'on appelle les cotisations sociales. En échange, tout le monde peut y accéder, quelle que soit sa situation.",
+  "Chaque automne, le gouvernement présente un Projet de Loi de Financement de la Sécurité Sociale, abrégé PLFSS. Ce texte fixe combien la Sécu va dépenser l'année suivante et comment elle va se financer. C'est un moment politique majeur car il touche directement à des dépenses qui concernent l'ensemble des Français.",
+  "En 2026, la Sécurité sociale dépense environ 18 milliards d'euros de plus qu'elle ne reçoit. Ce déficit s'accumule depuis des années et s'ajoute à la dette de l'État. Le gouvernement Lecornu s'est fixé l'objectif de le diviser par deux dès 2027, sans augmenter les impôts ni les cotisations.",
+  "Pour y arriver, le PLFSS 2027 prévoit principalement deux mesures d'économies : une désindexation partielle des retraites de base (les pensions n'augmenteront pas autant que les prix) et un durcissement des conditions d'accès à certaines aides de la CAF. Du côté de la santé, l'objectif de progression des dépenses hospitalières est fixé à un niveau que plusieurs acteurs jugent insuffisant par rapport aux besoins réels."
+ ],
+ "con": {
+  "args": [
+   "La CFDT juge ce budget 'déséquilibré, injuste et brutal pour les plus modestes' : les efforts sont concentrés sur des ménages modestes (petits retraités, familles allocataires de la CAF) plutôt que répartis équitablement.",
+   "La Fédération Hospitalière de France alerte : avec l'ONDAM proposé, il manque 1,3 milliard d'euros aux établissements de santé pour couvrir leurs dépenses réelles, ce qui risque d'aggraver les fermetures de lits et les difficultés de recrutement.",
+   "Des sénateurs, y compris dans la majorité, jugent l'objectif de réduction du déficit 'très ambitieux, voire intenable', ce qui signifie que les économies prévues sont peut-être surestimées.",
+   "Des alternatives moins douloureuses pour les plus fragiles existent selon les opposants : augmenter les cotisations sur les hauts salaires, taxer les revenus financiers, ou s'attaquer à la fraude aux cotisations patronales.",
+   "Baisser les allocations familiales et les aides au logement fragilise des familles qui les utilisent pour couvrir des besoins essentiels, et peut accentuer la pauvreté de certains enfants."
   ],
-  "con": {
-    "args": [
-      "La CFDT juge ce budget 'déséquilibré, injuste et brutal pour les plus modestes' : les efforts sont concentrés sur des ménages modestes (petits retraités, familles allocataires de la CAF) plutôt que répartis équitablement.",
-      "La Fédération Hospitalière de France alerte : avec l'ONDAM proposé, il manque 1,3 milliard d'euros aux établissements de santé pour couvrir leurs dépenses réelles, ce qui risque d'aggraver les fermetures de lits et les difficultés de recrutement.",
-      "Des sénateurs, y compris dans la majorité, jugent l'objectif de réduction du déficit 'très ambitieux, voire intenable', ce qui signifie que les économies prévues sont peut-être surestimées.",
-      "Des alternatives moins douloureuses pour les plus fragiles existent selon les opposants : augmenter les cotisations sur les hauts salaires, taxer les revenus financiers, ou s'attaquer à la fraude aux cotisations patronales.",
-      "Baisser les allocations familiales et les aides au logement fragilise des familles qui les utilisent pour couvrir des besoins essentiels, et peut accentuer la pauvreté de certains enfants."
-    ],
-    "label": "Contre",
-    "who": "Syndicats (CFDT, FO, CGT), opposition de gauche (LFI, PS), Fédération Hospitalière de France, certains sénateurs y compris de la majorité"
+  "label": "Contre",
+  "who": "Syndicats (CFDT, FO, CGT), opposition de gauche (LFI, PS), Fédération Hospitalière de France, certains sénateurs y compris de la majorité"
+ },
+ "date": "2026-10-23",
+ "type": "actualite",
+ "categories": [
+  "Protection sociale",
+  "Économie et budget"
+ ],
+ "generated": "2026-10-23",
+ "imported": true,
+ "local": [
+  "L'Occitanie compte plusieurs hôpitaux publics importants, dont le CHU de Toulouse, l'un des plus grands de France. Comme l'ensemble des hôpitaux publics, ils sont concernés par l'ONDAM fixé dans ce budget. Si le plafond de dépenses est trop serré, cela peut se traduire par des restrictions sur les recrutements infirmiers, des délais d'attente allongés aux urgences ou des reports de travaux. La FHF, qui représente ces établissements, a demandé une révision de l'ONDAM proposé pour éviter un creusement des déficits hospitaliers dans les territoires."
+ ],
+ "pro": {
+  "args": [
+   "Le déficit de la Sécu représente une dette que les générations futures devront rembourser. Réduire ce déficit maintenant, c'est éviter de le laisser s'aggraver et de payer des intérêts toujours plus élevés.",
+   "Le gouvernement choisit de ne pas augmenter les cotisations ni la CSG, afin de ne pas peser sur les salariés ni sur les entreprises, dans un contexte économique encore fragile.",
+   "La désindexation partielle des retraites est présentée comme temporaire et limitée : les pensions continuent d'augmenter, juste moins vite que l'inflation. Les retraités restent protégés par rapport à beaucoup de pays européens.",
+   "Réduire le déficit renforce la crédibilité de la France vis-à-vis des marchés financiers qui lui prêtent de l'argent, et permet d'emprunter à de meilleurs taux.",
+   "Maîtriser l'ONDAM incite les acteurs de santé à gagner en efficacité et à réduire certains gaspillages structurels."
+  ],
+  "label": "Pour",
+  "who": "Gouvernement Lecornu, majorité parlementaire, économistes libéraux"
+ },
+ "question": "Quand l'État doit réduire les dépenses sociales, il fait un choix : qui doit supporter l'effort en priorité ? Ceux qui reçoivent des prestations (retraités, familles), ceux qui travaillent et cotisent, ou ceux qui perçoivent des revenus du capital comme des dividendes ? Et ce choix doit-il être le même quelle que soit la situation économique du moment ?",
+ "sources": [
+  {
+   "lean": "Plutôt à gauche",
+   "name": "CFDT - Communiqué sur le PLFSS 2027",
+   "note": "Le syndicat réformiste pointe l'injustice dans la répartition des efforts",
+   "url": "https://www.cfdt.fr/sinformer/communiques-de-presse/plfss-2027-un-budget-desequilibre-sur-les-efforts-demandes-injuste-et-brutal-pour-les-plus-modestes"
   },
-  "date": "2026-10-23",
-  "generated": "2026-10-23",
-  "imported": true,
-  "local": [
-    "L'Occitanie compte plusieurs hôpitaux publics importants, dont le CHU de Toulouse, l'un des plus grands de France. Comme l'ensemble des hôpitaux publics, ils sont concernés par l'ONDAM fixé dans ce budget. Si le plafond de dépenses est trop serré, cela peut se traduire par des restrictions sur les recrutements infirmiers, des délais d'attente allongés aux urgences ou des reports de travaux. La FHF, qui représente ces établissements, a demandé une révision de l'ONDAM proposé pour éviter un creusement des déficits hospitaliers dans les territoires."
-  ],
-  "pro": {
-    "args": [
-      "Le déficit de la Sécu représente une dette que les générations futures devront rembourser. Réduire ce déficit maintenant, c'est éviter de le laisser s'aggraver et de payer des intérêts toujours plus élevés.",
-      "Le gouvernement choisit de ne pas augmenter les cotisations ni la CSG, afin de ne pas peser sur les salariés ni sur les entreprises, dans un contexte économique encore fragile.",
-      "La désindexation partielle des retraites est présentée comme temporaire et limitée : les pensions continuent d'augmenter, juste moins vite que l'inflation. Les retraités restent protégés par rapport à beaucoup de pays européens.",
-      "Réduire le déficit renforce la crédibilité de la France vis-à-vis des marchés financiers qui lui prêtent de l'argent, et permet d'emprunter à de meilleurs taux.",
-      "Maîtriser l'ONDAM incite les acteurs de santé à gagner en efficacité et à réduire certains gaspillages structurels."
-    ],
-    "label": "Pour",
-    "who": "Gouvernement Lecornu, majorité parlementaire, économistes libéraux"
+  {
+   "lean": "Plutôt à gauche",
+   "name": "Force Ouvrière - Budgets 2027 : déjà des débats animés",
+   "note": "FO détaille les points de blocage syndicaux sur le texte",
+   "url": "https://www.force-ouvriere.fr/budgets-2027-deja-des-debats-animes"
   },
-  "question": "Quand l'État doit réduire les dépenses sociales, il fait un choix : qui doit supporter l'effort en priorité ? Ceux qui reçoivent des prestations (retraités, familles), ceux qui travaillent et cotisent, ou ceux qui perçoivent des revenus du capital comme des dividendes ? Et ce choix doit-il être le même quelle que soit la situation économique du moment ?",
-  "sources": [
-    {
-      "lean": "Plutôt à gauche",
-      "name": "CFDT - Communiqué sur le PLFSS 2027",
-      "note": "Le syndicat réformiste pointe l'injustice dans la répartition des efforts",
-      "url": "https://www.cfdt.fr/sinformer/communiques-de-presse/plfss-2027-un-budget-desequilibre-sur-les-efforts-demandes-injuste-et-brutal-pour-les-plus-modestes"
-    },
-    {
-      "lean": "Plutôt à gauche",
-      "name": "Force Ouvrière - Budgets 2027 : déjà des débats animés",
-      "note": "FO détaille les points de blocage syndicaux sur le texte",
-      "url": "https://www.force-ouvriere.fr/budgets-2027-deja-des-debats-animes"
-    },
-    {
-      "lean": "Plutôt à droite",
-      "name": "Culture RH - PLF et PLFSS 2027, ce qu'il faut attendre pour les entreprises",
-      "note": "Angle patronal et RH, favorable à l'absence de hausse des cotisations",
-      "url": "https://culture-rh.com/plf-plfss-2027-entreprises/"
-    },
-    {
-      "lean": "Neutre / fact-check",
-      "name": "MoneyVox - Pension désindexée, aides CAF rabotées : ce qui change concrètement",
-      "note": "Synthèse factuelle des mesures avec chiffres concrets",
-      "url": "https://www.moneyvox.fr/retraite/actualites/110888/pension-de-retraite-desindexee-aides-caf-rabotees-ce-que-change-le-projet-de-budget-2027-de-la-secu"
-    },
-    {
-      "lean": "Neutre / fact-check",
-      "name": "Public Sénat - Alerte des sénateurs sur les dépenses de santé",
-      "note": "Éclairage parlementaire, y compris depuis la majorité",
-      "url": "https://www.publicsenat.fr/actualites/sante/budget-2027-de-la-securite-sociale-les-senateurs-alertent-sur-le-niveau-tres-ambitieux-voire-intenable-de-lobjectif-de-depenses-de-sant"
-    },
-    {
-      "lean": "Neutre / fact-check",
-      "name": "FHF - Communiqué sur le manque de financement hospitalier",
-      "note": "Chiffrage précis du manque à gagner pour les hôpitaux publics",
-      "url": "https://www.fhf.fr/actualites/communiques-de-presse/plfss-2027-en-letat-il-manque-13-milliard-deuros-aux-etablissements-de-sante-pour-couvrir-les"
-    }
-  ],
-  "stakes": [
-    "Ce budget touche concrètement le quotidien de millions de personnes. Une désindexation des retraites, même partielle, représente une baisse réelle du pouvoir d'achat pour les 17 millions de retraités du régime général. Un durcissement des aides CAF peut réduire les ressources de familles déjà fragiles. Du côté de la santé, fixer un ONDAM trop bas risque d'aggraver la situation des hôpitaux publics, qui sont déjà en déficit dans leur grande majorité.",
-    "L'enjeu de fond est un choix de société : à qui faire porter l'effort de redressement des finances sociales ? Le gouvernement choisit de toucher aux dépenses plutôt qu'aux recettes, et à des prestations touchant des groupes déjà nombreux. D'autres proposent d'agir sur les recettes en augmentant les cotisations sur les hauts revenus ou en taxant davantage les dividendes versés aux actionnaires. Ce débat traverse toutes les discussions parlementaires sur le texte."
-  ],
-  "subject": "L'Assemblée nationale examine le projet de loi de financement de la Sécurité sociale pour 2027, qui prévoit de réduire de moitié le déficit en limitant la hausse des pensions de retraite et certaines prestations familiales.",
-  "terms": [
-    {
-      "def": "Projet de Loi de Financement de la Sécurité Sociale. Texte de loi voté chaque automne au Parlement, qui fixe les recettes et dépenses de la Sécu pour l'année à venir.",
-      "term": "PLFSS"
-    },
-    {
-      "def": "Fait de ne plus augmenter une prestation (comme une pension de retraite) en suivant exactement la hausse des prix. Si l'inflation est de 2 % et que la pension n'augmente que de 0,9 %, le retraité perd du pouvoir d'achat même si sa pension monte légèrement en valeur absolue.",
-      "term": "Désindexation"
-    },
-    {
-      "def": "Objectif National de Dépenses d'Assurance Maladie. C'est le plafond de dépenses que l'État accepte de financer pour la santé (hôpitaux, médecins, médicaments). Si les dépenses réelles le dépassent, les hôpitaux ou professionnels de santé doivent s'ajuster.",
-      "term": "ONDAM"
-    },
-    {
-      "def": "Contribution Sociale Généralisée. Impôt prélevé sur la quasi-totalité des revenus (salaires, retraites, revenus du capital) pour financer la Sécurité sociale. Contrairement aux cotisations, elle est due même sans activité professionnelle.",
-      "term": "CSG"
-    },
-    {
-      "def": "Caisse d'Allocations Familiales. Organisme qui verse les aides aux familles : allocations familiales, aide au logement (APL), RSA, prime d'activité. Dépend de la branche famille de la Sécurité sociale.",
-      "term": "CAF"
-    }
-  ],
-  "theme": "Social",
-  "title": "Le budget de la Sécurité sociale 2027"
+  {
+   "lean": "Plutôt à droite",
+   "name": "Culture RH - PLF et PLFSS 2027, ce qu'il faut attendre pour les entreprises",
+   "note": "Angle patronal et RH, favorable à l'absence de hausse des cotisations",
+   "url": "https://culture-rh.com/plf-plfss-2027-entreprises/"
+  },
+  {
+   "lean": "Neutre / fact-check",
+   "name": "MoneyVox - Pension désindexée, aides CAF rabotées : ce qui change concrètement",
+   "note": "Synthèse factuelle des mesures avec chiffres concrets",
+   "url": "https://www.moneyvox.fr/retraite/actualites/110888/pension-de-retraite-desindexee-aides-caf-rabotees-ce-que-change-le-projet-de-budget-2027-de-la-secu"
+  },
+  {
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat - Alerte des sénateurs sur les dépenses de santé",
+   "note": "Éclairage parlementaire, y compris depuis la majorité",
+   "url": "https://www.publicsenat.fr/actualites/sante/budget-2027-de-la-securite-sociale-les-senateurs-alertent-sur-le-niveau-tres-ambitieux-voire-intenable-de-lobjectif-de-depenses-de-sant"
+  },
+  {
+   "lean": "Neutre / fact-check",
+   "name": "FHF - Communiqué sur le manque de financement hospitalier",
+   "note": "Chiffrage précis du manque à gagner pour les hôpitaux publics",
+   "url": "https://www.fhf.fr/actualites/communiques-de-presse/plfss-2027-en-letat-il-manque-13-milliard-deuros-aux-etablissements-de-sante-pour-couvrir-les"
+  }
+ ],
+ "stakes": [
+  "Ce budget touche concrètement le quotidien de millions de personnes. Une désindexation des retraites, même partielle, représente une baisse réelle du pouvoir d'achat pour les 17 millions de retraités du régime général. Un durcissement des aides CAF peut réduire les ressources de familles déjà fragiles. Du côté de la santé, fixer un ONDAM trop bas risque d'aggraver la situation des hôpitaux publics, qui sont déjà en déficit dans leur grande majorité.",
+  "L'enjeu de fond est un choix de société : à qui faire porter l'effort de redressement des finances sociales ? Le gouvernement choisit de toucher aux dépenses plutôt qu'aux recettes, et à des prestations touchant des groupes déjà nombreux. D'autres proposent d'agir sur les recettes en augmentant les cotisations sur les hauts revenus ou en taxant davantage les dividendes versés aux actionnaires. Ce débat traverse toutes les discussions parlementaires sur le texte."
+ ],
+ "subject": "L'Assemblée nationale examine le projet de loi de financement de la Sécurité sociale pour 2027, qui prévoit de réduire de moitié le déficit en limitant la hausse des pensions de retraite et certaines prestations familiales.",
+ "terms": [
+  {
+   "def": "Projet de Loi de Financement de la Sécurité Sociale. Texte de loi voté chaque automne au Parlement, qui fixe les recettes et dépenses de la Sécu pour l'année à venir.",
+   "term": "PLFSS"
+  },
+  {
+   "def": "Fait de ne plus augmenter une prestation (comme une pension de retraite) en suivant exactement la hausse des prix. Si l'inflation est de 2 % et que la pension n'augmente que de 0,9 %, le retraité perd du pouvoir d'achat même si sa pension monte légèrement en valeur absolue.",
+   "term": "Désindexation"
+  },
+  {
+   "def": "Objectif National de Dépenses d'Assurance Maladie. C'est le plafond de dépenses que l'État accepte de financer pour la santé (hôpitaux, médecins, médicaments). Si les dépenses réelles le dépassent, les hôpitaux ou professionnels de santé doivent s'ajuster.",
+   "term": "ONDAM"
+  },
+  {
+   "def": "Contribution Sociale Généralisée. Impôt prélevé sur la quasi-totalité des revenus (salaires, retraites, revenus du capital) pour financer la Sécurité sociale. Contrairement aux cotisations, elle est due même sans activité professionnelle.",
+   "term": "CSG"
+  },
+  {
+   "def": "Caisse d'Allocations Familiales. Organisme qui verse les aides aux familles : allocations familiales, aide au logement (APL), RSA, prime d'activité. Dépend de la branche famille de la Sécurité sociale.",
+   "term": "CAF"
+  }
+ ],
+ "title": "Le budget de la Sécurité sociale 2027"
 }

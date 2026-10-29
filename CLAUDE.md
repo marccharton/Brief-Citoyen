@@ -34,7 +34,7 @@ python3 -m http.server 8000        # aperçu local sur http://localhost:8000/
 
 ## Format d'un brief
 
-Voir le README pour le schéma complet. Champs : date, theme, title, subject, basics, terms, stakes, pro, con, local, sources (3 ou 4 sources « à creuser », avec lean), question, consulted (toutes les pages consultées), generated. Les briefs « Institutions » ont pro et con vides.
+Voir le README pour le schéma complet. Champs : date, type (« actualite » ou « institutions »), categories (1 à 3, liste fermée définie dans scripts/build.py, jamais plus de 10 catégories au total), title, subject, basics, terms, stakes, pro, con, local, sources (3 ou 4 sources « à creuser », avec lean), question, consulted (toutes les pages consultées), generated. Les briefs de type « institutions » ont pro et con vides. Le champ theme des anciens briefs est remplacé par type et categories ; build.py garde une correspondance pour les données anciennes.
 
 ## Règles à respecter
 

@@ -11,7 +11,9 @@ function buildBriefPdf(jsPDF, b){
   const [y0, m0, d0] = String(b.date || '').split('-').map(Number);
   const dt = new Date(Date.UTC(y0, (m0 || 1) - 1, d0 || 1));
   const dateTxt = JOURS[dt.getUTCDay()] + ' ' + dt.getUTCDate() + ' ' + MOIS[dt.getUTCMonth()] + ' ' + dt.getUTCFullYear();
-  const isInst = b.theme === 'Institutions' && !arr((b.pro || {}).args).length;
+  const isInst = b.type ? b.type === 'institutions' : (b.theme === 'Institutions' && !arr((b.pro || {}).args).length);
+  const typeLabel = isInst ? 'Comprendre les institutions' : 'Actualité';
+  const catLabel = arr(b.categories).slice(0, 3).join(', ');
 
   const doc = new jsPDF({unit: 'mm', format: 'a4'});
   const W = 210, H = 297, ML = 16, MR = 16, TOP = 16, BOT = 18, CW = W - ML - MR;
@@ -81,17 +83,19 @@ function buildBriefPdf(jsPDF, b){
 
   // En-tête : bandeau pleine largeur
   (function(){
-    const label = 'BRIEF CITOYEN  ·  ' + dateTxt.toUpperCase() + (b.theme ? '  ·  ' + clean(b.theme).toUpperCase() : '');
+    const label = 'BRIEF CITOYEN  ·  ' + dateTxt.toUpperCase();
+    const label2 = clean(typeLabel).toUpperCase() + (catLabel ? '  ·  ' + clean(catLabel).toUpperCase() : (b.theme && !b.type ? '  ·  ' + clean(b.theme).toUpperCase() : ''));
     font('times', 'bold', 25, C.white);
     const tl = doc.splitTextToSize(clean(b.title || 'Brief du jour'), CW);
     font('times', 'italic', 12.5, C.navySoft);
     const sl = b.subject ? doc.splitTextToSize(clean(b.subject), CW - 10) : [];
-    const h = 14 + 6 + tl.length * lh(25) + (sl.length ? 3 + sl.length * lh(12.5) : 0) + 9;
+    const h = 14 + 11 + tl.length * lh(25) + (sl.length ? 3 + sl.length * lh(12.5) : 0) + 9;
     fill(C.navy); doc.rect(0, 0, W, h, 'F');
     fill(C.acc); doc.rect(0, h, W, 1.6, 'F');
     let y = 14;
     font('helvetica', 'bold', 8, C.navySoft); doc.text(label, ML, y, {charSpace: 0.45});
-    y += 6;
+    font('helvetica', 'bold', 8, [255, 255, 255]); doc.text(label2, ML, y + 5, {charSpace: 0.45});
+    y += 11;
     font('times', 'bold', 25, C.white);
     tl.forEach(l => { doc.text(l, ML, y + 25 * PT * 0.95); y += lh(25); });
     if (sl.length){ y += 3; font('times', 'italic', 12.5, C.navySoft); sl.forEach(l => { doc.text(l, ML, y + 12.5 * PT * 0.95); y += lh(12.5); }); }

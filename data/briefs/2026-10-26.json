@@ -1,85 +1,89 @@
 {
-  "basics": [
-    "Le système de retraites français fonctionne par répartition : les actifs cotisent chaque mois et ces cotisations financent directement les pensions des retraités actuels. Il n'y a pas de compte individuel qui grossit avec le temps ; c'est un contrat entre générations. Ce modèle est mis sous pression depuis plusieurs décennies parce que la France vieillit.",
-    "En 1960, il y avait environ 4 personnes actives pour 1 retraité. Aujourd'hui, ce ratio est tombé à moins de 2 pour 1. Cela signifie que le même niveau de prestations doit être financé par moins de cotisants, ce qui creuse mécaniquement le déficit du système. Le Conseil d'orientation des retraites (COR), organisme indépendant, documente ce déséquilibre structurel depuis des années.",
-    "En mars 2023, le gouvernement d'Élisabeth Borne a fait passer une réforme repoussant l'âge légal de départ à la retraite de 62 à 64 ans, tout en allongeant la durée de cotisation nécessaire pour toucher une pension à taux plein à 43 ans. La réforme a été adoptée sans vote de l'Assemblée nationale, en utilisant l'article 49.3 de la Constitution. Cette décision a provoqué plusieurs mois de grèves et de manifestations massives, parmi les plus importantes depuis des décennies.",
-    "En 2026, le gouvernement de François Bayrou a décidé de suspendre cette réforme, gelant le relèvement progressif de l'âge légal. Les personnes nées entre 1961 et 1968 sont les plus directement concernées par ce revirement. La question du financement du système à long terme reste entière et non résolue."
+ "basics": [
+  "Le système de retraites français fonctionne par répartition : les actifs cotisent chaque mois et ces cotisations financent directement les pensions des retraités actuels. Il n'y a pas de compte individuel qui grossit avec le temps ; c'est un contrat entre générations. Ce modèle est mis sous pression depuis plusieurs décennies parce que la France vieillit.",
+  "En 1960, il y avait environ 4 personnes actives pour 1 retraité. Aujourd'hui, ce ratio est tombé à moins de 2 pour 1. Cela signifie que le même niveau de prestations doit être financé par moins de cotisants, ce qui creuse mécaniquement le déficit du système. Le Conseil d'orientation des retraites (COR), organisme indépendant, documente ce déséquilibre structurel depuis des années.",
+  "En mars 2023, le gouvernement d'Élisabeth Borne a fait passer une réforme repoussant l'âge légal de départ à la retraite de 62 à 64 ans, tout en allongeant la durée de cotisation nécessaire pour toucher une pension à taux plein à 43 ans. La réforme a été adoptée sans vote de l'Assemblée nationale, en utilisant l'article 49.3 de la Constitution. Cette décision a provoqué plusieurs mois de grèves et de manifestations massives, parmi les plus importantes depuis des décennies.",
+  "En 2026, le gouvernement de François Bayrou a décidé de suspendre cette réforme, gelant le relèvement progressif de l'âge légal. Les personnes nées entre 1961 et 1968 sont les plus directement concernées par ce revirement. La question du financement du système à long terme reste entière et non résolue."
+ ],
+ "con": {
+  "args": [
+   "Tous les métiers ne sont pas égaux face à un départ tardif : un aide-soignant ou un ouvrier du bâtiment à 64 ans n'est pas dans la même situation qu'un cadre. Les travailleurs manuels ont une espérance de vie en bonne santé significativement plus courte.",
+   "Une partie des travailleurs arrive déjà avant l'âge légal en situation de chômage ou d'arrêt maladie. Repousser l'âge légal pour eux ne change rien à leur départ effectif, mais réduit le montant de leur pension, calculée sur des trimestres incomplets.",
+   "D'autres leviers existent pour équilibrer le système sans toucher à l'âge : augmenter les cotisations patronales, taxer davantage les revenus du capital, ou agir sur les salaires pour élargir l'assiette de cotisation.",
+   "Le Compte Professionnel de Prévention (C2P), censé reconnaître la pénibilité et permettre un départ anticipé, a été affaibli en 2017 : les quatre facteurs les plus liés à l'usure physique réelle (postures contraignantes, port de charges lourdes, vibrations, gestes répétitifs) ont été retirés du dispositif, parce que les reconnaître coûtait trop cher aux entreprises.",
+   "L'utilisation du 49.3 en 2023 a laissé un sentiment fort d'injustice démocratique, indépendamment du fond du texte."
   ],
-  "con": {
-    "args": [
-      "Tous les métiers ne sont pas égaux face à un départ tardif : un aide-soignant ou un ouvrier du bâtiment à 64 ans n'est pas dans la même situation qu'un cadre. Les travailleurs manuels ont une espérance de vie en bonne santé significativement plus courte.",
-      "Une partie des travailleurs arrive déjà avant l'âge légal en situation de chômage ou d'arrêt maladie. Repousser l'âge légal pour eux ne change rien à leur départ effectif, mais réduit le montant de leur pension, calculée sur des trimestres incomplets.",
-      "D'autres leviers existent pour équilibrer le système sans toucher à l'âge : augmenter les cotisations patronales, taxer davantage les revenus du capital, ou agir sur les salaires pour élargir l'assiette de cotisation.",
-      "Le Compte Professionnel de Prévention (C2P), censé reconnaître la pénibilité et permettre un départ anticipé, a été affaibli en 2017 : les quatre facteurs les plus liés à l'usure physique réelle (postures contraignantes, port de charges lourdes, vibrations, gestes répétitifs) ont été retirés du dispositif, parce que les reconnaître coûtait trop cher aux entreprises.",
-      "L'utilisation du 49.3 en 2023 a laissé un sentiment fort d'injustice démocratique, indépendamment du fond du texte."
-    ],
-    "label": "Contre (suspendre ou abroger)",
-    "who": "Les syndicats, la gauche, les économistes hétérodoxes"
+  "label": "Contre (suspendre ou abroger)",
+  "who": "Les syndicats, la gauche, les économistes hétérodoxes"
+ },
+ "date": "2026-10-26",
+ "type": "actualite",
+ "categories": [
+  "Protection sociale",
+  "Économie et budget"
+ ],
+ "generated": "2026-10-26",
+ "imported": true,
+ "local": [
+  "En Occitanie, cette réforme touche particulièrement les secteurs où la pénibilité est forte : l'agriculture (viticulture, maraîchage), le BTP et les services à la personne, qui sont des employeurs importants de la région. Toulouse concentre également une part significative de l'aéronautique française (Airbus, Safran), secteur dont les régimes de retraite complémentaires ont leurs propres règles et qui suit de près les évolutions du régime général."
+ ],
+ "pro": {
+  "args": [
+   "Le vieillissement de la population est un fait démographique non contesté : avec moins de 2 actifs pour 1 retraité, le système ne peut s'équilibrer sans que chacun travaille un peu plus longtemps.",
+   "La quasi-totalité des pays européens voisins ont déjà un âge légal supérieur à 64 ans : l'Allemagne et l'Espagne sont à 67 ans. Travailler plus longtemps est la norme en Europe.",
+   "Augmenter les cotisations patronales renchérirait le coût du travail, avec des conséquences potentielles sur l'emploi et la compétitivité des entreprises françaises.",
+   "Reporter la réforme, c'est transférer le problème aux générations suivantes, qui devront payer des pensions plus élevées avec des recettes insuffisantes."
+  ],
+  "label": "Pour (maintenir ou aller plus loin)",
+  "who": "Le patronat, les économistes libéraux, les partis de droite et du centre"
+ },
+ "question": "Un système de retraites juste devrait-il fixer le même âge de départ pour tout le monde, ou la pénibilité du métier devrait-elle être le critère principal, au risque que ce soit beaucoup plus compliqué à gérer ?",
+ "sources": [
+  {
+   "lean": "Plutôt à gauche",
+   "name": "Médiapart",
+   "note": "analyses critiques de la réforme et des alternatives de financement (cotisations, capital)",
+   "url": "https://www.mediapart.fr"
   },
-  "date": "2026-10-26",
-  "generated": "2026-10-26",
-  "imported": true,
-  "local": [
-    "En Occitanie, cette réforme touche particulièrement les secteurs où la pénibilité est forte : l'agriculture (viticulture, maraîchage), le BTP et les services à la personne, qui sont des employeurs importants de la région. Toulouse concentre également une part significative de l'aéronautique française (Airbus, Safran), secteur dont les régimes de retraite complémentaires ont leurs propres règles et qui suit de près les évolutions du régime général."
-  ],
-  "pro": {
-    "args": [
-      "Le vieillissement de la population est un fait démographique non contesté : avec moins de 2 actifs pour 1 retraité, le système ne peut s'équilibrer sans que chacun travaille un peu plus longtemps.",
-      "La quasi-totalité des pays européens voisins ont déjà un âge légal supérieur à 64 ans : l'Allemagne et l'Espagne sont à 67 ans. Travailler plus longtemps est la norme en Europe.",
-      "Augmenter les cotisations patronales renchérirait le coût du travail, avec des conséquences potentielles sur l'emploi et la compétitivité des entreprises françaises.",
-      "Reporter la réforme, c'est transférer le problème aux générations suivantes, qui devront payer des pensions plus élevées avec des recettes insuffisantes."
-    ],
-    "label": "Pour (maintenir ou aller plus loin)",
-    "who": "Le patronat, les économistes libéraux, les partis de droite et du centre"
+  {
+   "lean": "Plutôt à droite",
+   "name": "Le Figaro",
+   "note": "défense de la nécessité d'une réforme structurelle face au défi démographique",
+   "url": "https://www.lefigaro.fr"
   },
-  "question": "Un système de retraites juste devrait-il fixer le même âge de départ pour tout le monde, ou la pénibilité du métier devrait-elle être le critère principal, au risque que ce soit beaucoup plus compliqué à gérer ?",
-  "sources": [
-    {
-      "lean": "Plutôt à gauche",
-      "name": "Médiapart",
-      "note": "analyses critiques de la réforme et des alternatives de financement (cotisations, capital)",
-      "url": "https://www.mediapart.fr"
-    },
-    {
-      "lean": "Plutôt à droite",
-      "name": "Le Figaro",
-      "note": "défense de la nécessité d'une réforme structurelle face au défi démographique",
-      "url": "https://www.lefigaro.fr"
-    },
-    {
-      "lean": "Neutre / fact-check",
-      "name": "Vie Publique",
-      "note": "synthèses officielles accessibles sur le système de retraites, les positions et les textes",
-      "url": "https://www.vie-publique.fr"
-    }
-  ],
-  "stakes": [
-    "Sans ajustement d'aucune sorte, le déficit du système de retraites est appelé à croître avec le vieillissement de la population. La suspension de la réforme replace ce problème entier dans le débat public : il faudra trouver une réponse, sous une forme ou une autre. Les options disponibles sont connues : travailler plus longtemps, cotiser davantage (salariés ou employeurs), taxer d'autres sources de revenus comme le capital, ou accepter une baisse du niveau des pensions.",
-    "La question n'est pas seulement financière. Elle touche à ce qu'on considère comme juste : doit-on travailler plus longtemps parce qu'on vit plus vieux, ou doit-on faire contribuer davantage ceux qui bénéficient de l'économie sans avoir de corps qui s'use ? La réponse engage des choix politiques profonds sur le partage des efforts entre travailleurs, entreprises et détenteurs de capital."
-  ],
-  "subject": "La réforme des retraites de 2023, qui avait repoussé l'âge légal de départ à 64 ans, a été suspendue par le gouvernement Bayrou en 2026, sans que la question du financement du système soit résolue.",
-  "terms": [
-    {
-      "def": "Mode de financement où les cotisations des actifs d'aujourd'hui paient les retraites d'aujourd'hui, par opposition à la capitalisation où chacun épargne pour sa propre retraite future.",
-      "term": "Système par répartition"
-    },
-    {
-      "def": "Âge minimal à partir duquel on peut demander à partir à la retraite. En dessous, on ne peut pas liquider sa pension, même si on a cotisé longtemps.",
-      "term": "Âge légal"
-    },
-    {
-      "def": "Niveau de pension maximal, atteint quand on a cotisé le nombre de trimestres requis (43 ans depuis 2023) ou atteint l'âge de 67 ans, quel que soit le nombre de trimestres.",
-      "term": "Taux plein"
-    },
-    {
-      "def": "Article de la Constitution permettant au gouvernement d'adopter un texte de loi sans vote de l'Assemblée nationale, sauf si une motion de censure est votée dans les 24 heures.",
-      "term": "Article 49.3"
-    },
-    {
-      "def": "Reconnaissance officielle que certains métiers usent le corps plus vite, permettant à ceux qui les exercent d'accumuler des droits pour partir plus tôt à la retraite via le Compte Professionnel de Prévention (C2P).",
-      "term": "Pénibilité"
-    }
-  ],
-  "theme": "Social",
-  "title": "La retraite à 64 ans suspendue"
+  {
+   "lean": "Neutre / fact-check",
+   "name": "Vie Publique",
+   "note": "synthèses officielles accessibles sur le système de retraites, les positions et les textes",
+   "url": "https://www.vie-publique.fr"
+  }
+ ],
+ "stakes": [
+  "Sans ajustement d'aucune sorte, le déficit du système de retraites est appelé à croître avec le vieillissement de la population. La suspension de la réforme replace ce problème entier dans le débat public : il faudra trouver une réponse, sous une forme ou une autre. Les options disponibles sont connues : travailler plus longtemps, cotiser davantage (salariés ou employeurs), taxer d'autres sources de revenus comme le capital, ou accepter une baisse du niveau des pensions.",
+  "La question n'est pas seulement financière. Elle touche à ce qu'on considère comme juste : doit-on travailler plus longtemps parce qu'on vit plus vieux, ou doit-on faire contribuer davantage ceux qui bénéficient de l'économie sans avoir de corps qui s'use ? La réponse engage des choix politiques profonds sur le partage des efforts entre travailleurs, entreprises et détenteurs de capital."
+ ],
+ "subject": "La réforme des retraites de 2023, qui avait repoussé l'âge légal de départ à 64 ans, a été suspendue par le gouvernement Bayrou en 2026, sans que la question du financement du système soit résolue.",
+ "terms": [
+  {
+   "def": "Mode de financement où les cotisations des actifs d'aujourd'hui paient les retraites d'aujourd'hui, par opposition à la capitalisation où chacun épargne pour sa propre retraite future.",
+   "term": "Système par répartition"
+  },
+  {
+   "def": "Âge minimal à partir duquel on peut demander à partir à la retraite. En dessous, on ne peut pas liquider sa pension, même si on a cotisé longtemps.",
+   "term": "Âge légal"
+  },
+  {
+   "def": "Niveau de pension maximal, atteint quand on a cotisé le nombre de trimestres requis (43 ans depuis 2023) ou atteint l'âge de 67 ans, quel que soit le nombre de trimestres.",
+   "term": "Taux plein"
+  },
+  {
+   "def": "Article de la Constitution permettant au gouvernement d'adopter un texte de loi sans vote de l'Assemblée nationale, sauf si une motion de censure est votée dans les 24 heures.",
+   "term": "Article 49.3"
+  },
+  {
+   "def": "Reconnaissance officielle que certains métiers usent le corps plus vite, permettant à ceux qui les exercent d'accumuler des droits pour partir plus tôt à la retraite via le Compte Professionnel de Prévention (C2P).",
+   "term": "Pénibilité"
+  }
+ ],
+ "title": "La retraite à 64 ans suspendue"
 }
