@@ -1,0 +1,50 @@
+name: Publier les briefs depuis Supabase
+
+# Récupère les briefs dans Supabase, régénère le site et pousse sur main.
+# GitHub Pages republie ensuite le site automatiquement.
+
+on:
+  schedule:
+    # Du lundi au vendredi, après la tâche de rédaction (vers 7 h 47, heure de Paris).
+    # Horaires en UTC : 7 h 10 et 8 h 40 UTC, soit 8 h 10 et 9 h 40 en hiver (une heure de plus en été).
+    - cron: "10 7 * * 1-5"
+    - cron: "40 8 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Récupérer les briefs depuis Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python3 scripts/fetch_supabase.py
+
+      - name: Régénérer le site
+        run: python3 scripts/build.py
+
+      - name: Publier si quelque chose a changé
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Aucun changement : rien à publier."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publication automatique des briefs depuis Supabase"
+          git push

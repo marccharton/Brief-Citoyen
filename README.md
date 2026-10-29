@@ -6,12 +6,16 @@ Site : https://marccharton.github.io/Brief-Citoyen/
 
 ## Fonctionnement
 
-- `data/briefs/<AAAA-MM-JJ>.json` : un fichier par brief (la source de vérité).
-- `scripts/build.py` : génère le site à partir des JSON (Python standard, sans dépendance).
+- Supabase, table `public.briefs` : la source de vérité. Une ligne par brief (`id`, `data` avec le JSON complet ; `date`, `type` et `categories` en sont recopiés automatiquement et contrôlés par la base). Lecture publique, écriture réservée au serveur.
+- `scripts/fetch_supabase.py` : recopie la table dans `data/briefs/<id>.json` (Python standard, sans dépendance).
+- `scripts/build.py` : génère le site à partir des JSON.
+- `.github/workflows/build.yml` : GitHub Action qui enchaîne les deux scripts puis pousse sur `main`, du lundi au vendredi après la rédaction, ou à la demande (onglet Actions, « Run workflow »).
 - `index.html`, `<AAAA-MM-JJ>/index.html`, `feed.xml` : fichiers générés, publiés par GitHub Pages.
 - `assets/` : style, script de la page, générateur de PDF (jsPDF).
 
-Ajouter un brief : déposer son JSON dans `data/briefs/`, lancer `python3 scripts/build.py`, puis committer et pousser sur `main`. Une tâche planifiée Claude le fait chaque matin de semaine.
+Ajouter un brief : insérer une ligne dans la table `briefs` (`insert into public.briefs (id, data) values (...)`), puis attendre la GitHub Action ou la lancer à la main. Une tâche planifiée Claude rédige un brief chaque matin de semaine.
+
+L'Action a besoin de deux secrets du dépôt (Settings, Secrets and variables, Actions) : `SUPABASE_URL` et `SUPABASE_KEY` (la clé publique « publishable » du projet).
 
 ## Format d'un brief
 

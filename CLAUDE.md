@@ -16,8 +16,13 @@ Si le connecteur Drive n'est pas disponible, le signaler à Marc avant de prendr
 ## Structure
 
 ```
-data/briefs/<AAAA-MM-JJ>.json   un fichier par brief, source de vérité (suffixe -b si deux briefs le même jour)
+Supabase public.briefs          source de vérité : une ligne par brief (id, data jsonb ; date, type,
+                                categories recopiés par trigger et contrôlés par contraintes)
+data/briefs/<AAAA-MM-JJ>.json   copie locale de la table, réécrite par fetch_supabase.py
+                                (suffixe -b si deux briefs le même jour)
+scripts/fetch_supabase.py       Supabase vers data/briefs/, Python standard sans dépendance
 scripts/build.py                générateur du site, Python standard sans dépendance
+.github/workflows/build.yml     fetch + build + push sur main (lun-ven 7 h 10 et 8 h 40 UTC, ou à la main)
 assets/style.css                style de toutes les pages (thème clair et sombre)
 assets/brief.js                 boutons « Partager le lien » et « Télécharger le PDF »
 assets/brief-pdf.js             générateur PDF (jsPDF 2.5.1 chargé depuis cdnjs)
@@ -28,6 +33,7 @@ comment-c-est-fait/, feed.xml   relancer build.py
 ## Commandes
 
 ```
+python3 scripts/fetch_supabase.py  # recopie Supabase dans data/briefs/ (SUPABASE_URL, SUPABASE_KEY)
 python3 scripts/build.py           # régénère tout le site depuis data/briefs/
 python3 -m http.server 8000        # aperçu local sur http://localhost:8000/
 ```
@@ -38,7 +44,9 @@ Voir le README pour le schéma complet. Champs : date, type (« actualite » ou 
 
 ## Règles à respecter
 
-- Une tâche planifiée publie un brief chaque matin de semaine vers 7 h 47 : elle écrit un JSON dans data/briefs/, lance build.py, commit et pousse sur main. Ne pas casser ce contrat (nom des champs, emplacement des fichiers, build.py sans argument).
+- Une tâche planifiée rédige un brief chaque matin de semaine vers 7 h 47 et l'insère dans la table Supabase briefs ; la GitHub Action le publie ensuite. Ne pas casser ce contrat (nom des champs, table et colonnes, build.py et fetch_supabase.py sans argument).
+- Ne jamais modifier un brief directement dans data/briefs/ : la prochaine exécution de l'Action l'écraserait avec la version de Supabase. Corriger la ligne en base.
+- Projet Supabase « brief-citoyen » (organisation New Focus, région eu-west-3). Seule la clé publique sert, et uniquement via les secrets GitHub ; aucune clé dans le dépôt.
 - Toute modification de build.py doit garder la rétrocompatibilité avec les briefs existants (champs absents, anciens briefs sans consulted).
 - Français correct avec tous les accents et toutes les apostrophes, dans le code comme dans les textes. Jamais le caractère « — ».
 - Ton neutre et impersonnel dans tout texte affiché : pas de tutoiement ni de vouvoiement.
