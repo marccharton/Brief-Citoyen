@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -38,12 +39,19 @@ def fetch(url, key):
 
 
 def main():
-    url = os.environ.get("SUPABASE_URL", "").rstrip("/")
-    key = os.environ.get("SUPABASE_KEY", "")
+    url = os.environ.get("SUPABASE_URL", "").strip().strip('"\'').rstrip("/")
+    key = os.environ.get("SUPABASE_KEY", "").strip().strip('"\'')
     if not url or not key:
         sys.exit("SUPABASE_URL et SUPABASE_KEY doivent être définies.")
 
-    rows = fetch(url, key)
+    if not url.startswith("https://"):
+        sys.exit("SUPABASE_URL doit commencer par https:// (exemple : https://xxxx.supabase.co).")
+    host = url.split("/")[2]
+    try:
+        rows = fetch(url, key)
+    except urllib.error.URLError as e:
+        sys.exit(f"Supabase injoignable ({host}) : {e.reason}. "
+                 "Vérifier la valeur de SUPABASE_URL et que le projet n'est pas en pause.")
     if not rows:
         # Par prudence, on ne vide jamais le site sur une réponse vide.
         sys.exit("Aucun brief reçu de Supabase : rien n'est modifié.")
