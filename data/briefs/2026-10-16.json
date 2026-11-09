@@ -1,11 +1,6 @@
 {
- "basics": [
-  "Chaque automne, le gouvernement présente à l'Assemblée nationale le PLF, projet de loi de finances. C'est le budget de l'État pour l'année suivante : il fixe combien l'État va dépenser, dans quels domaines, et comment il va financer ces dépenses. Un second texte, le PLFSS (projet de loi de financement de la Sécurité sociale), fixe quant à lui le budget de la Sécu : assurance maladie, retraites, allocations familiales. Les deux textes sont présentés ensemble et discutés en même temps. C'est un moment politique clé, souvent tendu, qui donne lieu à des mois de débats à l'Assemblée.",
-  "Pourquoi des coupes en 2027 ? La France a un déficit public important, c'est-à-dire qu'elle dépense plus qu'elle ne reçoit en impôts et cotisations. En 2025-2026, ce déficit a dépassé les 5 % du PIB, bien au-dessus des 3 % autorisés par les règles européennes. Le gouvernement est donc contraint de faire des économies pour éviter que la dette ne continue de gonfler indéfiniment. La Sécurité sociale, à elle seule, affiche un déficit de plusieurs dizaines de milliards d'euros par an.",
-  "Le budget 2027 vise, selon le gouvernement, à diviser par deux le déficit de la Sécurité sociale. Pour y parvenir, trois leviers ont été actionnés qui touchent directement la vie quotidienne : le gel partiel des pensions de retraite, une réforme des indemnités en cas d'arrêt maladie, et le gel des aides au logement.",
-  "Ce budget est présenté à l'approche de la présidentielle de 2027, ce qui rend les arbitrages politiquement très sensibles. Chaque mesure devient un signal envoyé aux électeurs, et les oppositions de droite comme de gauche cherchent à se distinguer sur ces sujets."
- ],
  "con": {
+  "who": "Syndicats (CFDT, CGT), partis de gauche, associations de défense des retraités et du logement",
   "args": [
    "Les efforts reposent presque exclusivement sur les salariés et les retraités, pendant que les grandes entreprises bénéficient toujours d'allègements fiscaux et de niches sociales représentant des dizaines de milliards d'euros.",
    "Geler les APL alors que les loyers continuent d'augmenter, c'est appauvrir concrètement les locataires les plus modestes et les étudiants, souvent déjà en difficulté pour payer leur loyer.",
@@ -13,21 +8,10 @@
    "La CFDT qualifie ce budget de déséquilibré sur les efforts demandés, injuste et brutal pour les plus modestes. Elle réclame que les hauts revenus et le capital soient davantage mis à contribution.",
    "La réforme des arrêts maladie pénalise les travailleurs qui exercent des métiers physiquement éprouvants, qui n'ont pas le choix de travailler malades, et pour qui chaque jour non indemnisé est une perte réelle de revenu."
   ],
-  "label": "Contre",
-  "who": "Syndicats (CFDT, CGT), partis de gauche, associations de défense des retraités et du logement"
+  "label": "Contre"
  },
- "date": "2026-10-16",
- "type": "actualite",
- "categories": [
-  "Économie et budget",
-  "Protection sociale"
- ],
- "generated": "2026-10-16",
- "imported": true,
- "local": [
-  "Toulouse et l'Occitanie, avec une forte population étudiante (premier pôle étudiant de France hors Île-de-France) et de nombreux logements locatifs privés, seront particulièrement touchées par le gel des APL. Une aide gelée alors que les loyers toulousains ont augmenté d'environ 3 à 4 % ces dernières années, c'est une perte nette de pouvoir d'achat pour des dizaines de milliers d'étudiants et de familles modestes. Par ailleurs, Toulouse compte une importante population de retraités et une économie tertiaire avec un taux d'arrêts maladie dans la moyenne nationale : les trois mesures du budget auraient donc un impact direct sur l'ensemble des habitants de la région."
- ],
  "pro": {
+  "who": "Gouvernement, partis du centre et de droite, économistes libéraux",
   "args": [
    "La France dépense structurellement plus qu'elle ne reçoit. Sans correction, la dette continue de croître et les intérêts à rembourser chaque année augmentent, ce qui réduit les marges pour financer l'hôpital, l'école ou la défense.",
    "Le nombre d'arrêts maladie a fortement augmenté ces dernières années en France, qui se situe parmi les pays européens avec le plus fort taux d'absentéisme. Réduire les indemnités sur les arrêts courts est présenté comme une incitation à consulter uniquement quand c'est nécessaire.",
@@ -35,41 +19,13 @@
    "Le gel des APL est temporaire et s'inscrit dans un ensemble de mesures ; par ailleurs, le PTZ (prêt à taux zéro) serait renforcé en contrepartie pour aider les primo-accédants à devenir propriétaires.",
    "Sans redressement des comptes, la capacité à verser les allocations de demain s'épuise : s'endetter aujourd'hui, c'est appauvrir les générations suivantes."
   ],
-  "label": "Pour",
-  "who": "Gouvernement, partis du centre et de droite, économistes libéraux"
+  "label": "Pour"
  },
- "question": "Quand l'État doit faire des économies, qui devrait supporter le plus grand effort : les actifs via leurs cotisations et indemnités, les retraités via leurs pensions, les entreprises via leurs avantages fiscaux, ou les hauts revenus via l'impôt ? Et ce choix est-il une question purement technique de comptabilité publique, ou une question de valeurs politiques sur la solidarité et la justice sociale ?",
- "sources": [
-  {
-   "lean": "Plutôt à gauche",
-   "name": "CFDT : communiqué sur le PLFSS 2027",
-   "note": "analyse critique et syndicale des mesures sociales du budget",
-   "url": "https://www.cfdt.fr/sinformer/communiques-de-presse/plfss-2027-un-budget-desequilibre-sur-les-efforts-demandes-injuste-et-brutal-pour-les-plus-modestes"
-  },
-  {
-   "lean": "Plutôt à droite",
-   "name": "Economie.gouv.fr : principales mesures du PLF 2027",
-   "note": "version officielle du gouvernement, présente les mesures sans critique",
-   "url": "https://www.economie.gouv.fr/node/3242311"
-  },
-  {
-   "lean": "Neutre / fact-check",
-   "name": "Moneyvox : les retraites de base désindexées",
-   "note": "explication chiffrée des mesures et de leur impact concret",
-   "url": "https://www.moneyvox.fr/retraite/actualites/110888/pension-de-retraite-desindexee-aides-caf-rabotees-ce-que-change-le-projet-de-budget-2027-de-la-secu"
-  },
-  {
-   "lean": "Neutre / fact-check",
-   "name": "La Finance pour tous : mesures du PLF 2027 pour les particuliers",
-   "note": "association indépendante d'éducation financière, pédagogique et sans parti pris",
-   "url": "https://www.lafinancepourtous.com/2026/10/02/projet-de-loi-de-finances-pour-2027-les-mesures-pour-les-particuliers/"
-  }
+ "date": "2026-10-16",
+ "type": "actualite",
+ "local": [
+  "Toulouse et l'Occitanie, avec une forte population étudiante (premier pôle étudiant de France hors Île-de-France) et de nombreux logements locatifs privés, seront particulièrement touchées par le gel des APL. Une aide gelée alors que les loyers toulousains ont augmenté d'environ 3 à 4 % ces dernières années, c'est une perte nette de pouvoir d'achat pour des dizaines de milliers d'étudiants et de familles modestes. Par ailleurs, Toulouse compte une importante population de retraités et une économie tertiaire avec un taux d'arrêts maladie dans la moyenne nationale : les trois mesures du budget auraient donc un impact direct sur l'ensemble des habitants de la région."
  ],
- "stakes": [
-  "Pour les retraites, le gouvernement propose de geler ou sous-indexer les pensions supérieures à 1 260 euros brut par mois : celles en dessous seraient revalorisées normalement, celles au-dessus non. En outre, la revalorisation annuelle serait décalée du 1er janvier au 1er juillet 2027, soit plusieurs mois de hausse en moins pour des millions de retraités. Sur les arrêts maladie, la réforme vise à réduire les indemnités sur les arrêts courts, jugés trop nombreux et trop coûteux. Sur les APL enfin, un gel implique que les aides ne suivent pas la hausse des loyers, ce qui appauvrit concrètement les allocataires.",
-  "L'enjeu est double. Côté gouvernement, il s'agit de tenir les comptes et d'éviter une dégradation de la note de la France par les agences de notation, ce qui renchérirait le coût de la dette. Côté citoyens et syndicats, la question est de savoir si ces efforts sont équitablement répartis : les retraités et les salariés modestes sont-ils les premiers touchés, pendant que les plus aisés ou les entreprises sont moins sollicités ?"
- ],
- "subject": "Le gouvernement présente son projet de budget pour 2027 avec des mesures concrètes sur les pensions de retraite, les indemnités en cas d'arrêt maladie et les aides au logement, ce qui ouvre un débat sur la répartition des efforts.",
  "terms": [
   {
    "def": "Projet de loi de finances. Le texte qui fixe le budget de l'État pour l'année suivante : recettes (impôts, taxes) et dépenses. Présenté chaque automne à l'Assemblée nationale.",
@@ -96,5 +52,49 @@
    "term": "APL"
   }
  ],
- "title": "Budget 2027 : retraites, arrêts maladie et APL dans la balance"
+ "title": "Budget 2027 : retraites, arrêts maladie et APL dans la balance",
+ "basics": [
+  "Chaque automne, le gouvernement présente à l'Assemblée nationale le PLF, projet de loi de finances. C'est le budget de l'État pour l'année suivante : il fixe combien l'État va dépenser, dans quels domaines, et comment il va financer ces dépenses. Un second texte, le PLFSS (projet de loi de financement de la Sécurité sociale), fixe quant à lui le budget de la Sécu : assurance maladie, retraites, allocations familiales. Les deux textes sont présentés ensemble et discutés en même temps. C'est un moment politique clé, souvent tendu, qui donne lieu à des mois de débats à l'Assemblée.",
+  "Pourquoi des coupes en 2027 ? La France a un déficit public important, c'est-à-dire qu'elle dépense plus qu'elle ne reçoit en impôts et cotisations. En 2025-2026, ce déficit a dépassé les 5 % du PIB, bien au-dessus des 3 % autorisés par les règles européennes. Le gouvernement est donc contraint de faire des économies pour éviter que la dette ne continue de gonfler indéfiniment. La Sécurité sociale, à elle seule, affiche un déficit de plusieurs dizaines de milliards d'euros par an.",
+  "Le budget 2027 vise, selon le gouvernement, à diviser par deux le déficit de la Sécurité sociale. Pour y parvenir, trois leviers ont été actionnés qui touchent directement la vie quotidienne : le gel partiel des pensions de retraite, une réforme des indemnités en cas d'arrêt maladie, et le gel des aides au logement.",
+  "Ce budget est présenté à l'approche de la présidentielle de 2027, ce qui rend les arbitrages politiquement très sensibles. Chaque mesure devient un signal envoyé aux électeurs, et les oppositions de droite comme de gauche cherchent à se distinguer sur ces sujets."
+ ],
+ "stakes": [
+  "Pour les retraites, le gouvernement propose de geler ou sous-indexer les pensions supérieures à 1 260 euros brut par mois : celles en dessous seraient revalorisées normalement, celles au-dessus non. En outre, la revalorisation annuelle serait décalée du 1er janvier au 1er juillet 2027, soit plusieurs mois de hausse en moins pour des millions de retraités. Sur les arrêts maladie, la réforme vise à réduire les indemnités sur les arrêts courts, jugés trop nombreux et trop coûteux. Sur les APL enfin, un gel implique que les aides ne suivent pas la hausse des loyers, ce qui appauvrit concrètement les allocataires.",
+  "L'enjeu est double. Côté gouvernement, il s'agit de tenir les comptes et d'éviter une dégradation de la note de la France par les agences de notation, ce qui renchérirait le coût de la dette. Côté citoyens et syndicats, la question est de savoir si ces efforts sont équitablement répartis : les retraités et les salariés modestes sont-ils les premiers touchés, pendant que les plus aisés ou les entreprises sont moins sollicités ?"
+ ],
+ "sources": [
+  {
+   "url": "https://www.cfdt.fr/sinformer/communiques-de-presse/plfss-2027-un-budget-desequilibre-sur-les-efforts-demandes-injuste-et-brutal-pour-les-plus-modestes",
+   "lean": "Plutôt à gauche",
+   "name": "CFDT : communiqué sur le PLFSS 2027",
+   "note": "analyse critique et syndicale des mesures sociales du budget"
+  },
+  {
+   "url": "https://www.economie.gouv.fr/node/3242311",
+   "lean": "Plutôt à droite",
+   "name": "Economie.gouv.fr : principales mesures du PLF 2027",
+   "note": "version officielle du gouvernement, présente les mesures sans critique"
+  },
+  {
+   "url": "https://www.moneyvox.fr/retraite/actualites/110888/pension-de-retraite-desindexee-aides-caf-rabotees-ce-que-change-le-projet-de-budget-2027-de-la-secu",
+   "lean": "Neutre / fact-check",
+   "name": "Moneyvox : les retraites de base désindexées",
+   "note": "explication chiffrée des mesures et de leur impact concret"
+  },
+  {
+   "url": "https://www.lafinancepourtous.com/2026/10/02/projet-de-loi-de-finances-pour-2027-les-mesures-pour-les-particuliers/",
+   "lean": "Neutre / fact-check",
+   "name": "La Finance pour tous : mesures du PLF 2027 pour les particuliers",
+   "note": "association indépendante d'éducation financière, pédagogique et sans parti pris"
+  }
+ ],
+ "subject": "Le gouvernement présente son projet de budget pour 2027 avec des mesures concrètes sur les pensions de retraite, les indemnités en cas d'arrêt maladie et les aides au logement, ce qui ouvre un débat sur la répartition des efforts.",
+ "imported": true,
+ "question": "Quand l'État doit faire des économies, qui devrait supporter le plus grand effort : les actifs via leurs cotisations et indemnités, les retraités via leurs pensions, les entreprises via leurs avantages fiscaux, ou les hauts revenus via l'impôt ? Et ce choix est-il une question purement technique de comptabilité publique, ou une question de valeurs politiques sur la solidarité et la justice sociale ?",
+ "generated": "2026-10-16",
+ "categories": [
+  "Économie et budget",
+  "Protection sociale"
+ ]
 }

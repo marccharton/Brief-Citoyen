@@ -1,0 +1,109 @@
+{
+ "con": {
+  "who": "Gouvernement Lecornu, droite (LR, RN), certains parents d'élèves préoccupés par les perturbations scolaires",
+  "arguments": [
+   "Les blocages empêchent les élèves non-grévistes de suivre leurs cours, notamment ceux qui préparent des épreuves de contrôle continu ou le baccalauréat. Le droit à l'instruction de l'ensemble des lycéens est également un droit fondamental.",
+   "Des violences et des dégradations ont eu lieu en marge de plusieurs journées de mobilisation, ce qui nuit selon le gouvernement à la lisibilité des revendications et à l'image du mouvement.",
+   "Le gouvernement souligne qu'il a déjà engagé une réponse concrète avec cinq chantiers prioritaires, 3 000 remplaçants supplémentaires et une hausse budgétaire de 1,2 milliard d'euros. Des mesures structurelles prennent du temps à produire leurs effets.",
+   "La responsabilité de l'état des bâtiments incombe aux conseils régionaux, qui ont leurs propres contraintes budgétaires. Une rénovation rapide et généralisée supposerait une coordination et des financements croisés complexes entre l'État et les régions.",
+   "Plusieurs membres du gouvernement ont dénoncé une instrumentalisation politique du mouvement par des organisations extérieures, estimant que des appels aux blocages émanaient de partis ou de syndicats plutôt que des lycéens eux-mêmes."
+  ]
+ },
+ "pro": {
+  "who": "Syndicats lycéens (USL, FIDL, MNL), syndicats d'enseignants (SNES-FSU, CGT-Éducation, CFDT, FO-Éducation), FCPE, partis de gauche (LFI, PS, NFP)",
+  "arguments": [
+   "Le manque d'enseignants remplaçants est documenté depuis de nombreuses années par les corps d'inspection et les syndicats : des cours de mathématiques, de sciences et de français ne sont pas assurés dans de nombreux établissements, créant des inégalités réelles selon le lycée fréquenté.",
+   "Un effectif de 35 à 36 élèves par classe dépasse les recommandations pédagogiques reconnues et rend difficile tout suivi individualisé, notamment pour les élèves en difficulté.",
+   "L'état de vétusté de certains bâtiments (toitures défaillantes, sanitaires hors d'usage, absence de climatisation lors des canicules) porte atteinte aux conditions élémentaires d'apprentissage et de travail.",
+   "Parcoursup est perçu comme opaque et inégalitaire : les critères de sélection ne sont pas toujours rendus publics, et la plateforme est perçue comme avantageant les élèves qui ont accès à un accompagnement extérieur (cours particuliers, prépa privée).",
+   "La convergence entre lycéens, enseignants, parents d'élèves (via la FCPE) et personnels de direction autour des mêmes constats donne une forte légitimité aux revendications du mouvement."
+  ]
+ },
+ "date": "2026-11-02",
+ "type": "actualite",
+ "local": "L'Occitanie compte environ 150 lycées publics, dont la gestion des bâtiments relève du conseil régional présidé par Carole Delga (PS). Toulouse, quatrième agglomération française et première ville étudiante hors Île-de-France avec plus de 130 000 étudiants, est directement concernée par les enjeux de Parcoursup et de l'accès aux formations supérieures en tension (médecine, droit, ingénierie). Des lycées toulousains ont participé aux mobilisations d'octobre. La région Occitanie avait déjà annoncé un programme de rénovation thermique de ses établissements avant le mouvement, mais l'ampleur des besoins demeure importante. La grève du 5 novembre devrait également toucher les transports urbains (Tisséo) et les services publics toulousains.",
+ "terms": [
+  {
+   "term": "Blocus",
+   "definition": "Action consistant à former une chaîne ou un barrage devant les entrées d'un lycée pour en empêcher l'accès. Le blocus est un mode d'action traditionnel des mouvements lycéens en France. Il n'est pas encadré par le droit et peut donner lieu à des tensions ou à des interpellations."
+  },
+  {
+   "term": "Parcoursup",
+   "definition": "Plateforme nationale sur laquelle les lycéens de terminale formulent leurs voeux d'orientation vers les formations de l'enseignement supérieur (BTS, IUT, licences universitaires, classes préparatoires, etc.). Lancée en 2018, elle est critiquée pour le manque de transparence sur les critères de sélection et le stress qu'elle génère en fin d'année scolaire."
+  },
+  {
+   "term": "Conseil régional",
+   "definition": "Assemblée élue responsable des politiques de la région. En matière d'éducation, les régions ont la charge du financement, de la construction et de l'entretien des lycées publics sur leur territoire. C'est donc la région, et non l'État, qui décide du budget alloué à la rénovation des bâtiments scolaires."
+  },
+  {
+   "term": "AESH",
+   "definition": "Accompagnant des élèves en situation de handicap. Ces professionnels soutiennent les élèves handicapés dans leur scolarité. Leur nombre insuffisant et leurs conditions de travail précaires (souvent à temps partiel, salaires bas) constituent une revendication récurrente des syndicats de l'éducation."
+  },
+  {
+   "term": "CPE",
+   "definition": "Conseiller principal d'éducation. Il est chargé de la vie scolaire au sein d'un lycée : suivi des absences, emplois du temps, médiation entre élèves et administration, accompagnement du bien-être des élèves. Les lycéens réclament des recrutements supplémentaires de CPE pour mieux accompagner la vie dans les établissements."
+  }
+ ],
+ "title": "Le mouvement lycéen de 2026",
+ "basics": [
+  "En France, les lycées (pour les élèves de 15 à 18 ans, en seconde, première et terminale) relèvent d'un financement partagé entre l'État et les régions. L'État, via le ministère de l'Éducation nationale, recrute et rémunère les enseignants, fixe les programmes et les effectifs réglementaires par classe. Les conseils régionaux, assemblées élues au niveau de chaque région, financent et entretiennent les bâtiments : toitures, chauffage, sanitaires, équipements numériques. Cette répartition des responsabilités entre deux niveaux de pouvoir peut créer des angles morts lorsque les deux ne coordonnent pas leurs efforts.",
+  "Le mouvement a démarré le 17 septembre 2026 au lycée Antoine-de-Saint-Exupéry de Créteil (Val-de-Marne), où une dizaine de postes d'enseignants étaient vacants à la rentrée. Des élèves ont rejoint les enseignants en grève et bloqué l'entrée du lycée. Le mouvement s'est propagé à d'autres établissements franciliens, puis à l'ensemble du territoire en moins de deux semaines. Les principales revendications portent sur le nombre d'élèves par classe (parfois 35 à 36 dans certains lycées), le remplacement des enseignants absents (notamment en mathématiques, physique-chimie et français), l'état des bâtiments (chaleur, plomberie, sanitaires dégradés) et la réforme ou la suppression de la plateforme Parcoursup.",
+  "Le pic de mobilisation a eu lieu le 6 octobre (journée dite Acte III) : entre 256 000 manifestants selon le ministère de l'Intérieur et 450 000 selon les organisateurs ont défilé dans toute la France. Quelque 500 établissements ont été perturbés à ce moment. Des heurts ont éclaté en marge de certains rassemblements. Amnesty International a signalé des cas de blessures graves parmi les manifestants et critiqué certains usages de la force. Plus de 6 600 personnes ont été interpellées depuis le début du mouvement, dont une majorité de mineurs.",
+  "Le Premier ministre Sébastien Lecornu a présenté le 4 octobre cinq axes de travail : priorité aux remplacements d'enseignants, rénovation des bâtiments (notamment contre la chaleur d'ici l'été 2027), révision des emplois du temps, plus de transparence sur Parcoursup et renforcement de la démocratie lycéenne. Le gouvernement a également annoncé le déploiement de 3 000 enseignants remplaçants supplémentaires, une hausse de 1,2 milliard d'euros du budget de l'Éducation nationale et l'ouverture de 15 000 places supplémentaires dans l'enseignement supérieur. Les syndicats lycéens ont jugé ces mesures partielles et ont appelé à poursuivre la mobilisation. Les lycées rouvrent aujourd'hui après deux semaines de vacances de la Toussaint, et une grève nationale est prévue le 5 novembre."
+ ],
+ "stakes": [
+  "La reprise des lycées ce 2 novembre marque un moment charnière pour le mouvement. Avant les vacances de la Toussaint, la mobilisation avait montré des signes d'essoufflement : la journée du 13 octobre avait rassemblé moins de manifestants que les actes précédents. La question est désormais de savoir si les élèves et les syndicats relancent la pression ou si le mouvement s'atténue après la pause. La grève du 5 novembre, soutenue par les grandes centrales syndicales (CFDT, CGT, FO, UNSA, FSU), pourrait soit relancer la dynamique, soit absorber les lycéens dans un mouvement plus large dépassant le seul secteur de l'éducation.",
+  "Au fond, le mouvement pose la question de la place de l'éducation dans les priorités budgétaires de l'État. Le projet de loi de finances pour 2027, examiné en parallèle au Parlement, prévoit des économies dans de nombreux ministères. Cette tension entre les engagements pris face aux lycéens et les contraintes budgétaires annoncées est au coeur des critiques des syndicats. La campagne présidentielle qui s'annonce pour 2027 pourrait faire de l'éducation un enjeu central, à la demande des organisations lycéennes et de la FCPE, qui appellent les candidats à placer l'école au coeur de leurs programmes."
+ ],
+ "sources": [
+  {
+   "url": "https://www.politis.fr/dossiers/social-ca-se-tend/",
+   "lean": "Plutôt à gauche",
+   "media": "Politis",
+   "title": "Dossier : Social, ça se tend..."
+  },
+  {
+   "url": "https://www.sudradio.fr/societe/blocus-de-lycees-franciliens-la-mobilisation-samplifie-le-ministre-denonce-une-instrumentalisation-politique",
+   "lean": "Plutôt à droite",
+   "media": "Sud Radio",
+   "title": "Blocus de lycées franciliens : la mobilisation s'amplifie, le ministre dénonce une instrumentalisation politique"
+  },
+  {
+   "url": "https://www.letudiant.fr/lycee/mouvement-lyceen-alors-que-la-mobilisation-continue-le-gouvernement-lance-cinq-chantiers-prioritaires.html",
+   "lean": "Neutre / fact-check",
+   "media": "L'Étudiant",
+   "title": "Mouvement lycéen : alors que la mobilisation continue, le gouvernement lance cinq chantiers prioritaires"
+  },
+  {
+   "url": "https://www.education.gouv.fr/mouvement-social-du-mardi-29-septembre-2026-506092",
+   "lean": "Neutre / fact-check",
+   "media": "Ministère de l'Éducation nationale",
+   "title": "Mouvement social du mardi 29 septembre 2026"
+  }
+ ],
+ "subject": "Depuis la mi-septembre 2026, des lycéens se mobilisent dans toute la France pour réclamer plus de moyens dans leurs établissements : davantage d'enseignants remplaçants, des classes moins chargées et des bâtiments rénovés. Les lycées rouvrent ce lundi 2 novembre après deux semaines de vacances de la Toussaint, et une grande journée de grève intersectorielle est annoncée pour le 5 novembre.",
+ "question": "Dans un système où l'État recrute les enseignants et les régions financent les bâtiments, qui doit rendre des comptes lorsque les conditions d'apprentissage se dégradent ?",
+ "consulted": [
+  "https://www.fcpe.asso.fr/actualite/les-revendications-de-la-jeunesse-doivent-etre-entendues",
+  "https://www.letudiant.fr/lycee/blocus-des-lycees-les-syndicats-lyceens-appellent-a-poursuivre-la-mobilisation.html",
+  "https://www.letudiant.fr/lycee/mouvement-lyceen-alors-que-la-mobilisation-continue-le-gouvernement-lance-cinq-chantiers-prioritaires.html",
+  "https://www.letudiant.fr/educpros/actualite/edito-que-nous-dit-l-onde-de-choc-de-la-mobilisation-lyceenne.html",
+  "https://www.publicsenat.fr/actualites/societe/blocage-des-lycees-syndicats-gilets-jaunes-se-dirige-t-on-vers-une-convergence-des-luttes",
+  "https://www.publicsenat.fr/actualites/politique/les-parents-doivent-prendre-leur-responsabilite-darmanin-souhaite-que-les-parents-payent-pour-les-degradations-des-lycees",
+  "https://www.publicsenat.fr/actualites/education/le-gouvernement-a-repondu-a-une-partie-des-revendications-selon-les-syndicats-lyceens-qui-appellent-a-poursuivre-le-mouvement",
+  "https://visitworld.today/fr/blog/4586/mass-protests-by-schoolchildren-in-france-in-2026-causes-and-consequences",
+  "https://vacances-scolaires.com/actualites/2026/10/13/manifestations-lyceennes-d-octobre-2026-bilan-de-la-mobilisation-revendications-et-impact-attendu-des-vacances-de-la/",
+  "https://www.24matins.fr/greve-du-5-novembre-ce-que-prepare-deja-lintersyndicale-1421874",
+  "https://www.sortiraparis.com/redirect-article/354559",
+  "https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation",
+  "https://www.politis.fr/dossiers/social-ca-se-tend/",
+  "https://www.education.gouv.fr/mouvement-social-du-mardi-29-septembre-2026-506092",
+  "https://lcp.fr/actualites/apres-le-17-octobre-et-avant-de-nouvelles-manifestations-sebastien-lecornu-recoit-les",
+  "https://www.sudradio.fr/societe/blocus-de-lycees-franciliens-la-mobilisation-samplifie-le-ministre-denonce-une-instrumentalisation-politique"
+ ],
+ "generated": "2026-11-02",
+ "categories": [
+  "Éducation et culture",
+  "Société"
+ ]
+}
