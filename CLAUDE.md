@@ -32,6 +32,8 @@ brief/index.html                coquille statique d'un brief (brief/?id=AAAA-MM-
 assets/style.css                style de toutes les pages (thème clair et sombre)
 assets/common.js                outils partagés (échappement, dates, chargement JSON)
 assets/index.js                 liste et filtres de la page d'accueil
+assets/about.js                 « Comment c'est fait » : une partie à la fois, navigation latérale
+                                (parties générées par render_about dans build.py)
 assets/brief.js                 rendu d'un brief : mode inspection (source de chaque phrase), fiche
                                 technique repliable, bouton « Partager le lien »
 methode/consignes.md            consignes éditoriales publiques données à l'IA, versionnées (v1, v2…)

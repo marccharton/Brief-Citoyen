@@ -245,11 +245,14 @@ def render_about(briefs):
 <h1>Comment c'est fait</h1>
 <p class="subject">Une idée simple : comprendre un sujet avant de savoir qui le défend.</p>
 </div></header>
-<main class="wrap article about">
-
+<main class="wrap about">
+<div class="about-layout">
+<nav class="toc" aria-label="Parties de la page"><p class="toc-t">Sur cette page</p><ol><li><a href="#intention"><span class="toc-n">1</span><span class="toc-l">L'intention<small>Pourquoi ce projet</small></span></a></li><li><a href="#fabrication"><span class="toc-n">2</span><span class="toc-l">La fabrication<small>Les étapes et les formats</small></span></a></li><li><a href="#choix-du-sujet"><span class="toc-n">3</span><span class="toc-l">Le choix du sujet<small>La règle de score</small></span></a></li><li><a href="#sources"><span class="toc-n">4</span><span class="toc-l">Les sources<small>Où l'IA s'informe</small></span></a></li><li><a href="#transparence"><span class="toc-n">5</span><span class="toc-l">Biais et transparence<small>Consignes publiques, postulat</small></span></a></li><li><a href="#limites"><span class="toc-n">6</span><span class="toc-l">Limites et bon usage<small>Ce que ce site n'est pas</small></span></a></li></ol></nav>
+<div class="parts">
+<section class="part" id="intention">
+<h2 class="part-t"><span>1</span>L'intention</h2>
 <section class="basics with-terms">
 <div class="prose">
-<h2 class="kicker">L'intention</h2>
 <p>La politique arrive souvent par les partis, les personnalités et les petites phrases. Brief citoyen fait le chemin inverse : il part d'un sujet concret (un budget, une loi, une réforme, une institution) et l'explique depuis le début.</p>
 <p>Chaque brief s'adresse à quelqu'un qui n'y connaît rien. Pas de prérequis, pas de sigle sans explication : le contexte d'abord, les mots ensuite, puis ce qui se joue vraiment.</p>
 <p>Les arguments sont présentés pour ce qu'ils disent, pas pour le camp qui les porte. L'idée est de pouvoir se faire un avis sur une idée, une posture, une mesure, avant de la ranger quelque part sur l'échiquier politique ou de la rattacher à un parti. La politique vient après.</p>
@@ -268,7 +271,11 @@ def render_about(briefs):
 <h2 class="kicker">Entièrement rédigé par une IA</h2>
 <p>Les briefs sont écrits par Claude, une intelligence artificielle développée par Anthropic. Une tâche automatique se lance chaque matin de semaine : elle choisit un sujet, fait ses recherches, rédige le brief et le publie ici. Aucun humain ne relit chaque brief avant sa publication.</p>
 </section>
+<nav class="partnav"><a class="pn-next" href="#fabrication"><span>Partie suivante</span>La fabrication</a></nav>
+</section>
 
+<section class="part" id="fabrication">
+<h2 class="part-t"><span>2</span>La fabrication</h2>
 <section>
 <h2 class="kicker">Le processus, en cinq étapes</h2>
 <ol class="steps">
@@ -280,7 +287,13 @@ def render_about(briefs):
 </ol>
 </section>
 
-<section id="choix-du-sujet">
+{classif_block()}
+<nav class="partnav"><a class="pn-prev" href="#intention"><span>Partie précédente</span>L'intention</a><a class="pn-next" href="#choix-du-sujet"><span>Partie suivante</span>Le choix du sujet</a></nav>
+</section>
+
+<section class="part" id="choix-du-sujet">
+<h2 class="part-t"><span>3</span>Le choix du sujet</h2>
+<section>
 <h2 class="kicker">Comment le sujet est choisi</h2>
 <div class="prose">
 <p>Le choix du sujet est déjà une forme de biais : parler d'une chose, c'est ne pas parler d'une autre. Pour que ce choix ne soit pas une boîte noire, il suit une règle fixe, et chaque brief Actualité garde la trace de son application dans sa fiche technique.</p>
@@ -301,6 +314,12 @@ def render_about(briefs):
 <p><strong>Décision.</strong> Le meilleur total l'emporte ; en cas d'égalité, la meilleure couverture, puis la meilleure fraîcheur. Ce score ne mesure pas l'importance réelle d'un sujet : il rend le choix explicable et comparable d'un jour à l'autre. Comme les sources elles-mêmes, il hérite de ce dont les médias parlent.</p>
 </div>
 </section>
+<nav class="partnav"><a class="pn-prev" href="#fabrication"><span>Partie précédente</span>La fabrication</a><a class="pn-next" href="#sources"><span>Partie suivante</span>Les sources</a></nav>
+</section>
+
+<section class="part" id="sources">
+<h2 class="part-t"><span>4</span>Les sources</h2>
+{sources_block(briefs)}
 
 <section>
 <h2 class="kicker">Chaque phrase reliée à sa source</h2>
@@ -310,7 +329,11 @@ def render_about(briefs):
 <p>Ce marquage est fait par l'IA elle-même et n'est pas encore vérifié automatiquement : un repère peut être inexact. En cas de doute, la source fait foi.</p>
 </div>
 </section>
+<nav class="partnav"><a class="pn-prev" href="#choix-du-sujet"><span>Partie précédente</span>Le choix du sujet</a><a class="pn-next" href="#transparence"><span>Partie suivante</span>Biais et transparence</a></nav>
+</section>
 
+<section class="part" id="transparence">
+<h2 class="part-t"><span>5</span>Biais et transparence</h2>
 <section class="box stakes">
 <h2 class="kicker">Ce qu'on demande à l'IA, en toutes lettres</h2>
 <p>Un modèle d'IA apprend à partir d'énormes quantités de textes, choisis et pondérés par l'entreprise qui le développe. Ce qu'il en garde, ses tendances et ses angles morts, ne peut pas être vérifié de l'extérieur. C'est une limite réelle, et elle ne disparaît pas.</p>
@@ -327,9 +350,11 @@ def render_about(briefs):
 <p class="sig">Marc Charton, auteur du projet</p>
 </div>
 </section>
+<nav class="partnav"><a class="pn-prev" href="#sources"><span>Partie précédente</span>Les sources</a><a class="pn-next" href="#limites"><span>Partie suivante</span>Limites et bon usage</a></nav>
+</section>
 
-{classif_block()}
-{sources_block(briefs)}
+<section class="part" id="limites">
+<h2 class="part-t"><span>6</span>Limites et bon usage</h2>
 <section class="sides limits">
 <div class="side con">
 <h2>Les limites</h2>
@@ -359,10 +384,14 @@ def render_about(briefs):
 <p>Les signalements sont bienvenus : ils permettent de corriger le brief concerné.</p>
 <a class="cta" href="https://github.com/marccharton/Brief-Citoyen/issues/new" target="_blank" rel="noopener">Signaler une erreur sur GitHub</a>
 </section>
+<nav class="partnav"><a class="pn-prev" href="#transparence"><span>Partie précédente</span>Biais et transparence</a></nav>
+</section>
+</div>
+</div>
 
 <p class="credit">Brief citoyen est un projet personnel de <a href="https://marccharton.github.io/">Marc Charton</a>, à Toulouse. Le code du site est public sur <a href="https://github.com/marccharton/Brief-Citoyen">GitHub</a>.</p>
 </main>""")
-    out.append(FOOT.format(prefix=prefix))
+    out.append(FOOT.format(prefix=prefix).replace("</body>", f'<script src="{prefix}assets/about.js" defer></script>\n</body>'))
     return "\n".join(out)
 
 
