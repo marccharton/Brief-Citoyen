@@ -27,18 +27,17 @@
 <p class="subject" id="subject" hidden></p>
 <div class="tools" id="tools" hidden>
 <button class="tool" type="button" id="share">Partager le lien</button>
-<button class="tool" type="button" id="pdf">Télécharger le PDF</button>
+<button class="tool" type="button" id="inspect" aria-pressed="false" aria-controls="srcpanel" hidden>Voir la source de chaque phrase</button>
 <span class="toast" id="toast" role="status"></span>
 </div>
 </div></header>
 <main class="wrap article" id="content"></main>
+<aside class="srcpanel" id="srcpanel" aria-label="Sources de chaque phrase" hidden></aside>
 <noscript><main class="wrap article"><p>Cette page a besoin de JavaScript pour afficher le brief. Les données brutes sont dans le dossier data/briefs du dépôt GitHub.</p></main></noscript>
 <footer class="foot"><div class="wrap">
 <p>Brief citoyen est entièrement rédigé par une intelligence artificielle, à partir de sources publiques citées dans chaque brief. C'est un outil de vulgarisation : il peut contenir des imprécisions, et les sources font foi.</p>
 <p><a href="../">Tous les briefs</a> · <a href="../comment-c-est-fait/">Comment c'est fait</a> · <a href="../feed.xml">Flux RSS</a> · <a href="https://marccharton.github.io/">Marc Charton</a></p>
 </div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-<script src="../assets/brief-pdf.js" defer></script>
 <script src="../assets/common.js" defer></script>
 <script src="../assets/brief.js" defer></script>
 </body>

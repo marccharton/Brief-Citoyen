@@ -32,8 +32,9 @@ brief/index.html                coquille statique d'un brief (brief/?id=AAAA-MM-
 assets/style.css                style de toutes les pages (thème clair et sombre)
 assets/common.js                outils partagés (échappement, dates, chargement JSON)
 assets/index.js                 liste et filtres de la page d'accueil
-assets/brief.js                 rendu d'un brief, boutons « Partager le lien » et « Télécharger le PDF »
-assets/brief-pdf.js             générateur PDF (jsPDF 2.5.1 chargé depuis cdnjs)
+assets/brief.js                 rendu d'un brief : mode inspection (source de chaque phrase), fiche
+                                technique repliable, bouton « Partager le lien »
+methode/consignes.md            consignes éditoriales publiques données à l'IA, versionnées (v1, v2…)
 data/index.json, feed.xml,      fichiers générés : ne pas les modifier à la main,
 comment-c-est-fait/             relancer build.py
 ```
@@ -48,7 +49,7 @@ python3 -m http.server 8000        # aperçu local sur http://localhost:8000/
 
 ## Format d'un brief
 
-Voir le README pour le schéma complet. Champs : date, type (« actualite » ou « institutions »), categories (1 à 3, liste fermée définie dans scripts/build.py, jamais plus de 10 catégories au total), title, subject, basics, terms, stakes, pro, con, local, sources (3 ou 4 sources « à creuser », avec lean), question, consulted (toutes les pages consultées), generated. Les briefs de type « institutions » ont pro et con vides. Le champ theme des anciens briefs est remplacé par type et categories ; build.py garde une correspondance pour les données anciennes.
+Voir le README pour le schéma complet. Champs : date, type (« actualite » ou « institutions »), categories (1 à 3, liste fermée définie dans scripts/build.py, jamais plus de 10 catégories au total), title, subject, basics, terms, stakes, pro, con, local, sources (3 ou 4 sources « à creuser », avec lean), question, consulted (toutes les pages consultées), generated, et depuis le 17/11/2026 fiche (fiche technique). Dans basics, stakes, local, pro.args et con.args, chaque phrase des briefs récents se termine par un repère [n], [n,m] ou [IA] qui renvoie au champ n de consulted ; brief.js les masque hors mode inspection, les anciens briefs n'en ont pas. Les briefs de type « institutions » ont pro et con vides. Le champ theme des anciens briefs est remplacé par type et categories ; build.py garde une correspondance pour les données anciennes.
 
 ## Règles à respecter
 
@@ -60,4 +61,5 @@ Voir le README pour le schéma complet. Champs : date, type (« actualite » ou 
 - Français correct avec tous les accents et toutes les apostrophes, dans le code comme dans les textes. Jamais le caractère « — ».
 - Ton neutre et impersonnel dans tout texte affiché : pas de tutoiement ni de vouvoiement.
 - Le site reste statique : aucune donnée privée dans ce dépôt public (pas d'adresses mail, de clés d'API ni de mots de passe).
-- Le générateur PDF existe en deux copies : assets/brief-pdf.js (site) et l'artefact Claude « Briefs citoyens » (archive). Seule la copie du site évolue désormais.
+- L'export PDF a été supprimé le 16/11/2026. L'artefact Claude « Briefs citoyens » n'est plus alimenté : le site est la seule destination.
+- methode/consignes.md est la copie publique, mot pour mot, de la partie éditoriale du prompt de la tâche planifiée. Toute modification de l'un doit être reportée dans l'autre, avec un nouveau numéro de version (en tête du fichier et dans le champ fiche.consignes demandé par le prompt).

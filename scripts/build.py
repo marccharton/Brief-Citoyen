@@ -208,7 +208,7 @@ def sources_block(briefs):
             leans["l" if "gauche" in lean else "r" if "droite" in lean else "n"] += 1
             h = host_of(src.get("url")) or "sans lien"
             counts[h] = counts.get(h, 0) + 1
-    rows = "".join(f'<li><span class="h">{e(h)}</span><span class="c">{c}</span></li>'
+    rows = "".join(f'<li><span class="h">{e(h)}</span><span class="c">{c} citation{"s" if c > 1 else ""}</span></li>'
                    for h, c in sorted(counts.items(), key=lambda x: (-x[1], x[0])))
     def pct(n):
         return round(100 * n / total) if total else 0
@@ -227,6 +227,7 @@ def sources_block(briefs):
 <h2 class="kicker">Les sources réellement citées</h2>
 <div class="prose"><p>Calculé automatiquement à partir des {len(briefs)} briefs publiés : {total} sources citées au total. Ce décompte se met à jour à chaque nouveau brief.</p></div>
 {bar}
+<h3 class="hosts-t">Sites les plus cités, par nombre de citations</h3>
 <ul class="hosts">{rows}</ul>
 </section>
 """
@@ -271,12 +272,60 @@ def render_about(briefs):
 <section>
 <h2 class="kicker">Le processus, en cinq étapes</h2>
 <ol class="steps">
-<li><strong>Choisir un sujet.</strong> Le lundi, le mercredi et le vendredi, un sujet d'actualité des derniers jours, en variant les thèmes et en évitant ceux déjà traités. Le mardi et le jeudi, un « Éclairage Institutions » qui explique une notion de base : la Constitution, le 49-3, le Sénat…</li>
-<li><strong>Se documenter.</strong> L'IA fait des recherches sur le web en suivant les règles décrites plus bas : sources primaires d'abord, médias identifiés, plusieurs sensibilités. Pour le contexte général (comment fonctionne une institution, l'histoire d'une réforme), elle s'appuie aussi sur ses propres connaissances, apprises avant sa mise en service : cette partie-là n'est pas sourcée article par article.</li>
-<li><strong>Rédiger.</strong> Les bases, les mots à connaître, ce qui se joue, les arguments pour et contre avec ceux qui les portent, un angle local sur Toulouse et l'Occitanie quand c'est pertinent, des sources pour creuser et une question ouverte.</li>
+<li><strong>Choisir un sujet.</strong> Le lundi, le mercredi et le vendredi, un sujet d'actualité des derniers jours, choisi selon une <a href="#choix-du-sujet">règle de score publique</a>. Le mardi et le jeudi, un « Éclairage Institutions » qui explique une notion de base, dans l'ordre d'une progression fixe : la Constitution, le 49-3, le Sénat…</li>
+<li><strong>Se documenter.</strong> L'IA fait des recherches sur le web en suivant les règles décrites plus bas : sources primaires d'abord, médias identifiés, plusieurs sensibilités. Pour le contexte général (comment fonctionne une institution, l'histoire d'une réforme), elle s'appuie aussi sur ses propres connaissances, apprises avant sa mise en service : ces phrases-là sont marquées « IA » dans le texte.</li>
+<li><strong>Rédiger.</strong> Chaque phrase est reliée à la source dont elle vient. Les bases, les mots à connaître, ce qui se joue, les arguments pour et contre avec ceux qui les portent, un angle local sur Toulouse et l'Occitanie quand c'est pertinent, des sources pour creuser et une question ouverte.</li>
 <li><strong>Contrôler la forme.</strong> Des vérifications automatiques portent sur le format, l'orthographe et le ton neutre. Elles ne vérifient pas les faits.</li>
-<li><strong>Publier.</strong> Le brief arrive sur ce site dans la matinée, en général entre 8 h et 10 h, avec son propre lien et une version PDF à partager.</li>
+<li><strong>Publier.</strong> Le brief arrive sur ce site dans la matinée, en général entre 8 h et 10 h, avec son propre lien et sa fiche technique, qui détaille comment le sujet a été choisi.</li>
 </ol>
+</section>
+
+<section id="choix-du-sujet">
+<h2 class="kicker">Comment le sujet est choisi</h2>
+<div class="prose">
+<p>Le choix du sujet est déjà une forme de biais : parler d'une chose, c'est ne pas parler d'une autre. Pour que ce choix ne soit pas une boîte noire, il suit une règle fixe, et chaque brief Actualité garde la trace de son application dans sa fiche technique.</p>
+<p><strong>Repérage.</strong> L'IA lance toujours les mêmes recherches, avec la date du jour : l'actualité politique en France, l'Assemblée nationale et le Sénat cette semaine, les annonces du gouvernement, la politique à Toulouse et en Occitanie. Elle en retient 5 à 8 sujets candidats des 7 derniers jours, puis compte pour chacun les sources distinctes qui en parlent.</p>
+<p><strong>Score.</strong> Chaque candidat est noté selon ces critères :</p>
+</div>
+<div class="scoregrid">
+<div><strong>Couverture (0 à 3)</strong><span>Nombre de sources distinctes qui en parlent : 1 source donne 0, 2 ou 3 donnent 1, 4 ou 5 donnent 2, 6 et plus donnent 3.</span></div>
+<div><strong>Variété des sources (0 à 2)</strong><span>Nombre de types de sources différents : officielles, agences, presse nationale ou régionale, médias publics, organisations.</span></div>
+<div><strong>Couvert des deux côtés (0 ou 1)</strong><span>Un point si des sources perçues à gauche et à droite en parlent : un sujet porté par un seul bord marque moins.</span></div>
+<div><strong>Fraîcheur (0 à 2)</strong><span>Fait nouveau depuis moins de 48 heures, ou dans la semaine.</span></div>
+<div><strong>Impact concret (0 à 2)</strong><span>Effet direct sur l'argent, les services publics ou les droits. Ce critère reste un jugement de l'IA, expliqué en une phrase.</span></div>
+<div><strong>Angle local (0 ou 1)</strong><span>Un effet identifiable à Toulouse ou en Occitanie.</span></div>
+<div><strong>Répétition (0 ou −1)</strong><span>Un point de moins si la catégorie est celle du brief Actualité précédent, pour varier les domaines.</span></div>
+</div>
+<div class="prose">
+<p><strong>Délai.</strong> Un sujet déjà traité dans les 14 derniers jours est écarté, sauf rebondissement majeur (un vote, une décision de justice, une décision officielle, un chiffre officiel nouveau), nommé dans la fiche.</p>
+<p><strong>Décision.</strong> Le meilleur total l'emporte ; en cas d'égalité, la meilleure couverture, puis la meilleure fraîcheur. Ce score ne mesure pas l'importance réelle d'un sujet : il rend le choix explicable et comparable d'un jour à l'autre. Comme les sources elles-mêmes, il hérite de ce dont les médias parlent.</p>
+</div>
+</section>
+
+<section>
+<h2 class="kicker">Chaque phrase reliée à sa source</h2>
+<div class="prose">
+<p>Depuis le 17 novembre 2026, chaque phrase d'un brief est reliée à la source dont elle vient. Le bouton « Voir la source de chaque phrase » colore le texte : une couleur et un numéro par source, qui renvoient à la liste des sources utilisées en fin de brief, avec un court extrait et un lien qui ouvre la page au passage cité (selon le navigateur).</p>
+<p>Les phrases qui viennent des connaissances générales de l'IA (contexte, définitions, transitions) sont soulignées en pointillés et marquées « IA ». Mieux vaut l'afficher que d'attribuer une phrase à tort à une source. La fiche technique indique la part du texte reliée à une source.</p>
+<p>Ce marquage est fait par l'IA elle-même et n'est pas encore vérifié automatiquement : un repère peut être inexact. En cas de doute, la source fait foi.</p>
+</div>
+</section>
+
+<section class="box stakes">
+<h2 class="kicker">Ce qu'on demande à l'IA, en toutes lettres</h2>
+<p>Un modèle d'IA apprend à partir d'énormes quantités de textes, choisis et pondérés par l'entreprise qui le développe. Ce qu'il en garde, ses tendances et ses angles morts, ne peut pas être vérifié de l'extérieur. C'est une limite réelle, et elle ne disparaît pas.</p>
+<p>Ce qui peut être montré, c'est ce qu'on lui demande. Les consignes que l'IA reçoit chaque matin (le ton, le choix du sujet, le choix des sources, la façon de relier chaque phrase à sa source) sont publiées mot pour mot. Chacun peut vérifier qu'aucune consigne ne pousse vers un point de vue. Chaque modification change leur numéro de version, l'historique est public, et la fiche technique de chaque brief indique la version utilisée.</p>
+<a class="cta" href="https://github.com/marccharton/Brief-Citoyen/blob/main/methode/consignes.md" target="_blank" rel="noopener">Lire les consignes données à l'IA</a>
+</section>
+
+<section class="postulat">
+<h2 class="kicker">Le postulat de ce projet</h2>
+<div class="prose">
+<p>Toute information passe par des filtres avant de nous arriver. Les médias ont une ligne éditoriale, des contraintes de temps, parfois des intérêts : même avec une réelle volonté d'impartialité, chaque rédaction choisit ses sujets, ses mots et ses angles, et commet aussi des erreurs. Quand on s'informe soi-même en lisant plusieurs articles, notre mémoire, notre compréhension et nos propres opinions ajoutent encore leurs approximations.</p>
+<p>Mon postulat, qui reste une opinion et peut être faux : dans cette chaîne, la reformulation par une IA qui reste très proche des sources qu'elle lit n'est pas le maillon le plus biaisé. L'essentiel des biais vient en amont, des sources elles-mêmes et du choix de ce dont on parle.</p>
+<p>Ce postulat ne dispense pas de prudence. L'IA ajoute ses propres risques : se tromper d'attribution, omettre une information, cadrer un sujet par l'ordre ou les mots qu'elle choisit, présenter à égalité des positions qui ne le sont pas. Plutôt que de demander de la confiance, ce projet cherche à rendre son fonctionnement vérifiable : une règle de choix du sujet publique, une fiche technique par brief, chaque phrase reliée à sa source ou marquée comme rédigée par l'IA, et les consignes publiées mot pour mot.</p>
+<p class="sig">Marc Charton, auteur du projet</p>
+</div>
 </section>
 
 {classif_block()}
@@ -290,6 +339,7 @@ def render_about(briefs):
 <li>Elle peut mal résumer une source, ou simplifier au point de perdre une nuance importante.</li>
 <li>L'actualité bouge vite : un brief peut être dépassé quelques jours après sa publication.</li>
 <li>L'équilibre entre « pour » et « contre » est un effort de présentation, pas une mesure objective de qui a raison.</li>
+<li>Ce qu'un brief ne dit pas ne laisse pas de trace : le choix des informations retenues et leur ordre orientent aussi la lecture.</li>
 </ul>
 </div>
 <div class="side pro">
