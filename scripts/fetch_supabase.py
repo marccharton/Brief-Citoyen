@@ -57,7 +57,7 @@ def main():
         sys.exit("Aucun brief reçu de Supabase : rien n'est modifié.")
 
     DATA.mkdir(parents=True, exist_ok=True)
-    seen, written = set(), 0
+    seen, written = set(), []
     for row in rows:
         bid, data = row.get("id", ""), row.get("data")
         if not ID_RE.match(bid) or not isinstance(data, dict):
@@ -69,15 +69,20 @@ def main():
         text = json.dumps(data, ensure_ascii=False, indent=1) + "\n"
         if not path.exists() or path.read_text(encoding="utf-8") != text:
             path.write_text(text, encoding="utf-8")
-            written += 1
+            written.append(bid)
 
-    removed = 0
+    removed = []
     for f in DATA.glob("*.json"):
         if f.stem not in seen:
             f.unlink()
-            removed += 1
+            removed.append(f.stem)
 
-    print(f"{len(seen)} briefs en base, {written} écrits ou mis à jour, {removed} supprimés.")
+    print(f"{len(seen)} briefs en base (dernier : {max(seen)}), "
+          f"{len(written)} écrits ou mis à jour, {len(removed)} supprimés.")
+    for bid in written:
+        print(f"  écrit : {bid}")
+    for bid in sorted(removed):
+        print(f"  supprimé : {bid}")
 
 
 if __name__ == "__main__":

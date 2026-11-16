@@ -9,7 +9,14 @@ on:
     # Horaires en UTC : 7 h 10 et 8 h 40 UTC, soit 8 h 10 et 9 h 40 en hiver (une heure de plus en été).
     - cron: "10 7 * * 1-5"
     - cron: "40 8 * * 1-5"
+    # Filet de sécurité : un passage chaque jour, week-end compris, pour rattraper
+    # les briefs ajoutés ou corrigés hors des horaires (GitHub retarde ou saute
+    # parfois les crons planifiés).
+    - cron: "23 17 * * *"
   workflow_dispatch: {}
+  # Permet à la tâche de rédaction de déclencher la publication juste après l'écriture.
+  repository_dispatch:
+    types: [brief-publie]
 
 permissions:
   contents: write
