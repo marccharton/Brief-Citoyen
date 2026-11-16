@@ -1,0 +1,127 @@
+{
+ "con": {
+  "who": "Organisations patronales (Medef, U2P, CPME), partis de droite et du centre, économistes libéraux",
+  "args": [
+   "Pour les TPE et PME, notamment dans l'artisanat, la restauration et le commerce, une hausse immédiate accroît les coûts salariaux sans leur laisser le temps de s'adapter, ce qui risque d'accélérer les suppressions d'emplois ou les fermetures.",
+   "Certains économistes libéraux soutiennent que le problème du pouvoir d'achat tient davantage aux charges fiscales et sociales pesant sur les bas salaires qu'au niveau nominal du SMIC, et qu'une réduction de ces charges serait plus efficace.",
+   "Un coup de pouce sur le SMIC crée un effet d'écrasement des grilles salariales, effaçant les différences entre les niveaux de qualification et décourageant la progression professionnelle.",
+   "Dans un contexte de déficit public élevé, une hausse du SMIC dans la fonction publique et les entreprises publiques se répercute directement sur les finances de l'État et des collectivités territoriales."
+  ],
+  "label": "Contre un relèvement exceptionnel du SMIC en dehors du mécanisme automatique"
+ },
+ "pro": {
+  "who": "Syndicats (CFDT, CGT, FO, FSU, UNSA, Solidaires), partis de gauche (NFP, PS, LFI, PCF), économistes favorables à la demande intérieure",
+  "args": [
+   "Le SMIC a perdu du terrain face à l'inflation : même après les revalorisations automatiques passées, le pouvoir d'achat des salariés au SMIC reste inférieur à ce qu'il était avant la vague inflationniste de 2021-2024.",
+   "De nombreuses branches professionnelles (hôtellerie-restauration, commerce, aide à domicile) maintiennent depuis des années des grilles de salaires qui démarrent au niveau du SMIC sans progression réelle, et cette situation est légalement anormale.",
+   "Une hausse du SMIC soutient la consommation des ménages les plus modestes, qui dépensent l'essentiel de leurs revenus en dépenses courantes locales, ce qui bénéficie aux commerces et services de proximité.",
+   "Plusieurs pays européens ont adopté des mécanismes d'indexation plus ambitieux sur les salaires sans provoquer de hausse significative du chômage à long terme."
+  ],
+  "label": "Pour une revalorisation significative du SMIC dès décembre 2026"
+ },
+ "date": "2026-11-09",
+ "type": "actualite",
+ "local": [
+  "À Toulouse, le mouvement du 5 novembre a mobilisé plusieurs milliers de manifestants dans le cortège intersyndicale, avec une forte présence des syndicats de l'éducation nationale, de la fonction publique territoriale et des agents de Tisséo, le réseau de transports en commun de la métropole.",
+  "La grève du 5 novembre a perturbé les lignes de bus et de métro Tisséo, contraignant de nombreux usagers toulousains à chercher des alternatives pour leurs déplacements vers les pôles d'emploi et les établissements scolaires.",
+  "L'Occitanie compte une forte proportion de salariés dans des secteurs à bas salaires (agriculture, hôtellerie-restauration, aide à domicile, commerce de détail), ce qui rend la région particulièrement sensible à tout mouvement sur le SMIC : une revalorisation significative toucherait directement une part importante des actifs de la région."
+ ],
+ "terms": [
+  {
+   "def": "Salaire minimum interprofessionnel de croissance, le salaire légal minimum applicable à tous les travailleurs du secteur privé en France, révisé automatiquement chaque 1er janvier (et parfois par un décret de coup de pouce du gouvernement) en fonction de l'inflation et de l'évolution des salaires. Son montant est en novembre 2026 de 1 477,93 euros nets par mois.",
+   "term": "SMIC"
+  },
+  {
+   "def": "Coalition de plusieurs syndicats qui coordonnent leurs actions de mobilisation sans fusionner. Celle qui mène le mouvement depuis fin septembre 2026 regroupe les huit principaux syndicats français : CFDT, CGT, FO, CFE-CGC, CFTC, UNSA, FSU et Solidaires.",
+   "term": "Intersyndicale"
+  },
+  {
+   "def": "Expression courante désignant une hausse du SMIC décidée par le gouvernement au-delà du mécanisme d'indexation automatique prévu par la loi. Cette décision est purement politique et ne résulte d'aucune obligation légale.",
+   "term": "Coup de pouce"
+  },
+  {
+   "def": "Réunion organisée par le gouvernement avec les syndicats de salariés et les organisations patronales pour débattre de questions relatives au travail et à l'emploi. Elle n'aboutit pas à un accord contraignant : les décisions restent de la compétence du gouvernement et du Parlement.",
+   "term": "Conférence sociale"
+  },
+  {
+   "def": "Capacité d'un ménage à acheter des biens et des services avec ses revenus. Il diminue quand les prix augmentent plus vite que les salaires, ce qui s'est produit de façon significative en France entre 2021 et 2024, période d'inflation élevée.",
+   "term": "Pouvoir d'achat"
+  }
+ ],
+ "title": "La conférence sociale du 9 novembre : le gouvernement face aux revendications salariales",
+ "basics": [
+  "Depuis fin septembre 2026, une intersyndicale regroupant l'ensemble des principaux syndicats français (CFDT, CGT, FO, CFE-CGC, CFTC, UNSA, FSU, Solidaires) organise des mobilisations régulières contre la vie chère et pour la hausse des salaires.",
+  "La grève du 5 novembre 2026 a constitué un pic de mobilisation : entre 575 000 personnes selon le gouvernement et 1,6 million selon la CGT ont manifesté dans toute la France, avec un taux de grévistes de 12,77 % dans l'éducation nationale et d'environ un tiers des cheminots de la SNCF selon la CGT.",
+  "Face à cette pression sociale prolongée, le Premier ministre Sébastien Lecornu a convoqué une conférence sociale pour le 9 novembre à Matignon, avec syndicats et patronat, pour discuter des salaires et du pouvoir d'achat. Les lycéens et étudiants mobilisés depuis mi-octobre doivent être reçus à leur tour.",
+  "Au centre des négociations : le SMIC, le salaire minimum légal, actuellement fixé à 1 477,93 euros nets par mois. Le ministre du Travail Jean-Pierre Farandou souhaite le porter au-delà de 1 500 euros nets, en anticipant la revalorisation automatique habituellement prévue en janvier.",
+  "Les syndicats réclament une hausse plus ambitieuse : la CFDT demande 100 euros de plus par mois, la CGT 10 % soit environ 150 euros, et Force ouvrière vise un SMIC à 2 000 euros nets. Les organisations patronales s'y opposent fermement, estimant que cela menacerait l'emploi dans les petites entreprises."
+ ],
+ "stakes": [
+  "Pour les salariés les plus modestes, une hausse du SMIC représente un gain direct de pouvoir d'achat dans un contexte d'inflation persistante qui a érodé les revenus réels malgré les revalorisations automatiques passées.",
+  "Pour les petites entreprises, notamment dans l'artisanat, le commerce et la restauration, un relèvement au-delà de l'automatique alourdit la masse salariale et peut menacer la viabilité de structures qui fonctionnent avec de faibles marges.",
+  "Pour le gouvernement Lecornu, répondre au mouvement intersyndical est une nécessité politique : un accord sur les salaires pourrait mettre fin à des mobilisations répétées qui ont un coût économique élevé, notamment pour le commerce.",
+  "La question des branches professionnelles dont les grilles salariales se situent en dessous ou juste au-dessus du SMIC concerne des millions de salariés et constitue un enjeu structurel de long terme pour le marché du travail français.",
+  "L'issue de la conférence du 9 novembre conditionne la suite du mouvement : un accord partiel pourrait diviser l'intersyndicale, tandis qu'un résultat jugé insuffisant risque de relancer les mobilisations avec un appel à la grève dans l'éducation prévu le 10 novembre."
+ ],
+ "sources": [
+  {
+   "url": "https://laclepublique.fr/national/articles/2026/2026-11-05-bilan-mobilisation-sociale/",
+   "lean": "Neutre / fact-check",
+   "name": "La Clé Publique",
+   "note": "Chiffres officiels et syndicaux des manifestants du 5 novembre (575 000 selon le gouvernement, 1,6 million selon la CGT), taux de grévistes, annonces gouvernementales côté lycéens, contexte de la conférence sociale du 9 novembre"
+  },
+  {
+   "url": "https://lcp.fr/actualites/salaires-pouvoir-d-achat-que-peut-on-attendre-de-la-conference-sociale-du-lundi-9",
+   "lean": "Neutre / fact-check",
+   "name": "LCP",
+   "note": "Positions syndicales (CFDT : +100 euros, CGT : +10 %) et patronales (Medef, U2P) sur la revalorisation du SMIC, montant actuel du SMIC (1 477,93 euros nets), objectif gouvernemental de 1 500 euros"
+  },
+  {
+   "url": "https://fr.qz.com/sebastien-lecornu-reunit-syndicats-patronat-matignon-smic-110726",
+   "lean": "Neutre / fact-check",
+   "name": "QZ France",
+   "note": "Positions détaillées des organisations syndicales et patronales, objectif gouvernemental de 1 500 euros nets, position du ministre du Travail Jean-Pierre Farandou"
+  },
+  {
+   "url": "https://www.politis.fr/dossiers/5-novembre-nouvelle-journee-de-colere-sociale/",
+   "lean": "Plutôt à gauche",
+   "name": "Politis",
+   "note": "Analyse des mobilisations et des revendications syndicales depuis fin septembre 2026, perspective critique sur la réponse gouvernementale"
+  },
+  {
+   "url": "https://www.economiematin.fr/greves-blocages-manifestations-week-end-7-8-novembre-2026",
+   "lean": "Plutôt à droite",
+   "name": "Economie Matin",
+   "note": "Coût économique des manifestations et perturbations pour les entreprises et le commerce, perspective libérale sur les conséquences d'une hausse du SMIC"
+  }
+ ],
+ "subject": "Après plus d'un mois de mobilisations sociales, le Premier ministre Sébastien Lecornu a convoqué une conférence sociale le 9 novembre 2026 à Matignon, réunissant syndicats et patronat sur la question des salaires et du pouvoir d'achat. Cette réunion fait suite à la grève intersyndicale du 5 novembre, qui a rassemblé entre 575 000 personnes selon le gouvernement et 1,6 million selon la CGT dans toute la France. Au coeur des négociations : la revalorisation du SMIC au-delà de la hausse automatique prévue en janvier 2027.",
+ "question": "La revalorisation du SMIC au-delà du mécanisme automatique peut-elle, à elle seule, améliorer durablement le pouvoir d'achat des salariés les plus modestes, ou faut-il l'accompagner d'autres mesures comme une refonte des charges sociales ou une revalorisation des grilles de branches professionnelles ?",
+ "consulted": [
+  {
+   "url": "https://laclepublique.fr/national/articles/2026/2026-11-05-bilan-mobilisation-sociale/",
+   "name": "La Clé Publique - Grève du 5 novembre 2026 : bilan, SNCF, manifestants, suite"
+  },
+  {
+   "url": "https://lcp.fr/actualites/salaires-pouvoir-d-achat-que-peut-on-attendre-de-la-conference-sociale-du-lundi-9",
+   "name": "LCP - Salaires, pouvoir d'achat : que peut-on attendre de la conférence sociale du lundi 9 novembre ?"
+  },
+  {
+   "url": "https://fr.qz.com/sebastien-lecornu-reunit-syndicats-patronat-matignon-smic-110726",
+   "name": "QZ France - Sébastien Lecornu réunit syndicats et patronat sur le SMIC"
+  },
+  {
+   "url": "https://www.politis.fr/dossiers/5-novembre-nouvelle-journee-de-colere-sociale/",
+   "name": "Politis - 5 novembre, nouvelle journée de colère sociale"
+  },
+  {
+   "url": "https://www.economiematin.fr/greves-blocages-manifestations-week-end-7-8-novembre-2026",
+   "name": "Economie Matin - Grèves, blocages et manifestations : ce qui pourrait se passer en France ce week-end des 7 et 8 novembre"
+  }
+ ],
+ "generated": "2026-11-09",
+ "categories": [
+  "Économie et budget",
+  "Société"
+ ]
+}

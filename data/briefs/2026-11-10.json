@@ -1,0 +1,68 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-10",
+ "type": "institutions",
+ "local": [],
+ "terms": [
+  {
+   "def": "Territoire délimité dans lequel les électeurs élisent un seul et unique député. La France est divisée en 577 circonscriptions de taille variable. Chaque circonscription envoie un représentant à l'Assemblée nationale.",
+   "term": "Circonscription"
+  },
+  {
+   "def": "Mode d'élection où les électeurs votent pour un seul candidat et où la victoire peut être acquise dès le premier tour (majorité absolue) ou au second tour (majorité relative). C'est ce système qui est utilisé pour élire les députés.",
+   "term": "Scrutin uninominal majoritaire à deux tours"
+  },
+  {
+   "def": "Période de cinq ans correspondant à un mandat de l'Assemblée nationale. Pendant cette durée, les mêmes députés siègent, sauf dissolution anticipée décidée par le Président de la République.",
+   "term": "Législature"
+  },
+  {
+   "def": "Vote par lequel l'Assemblée nationale peut renverser le gouvernement. Elle doit être signée par au moins un dixième des députés, et le vote ne peut avoir lieu que 48 heures après son dépôt. Si la majorité absolue des membres de l'Assemblée vote pour, le Premier ministre doit démissionner.",
+   "term": "Motion de censure"
+  }
+ ],
+ "title": "L'Assemblée nationale : comment on y arrive, à quoi ça sert",
+ "basics": [
+  "Imaginez une grande salle de réunion où 577 personnes représentent l'ensemble des Français pour décider des règles qui s'appliquent à tous. C'est l'Assemblée nationale. Elle siège au Palais Bourbon, dans le 7e arrondissement de Paris, en bordure de la Seine. Ces 577 membres s'appellent des députés. Ce nombre est inscrit dans la Constitution depuis 1986 et constitue un plafond fixé par la révision constitutionnelle de 2008.",
+  "Pour devenir député, il faut être élu dans une circonscription. La France est découpée en 577 circonscriptions : chacune correspond à un territoire précis, et les électeurs de ce territoire votent pour choisir leur représentant. L'élection se fait en deux tours. Au premier tour, un candidat est élu directement s'il obtient la majorité absolue des suffrages exprimés et que ces voix représentent au moins un quart des électeurs inscrits. C'est rare : dans la plupart des circonscriptions, personne ne franchit cette double barre. On passe alors au second tour, réservé aux candidats ayant obtenu au moins 12,5 % des électeurs inscrits. Au second tour, le candidat qui recueille le plus de voix l'emporte, même sans majorité absolue. Le mandat dure cinq ans : cette période s'appelle une législature.",
+  "Une fois élus, les députés ont trois grandes missions. La première est de voter les lois. Toute règle qui touche aux libertés fondamentales, aux impôts, à la justice ou à l'organisation de la société doit être approuvée par le Parlement : c'est ce que l'article 34 de la Constitution appelle le domaine de la loi. La deuxième mission est d'approuver le budget de l'État : chaque automne, le projet de loi de finances est soumis d'abord à l'Assemblée nationale, qui peut le modifier avant que le Sénat l'examine à son tour.",
+  "La troisième mission est de contrôler le gouvernement. Les députés peuvent poser des questions au Premier ministre et aux ministres, créer des commissions d'enquête pour examiner une affaire précise, ou voter une motion de censure pour renverser le gouvernement. Si la motion est adoptée à la majorité absolue des membres de l'Assemblée, le Premier ministre doit présenter sa démission au Président de la République. Seule l'Assemblée nationale détient ce pouvoir de renversement : le Sénat ne le peut pas.",
+  "Quand l'Assemblée nationale et le Sénat n'arrivent pas à s'entendre sur un texte de loi, une commission mixte paritaire réunit sept sénateurs et sept députés pour tenter de trouver un accord. Si la commission échoue, le gouvernement peut demander à l'Assemblée nationale de statuer définitivement : elle a alors le dernier mot. Cette prérogative est importante car elle donne à la chambre élue au suffrage universel direct un pouvoir supérieur à celui du Sénat en cas de désaccord persistant. L'Assemblée nationale est aujourd'hui au coeur de l'actualité politique : ses divisions depuis les élections législatives de 2024 ont conduit au rejet unanime du projet de budget 2027, illustrant les difficultés à gouverner sans majorité stable."
+ ],
+ "stakes": [
+  "Comprendre le fonctionnement de l'Assemblée nationale aide à suivre les débats sur la stabilité politique qui reviennent régulièrement dans l'actualité : sans majorité absolue depuis les élections législatives de 2024, le gouvernement est contraint de négocier texte par texte avec plusieurs groupes parlementaires, ce qui rend chaque vote incertain et peut déboucher sur des situations de blocage."
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "note": "référence institutionnelle officielle, articles 24, 25, 34, 39, 45, 49 et 50"
+  }
+ ],
+ "subject": "L'Assemblée nationale est la chambre basse du Parlement français : ses 577 membres, appelés députés, sont élus directement par les citoyens dans des circonscriptions et votent les lois au nom de la Nation.",
+ "question": "Le fait que l'Assemblée nationale ait le dernier mot sur le Sénat en cas de désaccord est-il une garantie démocratique nécessaire, ou risque-t-il de concentrer trop de pouvoir dans une seule chambre ?",
+ "consulted": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur"
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Assembl%C3%A9e_nationale_(France)",
+   "name": "Wikipédia : Assemblée nationale (France)"
+  }
+ ],
+ "generated": "2026-11-10",
+ "categories": [
+  "Vie démocratique"
+ ]
+}

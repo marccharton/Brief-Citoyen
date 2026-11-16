@@ -43,6 +43,102 @@
  ],
  "briefs": [
   {
+   "id": "2026-11-16",
+   "date": "2026-11-16",
+   "title": "Le budget 2027 au Sénat : nouvelle chance ou impasse annoncée ?",
+   "subject": "Après le rejet unanime du budget 2027 par l’Assemblée nationale début novembre, le Sénat prend la main à partir du 20 novembre pour examiner le projet de loi de finances, dans un contexte de fracture politique profonde.",
+   "type": "actualite",
+   "categories": [
+    "Économie et budget",
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-11-12",
+   "date": "2026-11-12",
+   "title": "Le Sénat : pourquoi une deuxième chambre ?",
+   "subject": "Le Sénat est la deuxième chambre du Parlement, celle qui représente les territoires plutôt que les citoyens directement.",
+   "type": "institutions",
+   "categories": [
+    "Vie démocratique",
+    "Territoires et quotidien"
+   ]
+  },
+  {
+   "id": "2026-11-11",
+   "date": "2026-11-11",
+   "title": "COP31 à Antalya : la France face aux défis du climat mondial",
+   "subject": "Depuis le 9 novembre 2026, 197 pays se réunissent à Antalya, en Turquie, pour la 31e Conférence des parties sur le climat (COP31). Sous présidence turco-australienne, les négociateurs s'efforcent de transformer les promesses climatiques en actions concrètes, dans un contexte difficile : retrait américain de l'Accord de Paris, financement climatique jugé insuffisant et objectif des 1,5 °C déjà compromis.",
+   "type": "actualite",
+   "categories": [
+    "Environnement et énergie",
+    "Europe et international"
+   ]
+  },
+  {
+   "id": "2026-11-10",
+   "date": "2026-11-10",
+   "title": "L'Assemblée nationale : comment on y arrive, à quoi ça sert",
+   "subject": "L'Assemblée nationale est la chambre basse du Parlement français : ses 577 membres, appelés députés, sont élus directement par les citoyens dans des circonscriptions et votent les lois au nom de la Nation.",
+   "type": "institutions",
+   "categories": [
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-11-09",
+   "date": "2026-11-09",
+   "title": "La conférence sociale du 9 novembre : le gouvernement face aux revendications salariales",
+   "subject": "Après plus d'un mois de mobilisations sociales, le Premier ministre Sébastien Lecornu a convoqué une conférence sociale le 9 novembre 2026 à Matignon, réunissant syndicats et patronat sur la question des salaires et du pouvoir d'achat. Cette réunion fait suite à la grève intersyndicale du 5 novembre, qui a rassemblé entre 575 000 personnes selon le gouvernement et 1,6 million selon la CGT dans toute la France. Au coeur des négociations : la revalorisation du SMIC au-delà de la hausse automatique prévue en janvier 2027.",
+   "type": "actualite",
+   "categories": [
+    "Économie et budget",
+    "Société"
+   ]
+  },
+  {
+   "id": "2026-11-06",
+   "date": "2026-11-06",
+   "title": "Le budget 2027 rejeté sans une seule voix pour, une première sous la Ve République",
+   "subject": "Le 4 novembre 2026 au soir, l'Assemblée nationale a rejeté la partie « recettes » du projet de loi de finances pour 2027 par 458 voix contre et aucune voix pour. C'est la première fois sous la Ve République qu'un budget ne réunit pas le moindre vote favorable. Le gouvernement Lecornu doit maintenant trouver une issue avant le 17 décembre, date limite fixée par la Constitution.",
+   "type": "actualite",
+   "categories": [
+    "Vie démocratique",
+    "Économie et budget"
+   ]
+  },
+  {
+   "id": "2026-11-05",
+   "date": "2026-11-05",
+   "title": "Le Premier ministre : pourquoi deux chefs de l'exécutif ?",
+   "subject": "Le Premier ministre est la deuxième personnalité de l'exécutif français. La Constitution de 1958 lui confie la direction de l'action du gouvernement et lui impose de répondre de son action devant l'Assemblée nationale, ce que le Président de la République n'est pas tenu de faire.",
+   "type": "institutions",
+   "categories": [
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-11-04",
+   "date": "2026-11-04",
+   "title": "L'encadrement des loyers arrive à échéance",
+   "subject": "Le dispositif qui plafonne les loyers dans les grandes villes françaises, appliqué depuis 2018-2022 dans neuf territoires, doit expirer le 24 novembre 2026. Le Sénat a voté le 21 octobre sa prolongation de deux ans, mais l'Assemblée nationale doit encore se prononcer avant cette date.",
+   "type": "actualite",
+   "categories": [
+    "Territoires et quotidien",
+    "Économie et budget"
+   ]
+  },
+  {
+   "id": "2026-11-03",
+   "date": "2026-11-03",
+   "title": "Le Président de la République : ses pouvoirs réels",
+   "subject": "Le Président de la République est élu pour cinq ans au suffrage universel direct et dispose, selon la Constitution de 1958, d'un rôle d'arbitre et de garant, ainsi que de pouvoirs propres qu'il peut exercer sans l'accord du gouvernement.",
+   "type": "institutions",
+   "categories": [
+    "Vie démocratique"
+   ]
+  },
+  {
    "id": "2026-11-02",
    "date": "2026-11-02",
    "title": "Le mouvement lycéen de 2026",

@@ -1,0 +1,58 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-12",
+ "type": "institutions",
+ "local": [],
+ "terms": [],
+ "title": "Le Sénat : pourquoi une deuxième chambre ?",
+ "basics": [
+  "Le Sénat est l'une des deux chambres du Parlement français. Il est composé de 348 sénateurs, élus pour six ans. La grande différence avec l'Assemblée nationale, c'est la façon dont ils sont élus : pas directement par les citoyens, mais par environ 172 000 'grands électeurs' - essentiellement des élus locaux : maires, conseillers municipaux, conseillers départementaux et régionaux. On appelle ça le suffrage indirect. C'est inscrit dans la Constitution à l'article 24 : le Sénat 'assure la représentation des collectivités territoriales de la République'.",
+  "Dans un système à deux chambres (qu'on appelle le bicamérisme), la deuxième chambre joue plusieurs rôles. D'abord, elle représente un autre électorat : là où l'Assemblée nationale représente directement les citoyens, le Sénat représente les territoires - les communes, les départements, les régions. Ensuite, elle sert de frein et de relecture : chaque loi doit être examinée par les deux chambres, ce qui oblige à la réfléchir deux fois. Enfin, le Sénat apporte une stabilité institutionnelle unique : contrairement à l'Assemblée nationale, le Sénat ne peut pas être dissous par le gouvernement.",
+  "Quand un projet de loi est déposé, il passe d'une chambre à l'autre - c'est ce qu'on appelle la navette parlementaire. L'Assemblée vote une version, le Sénat la modifie, l'Assemblée examine les modifications, et ainsi de suite jusqu'à ce que les deux chambres tombent d'accord. Si elles ne trouvent pas d'accord, une commission mixte de 7 sénateurs et 7 députés tente de trouver un compromis. Et si ça ne suffit toujours pas ? Le gouvernement peut donner le dernier mot à l'Assemblée nationale. Le Sénat a donc un pouvoir de relecture et de négociation, mais pas de veto définitif sur les lois ordinaires.",
+  "Le président du Sénat est la deuxième personnalité de l'État. Si le président de la République décède ou ne peut plus exercer ses fonctions, c'est lui qui assure l'intérim. Par ailleurs, certains textes sont obligatoirement soumis au Sénat en premier, notamment les lois qui concernent l'organisation des collectivités territoriales. Et pour modifier la Constitution elle-même, les deux chambres doivent voter le même texte en termes identiques - là, le Sénat a un vrai droit de blocage.",
+  "Parce que les sénateurs sont élus par des élus locaux et non directement par les citoyens, le Sénat a tendance à sur-représenter les communes rurales et les petites villes. Résultat : la droite y est historiquement plus forte qu'à l'Assemblée nationale. Certains trouvent que c'est un problème démocratique - une chambre qui ne reflète pas vraiment le vote des Français. D'autres estiment que c'est justement son rôle : représenter les territoires et non l'opinion publique du moment, ce qui lui permet de jouer un rôle de sage et de modérateur."
+ ],
+ "stakes": [
+  "Le Sénat est la deuxième chambre du Parlement, celle qui représente les territoires plutôt que les citoyens directement. Son mode d'élection indirect et son impossibilité d'être dissous lui donnent une stabilité que n'a pas l'Assemblée nationale. Sans avoir le dernier mot sur les lois ordinaires, il joue un rôle essentiel de relecture et de représentation des collectivités locales, et son président est le deuxième personnage de la République."
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "note": "référence institutionnelle officielle"
+  },
+  {
+   "url": "https://www.senat.fr/fileadmin/Connaitre_le_Senat/brochure_le_Senat_aujourd_hui.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Sénat : brochure « Le Sénat aujourd'hui »",
+   "note": "référence institutionnelle officielle"
+  }
+ ],
+ "subject": "Le Sénat est la deuxième chambre du Parlement, celle qui représente les territoires plutôt que les citoyens directement.",
+ "question": "Le Sénat, élu par des élus locaux plutôt que directement par les citoyens, est-il représentatif ?",
+ "consulted": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur"
+  },
+  {
+   "url": "https://www.senat.fr/fileadmin/Connaitre_le_Senat/brochure_le_Senat_aujourd_hui.pdf",
+   "name": "Sénat : brochure « Le Sénat aujourd'hui »"
+  }
+ ],
+ "generated": "2026-11-12",
+ "categories": [
+  "Vie démocratique",
+  "Territoires et quotidien"
+ ]
+}

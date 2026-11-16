@@ -1,0 +1,137 @@
+{
+ "con": {
+  "who": "RN et UDR (seul groupe ayant voté contre au Sénat le 21 octobre), candidats à la présidentielle 2027 de droite (Bruno Retailleau, Édouard Philippe, David Lisnard), organisations de propriétaires, économistes libéraux",
+  "args": [
+   "La Cour des comptes signale que 37 % des annonces locatives dépassent les plafonds et que les sanctions restent insuffisantes, ce qui fragilise l'efficacité réelle du mécanisme.",
+   "Des analyses portant sur 196 études internationales comparables montrent qu'un encadrement des loyers entraîne à moyen et long terme une réduction de l'offre locative et un ralentissement de la construction, ce qui peut aggraver la pénurie de logements.",
+   "Des propriétaires, ne pouvant plus amortir leurs travaux d'entretien sur le loyer, réduisent leurs dépenses de rénovation. Le rapport de la Cour des comptes évoque une dégradation progressive de la qualité du parc locatif.",
+   "Le dispositif est mal ciblé : près de 30 % des locataires qui en bénéficient font partie des 20 % des ménages les plus aisés. Les avantages ne se concentrent donc pas sur les ménages qui en ont le plus besoin.",
+   "L'incertitude sur la pérennité du dispositif et les contraintes qu'il impose peuvent freiner les mises en location de logements vacants par des propriétaires qui préfèrent attendre une clarification juridique."
+  ],
+  "label": "Contre : pour la suppression ou la non-prolongation"
+ },
+ "pro": {
+  "who": "Gauche (PS, LFI, NFP), associations de locataires (DAL, CLCV), maires des villes concernées, syndicats étudiants",
+  "args": [
+   "Les locataires économisent environ 1 000 euros par an en Île-de-France grâce au dispositif, selon l'Atelier Parisien d'Urbanisme. Sur un loyer déjà élevé dans une zone tendue, cet avantage est concret et immédiat.",
+   "Dans des marchés à 27 candidats par logement disponible, les propriétaires n'ont aucune incitation à ne pas fixer leurs loyers au maximum sans plafonnement. L'encadrement rétablit un rapport de force plus équilibré entre propriétaires et locataires.",
+   "Les maires des villes expérimentales ont signé en mai 2026 une tribune dans Le Monde pour demander le maintien du dispositif, estimant en observer les effets positifs sur le terrain.",
+   "Le Sénat a adopté la prolongation avec 325 voix pour 17 contre (sur 342 votants), montrant un soutien très large dépassant les clivages gauche-droite habituels.",
+   "La suppression du dispositif profiterait d'abord aux propriétaires qui ne respectaient déjà pas les plafonds, sans garantie d'amélioration de l'offre pour les locataires dans des délais brefs."
+  ],
+  "label": "Pour le maintien ou la prolongation"
+ },
+ "date": "2026-11-04",
+ "type": "actualite",
+ "local": [
+  "Montpellier fait partie des neuf territoires concernés par l'expérimentation et affiche le plus bas taux de dépassement de France : seulement 12 % des annonces y dépassent les plafonds légaux en 2026, contre 37 % en moyenne nationale. Ce résultat illustre que l'efficacité du dispositif dépend fortement de la mobilisation des acteurs locaux pour le faire appliquer. Toulouse, quatrième ville française et premier pôle universitaire hors Île-de-France, n'est pas couverte par le dispositif actuel. Elle est classée en zone tendue et pourrait théoriquement candidater si la loi est prolongée, mais aucune démarche officielle n'a été engagée. La forte croissance démographique et l'important marché étudiant de Toulouse font de l'accès au logement l'un des enjeux majeurs de la région."
+ ],
+ "terms": [
+  {
+   "def": "Territoire où la demande de logement dépasse structurellement l'offre disponible. Les loyers y augmentent plus vite qu'ailleurs, et les délais pour trouver un logement sont plus longs. L'État y impose des règles particulières, comme la limitation des hausses de loyer lors d'un renouvellement de bail.",
+   "term": "Zone tendue"
+  },
+  {
+   "def": "Mécanisme légal qui fixe un plafond de loyer au mètre carré dans certaines zones. Le propriétaire ne peut pas dépasser ce plafond, sauf à justifier d'un complément exceptionnel. Le dispositif s'applique aux nouvelles locations et aux renouvellements de bail dans les villes qui en font la demande.",
+   "term": "Encadrement des loyers"
+  },
+  {
+   "def": "Montant exprimé en euros par mètre carré, fixé par le préfet pour chaque type de logement et chaque quartier, en tenant compte de la taille, de l'ancienneté du bâtiment et du statut meublé ou non meublé. Il sert de base pour calculer le loyer maximum autorisé.",
+   "term": "Loyer de référence"
+  },
+  {
+   "def": "Montant s'ajoutant au loyer plafonné, autorisé uniquement si le logement présente une caractéristique vraiment exceptionnelle non prise en compte dans le loyer de référence. Il est interdit dans les logements classés F ou G par le diagnostic de performance énergétique.",
+   "term": "Complément de loyer"
+  },
+  {
+   "def": "Indice publié chaque trimestre par l'INSEE, qui fixe dans toute la France le plafond d'augmentation annuelle d'un loyer en cours de bail. Il s'applique indépendamment de l'encadrement des loyers et dans toutes les communes.",
+   "term": "IRL (Indice de référence des loyers)"
+  }
+ ],
+ "title": "L'encadrement des loyers arrive à échéance",
+ "basics": [
+  "Dans les grandes villes françaises, louer un appartement est devenu difficile. La demande dépasse largement l'offre : à Paris, environ 225 000 dossiers ont été déposés en 2026 pour seulement 8 400 logements disponibles, soit près de 27 candidats par bien selon une étude publiée en 2026. Les loyers ont progressé en moyenne de 2,5 % par an ces dernières années dans ces territoires, dits zones tendues. Face à cette tension, l'encadrement des loyers est l'un des outils que les pouvoirs publics ont mis en place pour tenter de réguler le marché.",
+  "Le dispositif a été introduit par la loi ELAN en 2018, à titre expérimental. Les collectivités qui souhaitent l'appliquer en font la demande au préfet de département, qui fixe ensuite par arrêté un loyer de référence au mètre carré pour chaque type de logement et chaque quartier. Le loyer demandé par un propriétaire ne peut pas dépasser ce montant de plus de 20 % (c'est la borne haute). Un complément de loyer n'est autorisé que pour des caractéristiques exceptionnelles du logement, non prises en compte dans la référence (une terrasse avec vue remarquable, par exemple). En cas de dépassement, le locataire peut saisir la justice pour obtenir une réduction de son loyer et le remboursement du trop-perçu. Le propriétaire risque une amende administrative allant jusqu'à 5 000 euros s'il est un particulier, et jusqu'à 15 000 euros s'il s'agit d'une société.",
+  "L'expérimentation couvre aujourd'hui neuf territoires : Paris, Lille, Lyon et Villeurbanne, Bordeaux, Montpellier, les intercommunalités de Plaine Commune et d'Est Ensemble (en Seine-Saint-Denis), et la communauté d'agglomération du Pays Basque. Elle concerne au total 1,2 million de locataires sur les 7,7 millions que compte le parc locatif privé en France. Elle doit arriver à son terme le 24 novembre 2026, sauf si le Parlement adopte rapidement un nouveau texte.",
+  "En octobre 2026, la Cour des comptes a publié un rapport d'évaluation. Ses conclusions sont nuancées. Les loyers auraient baissé entre 2 et 4 % dans la plupart des territoires ; l'Atelier Parisien d'Urbanisme estime que les loyers parisiens ont été freinés d'environ 5 % entre 2019 et 2025, soit environ 1 000 euros d'économie par an et par locataire. Mais le rapport signale aussi des limites sérieuses : selon un baromètre de la Fondation pour le Logement des Défavorisés, 37 % des annonces locatives dépassent encore les plafonds légaux en 2026, avec un montant moyen de dépassement de 159 euros par mois. Les contournements passent souvent par un recours abusif au complément de loyer. La Cour souligne que les données disponibles sont insuffisantes pour évaluer correctement l'effet à long terme du dispositif sur l'offre de logements."
+ ],
+ "stakes": [
+  "Si l'Assemblée nationale n'adopte pas le texte du Sénat avant le 24 novembre sans y apporter d'amendement, l'encadrement des loyers s'éteindra automatiquement dans les neuf territoires concernés (tout amendement renverrait le texte en navette, rendant l'adoption impossible avant l'échéance). Les observateurs anticipent alors un rebond des loyers de 2 à 4 % dans ces villes. Le calendrier parlementaire est très chargé jusqu'au 16 novembre avec l'examen du budget de l'État, rendant le vote difficile mais pas impossible.",
+  "La question posée dépasse le calendrier immédiat. Elle touche à deux visions du marché locatif : laisser les loyers s'ajuster librement pour maintenir une offre suffisante, ou les encadrer pour protéger les locataires face à une crise que le marché seul n'a pas résolue en plusieurs décennies dans les grandes métropoles. Le rapport de la Cour des comptes montre que les deux effets coexistent, et que les données disponibles ne permettent pas encore de trancher définitivement."
+ ],
+ "sources": [
+  {
+   "url": "https://www.ccomptes.fr/sites/default/files/2026-10/20261014-Encadrement-des-loyers.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Cour des comptes : Encadrement des loyers (octobre 2026)",
+   "note": "rapport officiel d'évaluation de l'expérimentation"
+  },
+  {
+   "url": "https://nosparlementaires.fr/actualites/encadrement-loyers-23-novembre-2026-senat-21-octobre",
+   "lean": "Neutre / fact-check",
+   "name": "nosparlementaires.fr : Encadrement des loyers, vote du Sénat (21 octobre 2026)",
+   "note": "détail du vote et des positions des groupes parlementaires"
+  },
+  {
+   "url": "https://monimmeuble.com/actualite/encadrement-des-loyers-37-des-annonces-hors-la-loi-en-2026",
+   "lean": "Plutôt à gauche",
+   "name": "monimmeuble.com : Encadrement des loyers, 37 % des annonces hors la loi en 2026",
+   "note": "baromètre annuel de la Fondation pour le Logement des Défavorisés"
+  },
+  {
+   "url": "https://contrepoints.org/les-republicains-votent-pour-la-prolongation-de-lencadrement-des-loyers/",
+   "lean": "Plutôt à droite",
+   "name": "Contrepoints : Les Républicains votent pour la prolongation de l'encadrement des loyers",
+   "note": "analyse critique du dispositif et du vote sénatorial"
+  }
+ ],
+ "subject": "Le dispositif qui plafonne les loyers dans les grandes villes françaises, appliqué depuis 2018-2022 dans neuf territoires, doit expirer le 24 novembre 2026. Le Sénat a voté le 21 octobre sa prolongation de deux ans, mais l'Assemblée nationale doit encore se prononcer avant cette date.",
+ "question": "Vaut-il mieux plafonner les loyers pour protéger les locataires dans les villes où le marché est en tension, ou ce plafonnement risque-t-il d'aggraver la pénurie de logements à long terme en décourageant les propriétaires d'investir ou de rénover leurs biens ?",
+ "consulted": [
+  {
+   "url": "https://www.ccomptes.fr/sites/default/files/2026-10/20261014-Encadrement-des-loyers.pdf",
+   "name": "Cour des comptes : Encadrement des loyers, rapport d'évaluation d'octobre 2026"
+  },
+  {
+   "url": "https://monimmeuble.com/actualite/encadrement-des-loyers-37-des-annonces-hors-la-loi-en-2026",
+   "name": "monimmeuble.com : Encadrement des loyers, 37 % des annonces hors la loi en 2026"
+  },
+  {
+   "url": "https://nosparlementaires.fr/actualites/encadrement-loyers-23-novembre-2026-senat-21-octobre",
+   "name": "nosparlementaires.fr : Encadrement des loyers, vote du Sénat à 2028 (21 octobre 2026)"
+  },
+  {
+   "url": "https://weinvest.fr/blog/encadrement-loyers-2026-villes-experimentation",
+   "name": "WeInvest.fr : Encadrement des loyers 2026, villes et expérimentation"
+  },
+  {
+   "url": "https://www.le-partenaire.fr/actualites/immobilieres/encadrement-loyers-fin-novembre-2026",
+   "name": "Le Partenaire : Encadrement des loyers, fin en novembre ou prolongation ?"
+  },
+  {
+   "url": "https://www.pretto.fr/actualites/actualites-2026/encadrement-loyers-bilan-2026/",
+   "name": "Pretto.fr : Encadrement des loyers, un bilan mitigé en 2026"
+  },
+  {
+   "url": "https://ingefii.fr/encadrement-des-loyers-2026-ce-que-revele-le-rapport-cle/",
+   "name": "Ingefii.fr : Encadrement des loyers 2026, ce que révèle le rapport clé"
+  },
+  {
+   "url": "https://contrepoints.org/les-republicains-votent-pour-la-prolongation-de-lencadrement-des-loyers/",
+   "name": "Contrepoints : Les Républicains votent pour la prolongation de l'encadrement des loyers"
+  },
+  {
+   "url": "https://www.publicsenat.fr/emission/100-senat/le-senat-prolonge-de-deux-ans-lexperimentation-de-lencadrement-des-loyers-e18",
+   "name": "Public Sénat : Le Sénat prolonge de deux ans l'expérimentation de l'encadrement des loyers"
+  },
+  {
+   "url": "https://www.manda.fr/ressources/articles/est-ce-que-toulouse-est-soumise-a-lencadrement-des-loyers",
+   "name": "Manda.fr : Toulouse et l'encadrement des loyers"
+  }
+ ],
+ "generated": "2026-11-04",
+ "categories": [
+  "Territoires et quotidien",
+  "Économie et budget"
+ ]
+}

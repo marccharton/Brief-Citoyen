@@ -1,0 +1,133 @@
+{
+ "con": {
+  "who": "Opposition de gauche (NFP, LFI, PS, écologistes) et de droite (RN, LR)",
+  "args": [
+   "La gauche reproche au budget de faire peser l'effort sur les ménages modestes (gel des aides au logement, hausse de TVA sur certains produits, frais d'inscription en BTS) sans taxer davantage les grandes fortunes.",
+   "La droite (RN, LR) estime que les 54 milliards d'économies annoncées sont insuffisants et non crédibles : le budget ne réduit pas assez la dépense publique et repose sur des hypothèses de croissance jugées trop optimistes par le Haut Conseil des finances publiques.",
+   "Le rejet à l'unanimité révèle un problème de fond : sans majorité stable à l'Assemblée depuis les élections législatives de 2024, le gouvernement se retrouve structurellement incapable de faire adopter un budget dans les conditions normales prévues par la Constitution."
+  ],
+  "label": "Contre le budget du gouvernement tel que présenté"
+ },
+ "pro": {
+  "who": "Gouvernement Lecornu, partisans de la discipline budgétaire, centre droit",
+  "args": [
+   "Le texte gouvernemental vise un déficit de 5 % du PIB pour 2027. La version amendée par les députés aurait porté le déficit à 5,9 %, ce qui risquait d'envoyer un signal négatif aux marchés financiers qui prêtent à la France à des taux déjà élevés.",
+   "Un budget adopté, même imparfait, préserve le rôle constitutionnel du Parlement et évite le précédent des ordonnances budgétaires, qui priverait les élus de leur principal pouvoir de contrôle.",
+   "Le Sénat et une éventuelle commission mixte paritaire offrent une dernière chance d'aboutir à un texte de compromis acceptable avant la date limite du 17 décembre."
+  ],
+  "label": "Pour l'adoption rapide d'un budget dans la version du gouvernement"
+ },
+ "date": "2026-11-06",
+ "type": "actualite",
+ "local": [
+  "La Région Occitanie et Toulouse Métropole figurent parmi les grandes collectivités qui attendaient avec inquiétude l'issue du budget 2027 : le texte gouvernemental initial prévoyait un effort de 5,4 milliards d'euros sur l'ensemble des collectivités françaises, à travers diverses contributions et baisses de dotations.",
+  "Lors des débats à l'Assemblée, les députés avaient supprimé les principales ponctions sur les collectivités (retrait de la contribution CPEB d'environ 2,5 milliards, revalorisation de la dotation globale de fonctionnement). Mais ce texte amendé a été rejeté : c'est donc la version gouvernementale initiale, moins favorable aux collectivités, qui repart au Sénat.",
+  "Dans l'attente d'un budget définitif, les collectivités fonctionnent en gestion provisoire et ne peuvent pas adopter leur propre budget. Cette incertitude retarde les décisions d'investissement locales, notamment pour les projets de transport et d'infrastructures portés par la Région Occitanie et Toulouse Métropole."
+ ],
+ "terms": [
+  {
+   "def": "Texte de loi présenté chaque automne par le gouvernement pour fixer les recettes et les dépenses de l'État pour l'année à venir. La première partie porte sur les recettes (impôts et taxes) ; la seconde sur les dépenses. Le rejet de la première partie entraîne celui de l'ensemble du texte.",
+   "term": "PLF (projet de loi de finances)"
+  },
+  {
+   "def": "Disposition qui fixe le délai de 70 jours accordé au Parlement pour voter le budget. Passé ce délai, le gouvernement peut adopter le budget par ordonnances, sans vote des élus.",
+   "term": "Article 47 de la Constitution"
+  },
+  {
+   "def": "Actes permettant au gouvernement de mettre en œuvre un budget sans vote du Parlement, en vertu de l'article 47 de la Constitution. Cette procédure n'a jamais été utilisée sous la Ve République.",
+   "term": "Ordonnances budgétaires"
+  },
+  {
+   "def": "Article de la Constitution permettant au gouvernement d'adopter un texte de loi sans vote de l'Assemblée. En contrepartie, l'opposition peut déposer une motion de censure pour tenter de renverser le gouvernement dans les 24 heures.",
+   "term": "Article 49-3"
+  },
+  {
+   "def": "Commission composée de 7 sénateurs et 7 députés, chargée de trouver un texte de compromis quand les deux chambres ne s'entendent pas. Si la CMP échoue, l'Assemblée nationale a le dernier mot.",
+   "term": "Commission mixte paritaire (CMP)"
+  }
+ ],
+ "title": "Le budget 2027 rejeté sans une seule voix pour, une première sous la Ve République",
+ "basics": [
+  "Chaque automne, le gouvernement soumet au Parlement son projet de loi de finances (PLF), qui fixe les recettes (impôts, taxes) et les dépenses de l'État pour l'année suivante.",
+  "L'Assemblée nationale examine le texte en premier. Les 577 députés peuvent l'amender (c'est-à-dire y apporter des modifications) pendant les débats. Si l'Assemblée rejette le texte, le Sénat reçoit la version originale du gouvernement, non celle issue des débats.",
+  "Le Sénat examine ensuite le texte à son tour. Si les deux chambres n'arrivent pas à s'entendre, une commission mixte paritaire (7 sénateurs et 7 députés) tente de trouver un compromis.",
+  "La Constitution impose un délai maximum de 70 jours pour voter le budget. Si ce délai expire le 17 décembre à minuit sans accord, le gouvernement peut mettre en œuvre le budget par ordonnances, c'est-à-dire sans vote du Parlement.",
+  "En dernier recours, si aucune de ces voies n'aboutit, le gouvernement peut recourir à une loi spéciale qui lui permet de continuer à collecter les impôts et à payer les fonctionnaires au 1er janvier, le temps que le budget définitif soit adopté."
+ ],
+ "stakes": [
+  "Un rejet sans aucune voix pour est sans précédent sous la Ve République : il illustre l'isolement total du gouvernement Lecornu dans une Assemblée très fragmentée, où aucun groupe n'a voulu endosser le texte.",
+  "Les débats avaient tellement modifié le budget que le déficit aurait atteint 5,9 % du PIB au lieu des 5 % visés, un résultat jugé inacceptable même par des groupes proches de la majorité comme le MoDem (dont la députée Perrine Goulet a qualifié le texte amendé de texte d'« aucune cohérence »).",
+  "Le Sénat examine la version initiale du gouvernement à partir du 20 novembre, avec un vote solennel prévu le 9 décembre. Si aucun accord n'émerge d'ici le 17 décembre (délai constitutionnel de 70 jours), le gouvernement devra choisir entre les ordonnances et le 49-3.",
+  "Un recours aux ordonnances pour le budget serait une première absolue sous la Ve République et affaiblirait considérablement le rôle du Parlement dans les décisions sur les finances publiques.",
+  "Sans budget définitivement voté, les collectivités locales (communes, régions, départements) ne peuvent pas arrêter leur propre budget local, ce qui retarde les décisions d'investissement public à l'échelle du territoire."
+ ],
+ "sources": [
+  {
+   "url": "https://fr.euronews.com/2026/11/05/budget-2027-lassemblee-nationale-rejette-le-texte-a-lunanimite",
+   "lean": "Neutre / fact-check",
+   "name": "Euronews France",
+   "note": "Résultat du vote : 458 contre, 0 pour, 2 abstentions"
+  },
+  {
+   "url": "https://lcp.fr/actualites/budget-2027-l-assemblee-rejette-a-l-unanimite-la-partie-recettes-le-projet-de-loi-de",
+   "lean": "Neutre / fact-check",
+   "name": "LCP – Assemblée nationale",
+   "note": "Explication du rejet et de la suite de la procédure parlementaire"
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-calendrier-49-3-ordonnancesquelles-sont-les-echeances-a-venir-et-les-scenarios-possibles",
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat",
+   "note": "Calendrier constitutionnel et scénarios possibles après le rejet"
+  },
+  {
+   "url": "https://www.parlons-politique.fr/actualite-nationale/budget-2027-eviter-le-blocage-par-ordonnances-pourrait-garantir-la-continuite-mais-reduire-le-role-du-parlement_28268/",
+   "lean": "Plutôt à gauche",
+   "name": "Parlons Politique",
+   "note": "Analyse critique du recours possible aux ordonnances et de la réduction du rôle du Parlement"
+  },
+  {
+   "url": "https://www.rcf.fr/articles/economie-et-societe/budget-2027-rejete-a-lassemblee-a-quoi-fautil-sattendre",
+   "lean": "Centre",
+   "name": "RCF",
+   "note": "Analyse des conséquences du rejet et des scénarios à venir"
+  }
+ ],
+ "subject": "Le 4 novembre 2026 au soir, l'Assemblée nationale a rejeté la partie « recettes » du projet de loi de finances pour 2027 par 458 voix contre et aucune voix pour. C'est la première fois sous la Ve République qu'un budget ne réunit pas le moindre vote favorable. Le gouvernement Lecornu doit maintenant trouver une issue avant le 17 décembre, date limite fixée par la Constitution.",
+ "question": "Si aucun accord n'est trouvé d'ici le 17 décembre, le gouvernement devra choisir entre mettre en œuvre le budget par ordonnances (sans vote du Parlement, une première en France) ou user du 49-3 (en risquant une motion de censure). Lequel de ces deux scénarios semble le moins dangereux pour la démocratie ?",
+ "consulted": [
+  {
+   "url": "https://fr.euronews.com/2026/11/05/budget-2027-lassemblee-nationale-rejette-le-texte-a-lunanimite",
+   "name": "Euronews France – Rejet du PLF 2027 à l'unanimité"
+  },
+  {
+   "url": "https://lcp.fr/actualites/budget-2027-l-assemblee-rejette-a-l-unanimite-la-partie-recettes-le-projet-de-loi-de",
+   "name": "LCP – Rejet à l'unanimité de la partie recettes"
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-calendrier-49-3-ordonnancesquelles-sont-les-echeances-a-venir-et-les-scenarios-possibles",
+   "name": "Public Sénat – Calendrier et scénarios budgétaires"
+  },
+  {
+   "url": "https://www.banquedesterritoires.fr/budget-2027-dans-lhemicycle-les-deputes-sopposent-aux-ponctions-sur-les-collectivites",
+   "name": "Banque des Territoires – Ponctions sur les collectivités dans le PLF 2027"
+  },
+  {
+   "url": "https://www.moneyvox.fr/votre-argent/actualites/110634/budget-2027-toutes-les-reactions-politiques",
+   "name": "Moneyvox – Réactions politiques des partis au budget 2027"
+  },
+  {
+   "url": "https://www.parlons-politique.fr/actualite-nationale/budget-2027-eviter-le-blocage-par-ordonnances-pourrait-garantir-la-continuite-mais-reduire-le-role-du-parlement_28268/",
+   "name": "Parlons Politique – Ordonnances budgétaires et rôle du Parlement"
+  },
+  {
+   "url": "https://www.rcf.fr/articles/economie-et-societe/budget-2027-rejete-a-lassemblee-a-quoi-fautil-sattendre",
+   "name": "RCF – Budget 2027 rejeté, que faut-il attendre ?"
+  }
+ ],
+ "generated": "2026-11-06",
+ "categories": [
+  "Vie démocratique",
+  "Économie et budget"
+ ]
+}

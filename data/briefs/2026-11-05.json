@@ -1,0 +1,74 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-05",
+ "type": "institutions",
+ "local": [],
+ "terms": [
+  {
+   "def": "L'un des trois grands pouvoirs de l'État, avec le législatif (qui vote les lois) et le judiciaire (qui règle les litiges). En France, l'exécutif est dit bicéphale car il a deux têtes : le Président de la République et le gouvernement dirigé par le Premier ministre.",
+   "term": "Exécutif"
+  },
+  {
+   "def": "Capacité d'édicter des règles obligatoires sans passer par un vote du Parlement. Le Premier ministre l'exerce en signant des décrets. Ces décrets doivent respecter les lois votées par le Parlement et en précisent les modalités d'application concrète.",
+   "term": "Pouvoir réglementaire"
+  },
+  {
+   "def": "Vote de l'Assemblée nationale par lequel les députés renversent le gouvernement. Pour être déposée, elle doit être signée par au moins un dixième des membres de l'Assemblée et ne peut être votée que 48 heures après son dépôt. Si elle est adoptée à la majorité absolue des membres de l'Assemblée, le Premier ministre doit présenter la démission de son gouvernement au Président de la République.",
+   "term": "Motion de censure"
+  },
+  {
+   "def": "Résidence officielle et lieu de travail du Premier ministre, situé rue de Varenne à Paris. Par métonymie, Matignon désigne souvent le Premier ministre lui-même et son équipe, comme l'Élysée désigne le Président de la République.",
+   "term": "Hôtel Matignon"
+  }
+ ],
+ "title": "Le Premier ministre : pourquoi deux chefs de l'exécutif ?",
+ "basics": [
+  "Dans un appartement partagé, deux locataires se répartissent les tâches : l'un gère les grandes décisions comme le contrat de bail ou les travaux importants, l'autre s'occupe de l'organisation quotidienne. En France, c'est un peu la même chose au sommet de l'État. Deux personnalités partagent l'exécutif : le Président de la République, élu directement par les citoyens pour cinq ans, fixe les grandes orientations ; le Premier ministre organise et conduit la politique au jour le jour depuis l'Hôtel Matignon, sa résidence officielle à Paris.",
+  "La Constitution de 1958 est très claire sur ce partage. Son article 20 dispose que le Gouvernement détermine et conduit la politique de la Nation. C'est donc l'équipe dirigée par le Premier ministre qui est chargée de mettre en oeuvre la politique nationale. L'article 21 précise que le Premier ministre dirige l'action du Gouvernement. C'est lui qui coordonne les ministres, leur donne des orientations communes et signe les décrets qui permettent d'appliquer les lois dans la pratique. Cette capacité à édicter des règles sans passer par un vote du Parlement s'appelle le pouvoir réglementaire.",
+  "Le Premier ministre est nommé par le Président de la République (article 8 de la Constitution). Mais contrairement au Président, il est également responsable devant l'Assemblée nationale. Si les députés adoptent à la majorité une motion de censure, le Premier ministre est contraint de remettre sa démission et celle de son gouvernement au Président (article 50). Le Président, lui, n'est pas soumis à cette contrainte : il n'est pas responsable devant le Parlement. Cette différence crée une sorte de tampon entre le pouvoir présidentiel et les élus de l'Assemblée nationale.",
+  "En pratique, depuis la fondation de la Ve République, une répartition informelle s'est installée. On parle souvent du domaine réservé du Président : la politique étrangère, la défense nationale, les affaires européennes. L'Élysée y exerce une influence prépondérante, même si rien dans la Constitution ne l'écrit noir sur blanc. Le Premier ministre gère davantage la politique intérieure : l'économie, les réformes sociales, le budget, les relations avec le Parlement et les syndicats. Il préside aussi les réunions interministérielles qui coordonnent l'action de l'ensemble des ministères.",
+  "Cette architecture prend tout son sens à quelques mois de l'élection présidentielle d'avril 2027. Comprendre qui décide quoi entre l'Élysée et Matignon permet de mesurer ce qu'une victoire présidentielle changerait réellement pour les citoyens. De nombreuses promesses de campagne portent sur la politique intérieure : elles dépendent autant du Premier ministre et de sa majorité parlementaire que de la seule volonté du Président."
+ ],
+ "stakes": [
+  "Comprendre le rôle du Premier ministre aide à suivre les débats sur l'équilibre des pouvoirs qui reviennent régulièrement dans l'actualité : que se passe-t-il quand le Président et le Premier ministre sont de camps politiques opposés, qui décide vraiment de la politique du pays en période de crise, et quelle marge de manoeuvre réelle détient un candidat à la présidentielle pour mettre en oeuvre son programme une fois élu ?"
+ ],
+ "sources": [
+  {
+   "url": "https://www.assemblee-nationale.fr/dyn/16/divers/texte_reference/01_constitution.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Assemblée nationale : texte de la Constitution du 4 octobre 1958 (version consolidée)",
+   "note": "référence institutionnelle officielle, articles 8, 20, 21, 49 et 50"
+  },
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "note": "référence institutionnelle officielle"
+  }
+ ],
+ "subject": "Le Premier ministre est la deuxième personnalité de l'exécutif français. La Constitution de 1958 lui confie la direction de l'action du gouvernement et lui impose de répondre de son action devant l'Assemblée nationale, ce que le Président de la République n'est pas tenu de faire.",
+ "question": "Lorsque les électeurs élisent un Président mais donnent ensuite la majorité à l'Assemblée nationale à un camp différent, laquelle des deux personnalités tient-elle réellement la légitimité pour gouverner ?",
+ "consulted": [
+  {
+   "url": "https://www.assemblee-nationale.fr/dyn/16/divers/texte_reference/01_constitution.pdf",
+   "name": "Assemblée nationale : Constitution du 4 octobre 1958, texte consolidé (PDF)"
+  },
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur"
+  }
+ ],
+ "generated": "2026-11-05",
+ "categories": [
+  "Vie démocratique"
+ ]
+}

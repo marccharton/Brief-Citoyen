@@ -1,0 +1,107 @@
+{
+ "con": {
+  "who": "Gauche (PS, LFI, GDR), syndicats (CGT, FO, FSU)",
+  "args": [
+   "Le gel des pensions, des APL et du point d’indice revient à faire baisser le niveau de vie réel de millions de ménages modestes et de fonctionnaires, qui n’ont pas les ressources pour absorber l’inflation.",
+   "Les grandes entreprises et les très hauts patrimoines sont ménagés : la surtaxe sur les bénéfices des multinationales est réduite et la transmission des gros patrimoines facilitée, ce qui crée une inégalité criante dans le partage de l’effort.",
+   "Couper dans les services publics (santé, éducation, justice) fragilise les fondements de la cohésion sociale et génère des surcoûts à terme (déserts médicaux, décrochage scolaire, insécurité)."
+  ],
+  "label": "Contre les coupes dans les dépenses sociales"
+ },
+ "pro": {
+  "who": "Gouvernement Lecornu, droite sénatoriale (LR, centristes)",
+  "args": [
+   "La France ne peut pas continuer à laisser filer sa dette : sans effort significatif, le déficit atteindrait 6,5 % du PIB en 2027, exposant le pays à une crise de financement sur les marchés obligataires.",
+   "Réduire les dépenses publiques plutôt qu’augmenter les impôts préserve la compétitivité des entreprises françaises, l’investissement et l’emploi sur le long terme.",
+   "Un redressement rapide protège la crédibilité de la France vis-à-vis de ses partenaires européens et des règles du Pacte de stabilité, réduisant ainsi le risque d’une procédure pour déficit excessif."
+  ],
+  "label": "Pour le plan d’économies du gouvernement"
+ },
+ "date": "2026-11-16",
+ "type": "actualite",
+ "local": [
+  "Toulouse et l’Occitanie sont particulièrement exposées à plusieurs mesures du PLF. La région concentre un nombre important d’agents de la fonction publique d’État (enseignants, chercheurs, personnels hospitaliers du CHU de Toulouse) : le gel du point d’indice se traduira concrètement par une perte de pouvoir d’achat pour des dizaines de milliers de familles.",
+  "Les collectivités locales d’Occitanie, déjà sous tension financière, sont priées de limiter leurs dépenses de fonctionnement à l’inflation (1,8 %). Cela contraint les capacités d’investissement de la région, du département de Haute-Garonne et de la mairie de Toulouse, notamment dans les transports en commun, les collèges et les lycées.",
+  "Le secteur aéronautique toulousain surveille attentivement les arbitrages fiscaux : toute modification du crédit d’impôt recherche ou des aides à l’apprentissage (menacées de coupes dans le budget du ministère du Travail) pourrait affecter les sous-traitants d’Airbus qui forment massivement via l’apprentissage."
+ ],
+ "terms": [
+  {
+   "def": "Le texte qui fixe les recettes (impôts, taxes) et les dépenses de l’État pour l’année suivante. Il est discuté chaque automne par le Parlement avant d’être adopté fin décembre.",
+   "term": "Projet de loi de finances (PLF)"
+  },
+  {
+   "def": "Article de la Constitution permettant au gouvernement de faire adopter un texte sans vote de l’Assemblée nationale. Le gouvernement s’expose alors à une motion de censure : si elle est votée, le gouvernement doit démissionner et le texte est rejeté.",
+   "term": "49.3"
+  },
+  {
+   "def": "Commission réunissant 7 députés et 7 sénateurs pour trouver un accord sur un texte que les deux chambres n’ont pas voté dans les mêmes termes. Si la CMP échoue, chaque chambre vote à nouveau.",
+   "term": "Commission mixte paritaire (CMP)"
+  },
+  {
+   "def": "Valeur de référence qui sert à calculer la rémunération des fonctionnaires. Le geler signifie que leurs salaires n’augmentent pas, même en cas d’inflation.",
+   "term": "Point d’indice"
+  },
+  {
+   "def": "Mesure constitutionnelle exceptionnelle permettant au gouvernement de mettre en oeuvre le budget par décret si le Parlement n’a pas voté dans les délais. Aucun gouvernement de la Ve République ne l’a jamais utilisée.",
+   "term": "Ordonnances budgétaires"
+  }
+ ],
+ "title": "Le budget 2027 au Sénat : nouvelle chance ou impasse annoncée ?",
+ "basics": [
+  "Le 4 novembre 2026, l’Assemblée nationale a rejeté la partie recettes du projet de loi de finances (PLF) pour 2027 à l’unanimité : 458 voix contre, zéro pour. Ce vote sans précédent reflète le fait que le texte, profondément remanié depuis mi-octobre par des coalitions changeantes, ne satisfaisait plus aucun groupe politique. Résultat : c’est le texte initial du gouvernement Lecornu — et non la version amendée par les députés — qui a été transmis au Sénat.",
+  "Le gouvernement vise un effort budgétaire d’environ 54 milliards d’euros pour stabiliser le déficit public à 5 % du PIB en 2027, contre environ 6,5 % sans mesures correctives. Parmi les leviers envisagés : gel du point d’indice des fonctionnaires, désindexation partielle des retraites, réforme des arrêts maladie, gel des APL et limitation de certaines prestations sociales.",
+  "Le Sénat examine le budget de la Sécurité sociale (PLFSS) du 12 au 17 novembre, puis le PLF (budget de l’État) du 20 novembre au 8 décembre, avec un vote solennel le 9 décembre. Des commissions mixtes paritaires (CMP) réuniront ensuite sénateurs et députés pour tenter un compromis. Si aucun accord n’est trouvé d’ici le 17 décembre (délai constitutionnel de 70 jours), le gouvernement pourrait recourir à des ordonnances ou à un 49.3, avec le risque d’une motion de censure."
+ ],
+ "stakes": [
+  "Au coeur du débat se trouve une question fondamentale : comment répartir l’effort de redressement des finances publiques ? Le gouvernement propose de couper massivement dans les dépenses (services publics, prestations sociales, fonctionnaires), en limitant au maximum les hausses d’impôts pour ne pas pénaliser la compétitivité des entreprises. La gauche dénonce ce choix comme socialement injuste : les classes moyennes et populaires supporteraient l’essentiel de l’effort, tandis que les grandes fortunes et les profits records des multinationales seraient préservés.",
+  "La crise budgétaire s’inscrit dans un contexte de paralysie politique chronique depuis les élections législatives de 2024. Le gouvernement Lecornu gouverne sans majorité absolue et doit négocier en permanence avec des groupes aux exigences contradictoires. La majorité sénatoriale (droite LR et centristes) veut au contraire supprimer la plupart des nouvelles taxes votées par les députés — qu’elle qualifie de ‘budget cryptosocialiste’ — et aller plus loin dans les économies (jusqu’à 50 milliards). Ces positions opposées rendent un accord en CMP très incertain.",
+  "L’ombre de la présidentielle de 2027 plane sur tous les débats. Chaque groupe utilise la séquence budgétaire pour construire son image électorale : la gauche comme défenseur des services publics et de la justice sociale, la droite sénatoriale comme gardienne de la rigueur budgétaire et de la baisse des impôts, et le gouvernement comme gestionnaire responsable face à l’urgence de la dette. Ce calcul politique rend les compromis plus difficiles mais aussi plus visibles pour les citoyens."
+ ],
+ "sources": [
+  {
+   "url": "https://lcp.fr/actualites/budget-2027-l-assemblee-rejette-a-l-unanimite-la-partie-recettes-le-projet-de-loi-de",
+   "lean": "Neutre / fact-check",
+   "name": "LCP Assemblée nationale — Rejet unanime du budget 2027",
+   "note": "Chaîne parlementaire, couvre les travaux législatifs des deux chambres avec accès direct aux comptes rendus."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/face-a-un-budget-cryptosocialiste-la-majorite-senatoriale-veut-eradiquer-tous-les-impots-votes-par-les-deputes",
+   "lean": "Plutôt à droite",
+   "name": "Public Sénat — La majorité sénatoriale veut ‘éradiquer’ les impôts votés par les députés",
+   "note": "Chaîne parlementaire liée au Sénat, favorable à la ligne de la majorité sénatoriale LR/centre."
+  },
+  {
+   "url": "https://lcp.fr/actualites/budget-2027-les-plus-modestes-continuent-de-payer-pour-les-plus-riches-denoncent-les",
+   "lean": "Plutôt à gauche",
+   "name": "LCP — ‘Les plus modestes continuent de payer pour les plus riches’, dénoncent les socialistes",
+   "note": "Tribune des responsables PS sur leur ligne d’opposition au budget, centrée sur la justice fiscale."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-calendrier-49-3-ordonnancesquelles-sont-les-echeances-a-venir-et-les-scenarios-possibles",
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat — Calendrier et scénarios possibles pour le budget 2027",
+   "note": "Analyse factuelle et détaillée du calendrier constitutionnel, des délais et des options procédurales."
+  }
+ ],
+ "subject": "Après le rejet unanime du budget 2027 par l’Assemblée nationale début novembre, le Sénat prend la main à partir du 20 novembre pour examiner le projet de loi de finances, dans un contexte de fracture politique profonde.",
+ "question": "Si le Sénat adopte une version du budget radicalement différente de celle que souhaitait l’Assemblée, et que la CMP échoue, qui doit trancher : le gouvernement avec le 49.3, le Président avec une dissolution, ou les ordonnances ? Et quel scénario vous semble le plus légitime démocratiquement ?",
+ "consulted": [
+  {
+   "url": "https://www.moneyvox.fr/impot/actualites/111122/assemblee-rejette-a-unanimite-un-budget-2027-profondement-transforme-le-texte-part-au-senat",
+   "name": "Moneyvox — Budget 2027 : l’Assemblée rejette à l’unanimité, le texte part au Sénat"
+  },
+  {
+   "url": "https://fr.euronews.com/2026/11/05/budget-2027-lassemblee-nationale-rejette-le-texte-a-lunanimite",
+   "name": "Euronews FR — Budget 2027 : l’Assemblée nationale rejette le texte à l’unanimité"
+  },
+  {
+   "url": "https://www.dhnet.be/dernieres-depeches/2026/09/17/lecornu-presente-un-budget-offensif-avec-54-milliards-deconomies-IYYWKDHHKBEGHBRO7Q3SKUDTXA/",
+   "name": "Dhnet — Lecornu présente un budget offensif avec 54 milliards d’économies"
+  }
+ ],
+ "generated": "2026-11-16",
+ "categories": [
+  "Économie et budget",
+  "Vie démocratique"
+ ]
+}

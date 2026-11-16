@@ -1,0 +1,64 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-03",
+ "type": "institutions",
+ "local": [],
+ "terms": [
+  {
+   "def": "Signature que le Premier ministre, et parfois les ministres concernés, doit apposer sur un acte du Président pour lui donner force juridique. Un acte contresigné engage à la fois le Président et le gouvernement.",
+   "term": "Contreseing"
+  },
+  {
+   "def": "Actes que le Président peut décider seul, sans avoir besoin du contreseing du Premier ministre. Ils sont limitativement listés à l'article 19 de la Constitution : nomination du Premier ministre, référendum, dissolution de l'Assemblée nationale, pouvoirs exceptionnels, messages au Parlement et saisines du Conseil constitutionnel.",
+   "term": "Pouvoirs propres"
+  },
+  {
+   "def": "Décision du Président de mettre fin au mandat des députés avant son terme normal et d'organiser de nouvelles élections législatives entre vingt et quarante jours après. Une nouvelle dissolution ne peut pas intervenir dans l'année qui suit ces élections.",
+   "term": "Dissolution de l'Assemblée nationale"
+  },
+  {
+   "def": "Expression non écrite dans la Constitution, désignant les domaines que les présidents de la Ve République ont coutume de traiter en priorité, indépendamment du gouvernement : politique étrangère, défense nationale, affaires européennes. Cette pratique, héritée du général de Gaulle, n'a pas de base constitutionnelle explicite.",
+   "term": "Domaine réservé"
+  }
+ ],
+ "title": "Le Président de la République : ses pouvoirs réels",
+ "basics": [
+  "Imaginez un immeuble dont plusieurs personnes partagent la gestion : un gérant s'occupe des affaires quotidiennes, un conseil de copropriétaires vote les grandes décisions, et un président de l'assemblée générale veille à ce que tout le monde respecte les règles. En France, le Président de la République joue ce dernier rôle, mais avec bien plus d'autorité. La Constitution de 1958, fondatrice de la Ve République, lui confie trois missions fondamentales à l'article 5 : veiller au respect de la Constitution, assurer la continuité de l'État, et être le garant de l'indépendance nationale et de l'intégrité du territoire.",
+  "Depuis 1962, le Président est élu directement par les citoyens, au suffrage universel direct à deux tours. Pour être élu, un candidat doit obtenir la majorité absolue des voix. Si personne ne l'obtient au premier tour, les deux candidats arrivés en tête s'affrontent au second tour, quatorze jours plus tard. Le mandat dure cinq ans depuis la réforme de 2000, qui l'avait ramené de sept à cinq ans. Nul ne peut exercer plus de deux mandats consécutifs.",
+  "Certains pouvoirs appartiennent au Président seul : ce sont ses pouvoirs propres. L'article 19 de la Constitution précise que ces actes ne nécessitent pas la signature du Premier ministre. Parmi eux figurent la nomination du Premier ministre (article 8), l'organisation d'un référendum (article 11), la dissolution de l'Assemblée nationale (article 12) et l'activation des pouvoirs exceptionnels en cas de crise grave qui menacerait les institutions ou l'intégrité du territoire (article 16). Ces pouvoirs restent les siens même si le gouvernement et l'Assemblée nationale sont de sensibilité politique opposée.",
+  "La plupart des autres actes présidentiels doivent être contresignés par le Premier ministre ou les ministres concernés. Le Président nomme les autres membres du gouvernement, mais sur proposition du Premier ministre. Il préside le Conseil des ministres chaque semaine. Il signe les ordonnances et les décrets importants. L'article 15 fait de lui le chef des armées, et l'article 14 lui confie l'accréditation des ambassadeurs. En pratique, la politique étrangère et la défense nationale forment ce qu'on appelle le domaine réservé du Président, un usage non écrit dans la Constitution mais solidement ancré depuis le général de Gaulle.",
+  "À quelques mois de l'élection présidentielle d'avril 2027, comprendre les pouvoirs réels du Président aide à mesurer ce que chaque candidat pourra ou ne pourra pas décider seul. Beaucoup de promesses électorales dépendent du gouvernement et de la majorité parlementaire, pas uniquement de la volonté de l'Élysée."
+ ],
+ "stakes": [
+  "Comprendre les pouvoirs du Président aide à suivre les débats sur l'équilibre institutionnel qui reviennent dans l'actualité : faut-il renforcer le Parlement face à un exécutif fort, comment se répartissent les responsabilités en période de cohabitation, et quelle marge de manoeuvre réelle détient l'Élysée pour mettre en oeuvre un programme électoral ?"
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 (articles 5 à 19)",
+   "note": "référence institutionnelle officielle"
+  }
+ ],
+ "subject": "Le Président de la République est élu pour cinq ans au suffrage universel direct et dispose, selon la Constitution de 1958, d'un rôle d'arbitre et de garant, ainsi que de pouvoirs propres qu'il peut exercer sans l'accord du gouvernement.",
+ "question": "La Constitution confie au Président des pouvoirs qu'il exerce seul, sans l'accord du gouvernement : cette concentration de décisions entre les mains d'une seule personne est-elle une garantie de stabilité ou un risque pour l'équilibre démocratique ?",
+ "consulted": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958 en vigueur"
+  }
+ ],
+ "generated": "2026-11-03",
+ "categories": [
+  "Vie démocratique"
+ ]
+}
