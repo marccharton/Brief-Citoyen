@@ -7,7 +7,7 @@ Un sujet de politique française chaque matin de semaine, expliqué depuis les b
 
 Ce fichier est public : il ne contient que la partie technique. L'intention du projet, l'historique et les décisions sont dans le Google Drive pro de Marc (connecteur Google Drive) :
 
-- Document à lire en premier : `Outils / Claude / Mémoire globale / Dépôt · Brief-Citoyen / Contexte : Brief citoyen`
+- Document à lire en premier : `Outils / Claude / Mémoire globale / Dépôt · Brief-Citoyen / contexte-brief-citoyen.md` (remplace l'ancien Google Doc « Contexte : Brief citoyen », figé au 28/10/2026)
 - Puis, pour le contexte général de Marc : `Outils / Claude / Mémoire globale / memoire-globale.md`, copie de sa mémoire Claude régénérée chaque nuit
 - Convention générale : `Outils / Claude / Lisez-moi : organisation du contexte Claude`
 
@@ -58,6 +58,7 @@ Voir le README pour le schéma complet. Champs : date, type (« actualite » ou 
 - Une tâche planifiée rédige un brief chaque matin de semaine vers 7 h 47 et l'insère dans la table Supabase briefs ; la GitHub Action le publie ensuite. Ne pas casser ce contrat (nom des champs, table et colonnes, build.py et fetch_supabase.py sans argument).
 - Ne jamais modifier un brief directement dans data/briefs/ : la prochaine exécution de l'Action l'écraserait avec la version de Supabase. Corriger la ligne en base.
 - Projet Supabase « brief-citoyen » (organisation New Focus, région eu-west-3). Seule la clé publique sert, et uniquement via les secrets GitHub ; aucune clé dans le dépôt.
+- build.py ajoute à chaque lien vers assets/ un paramètre ?v=<empreinte du fichier>, y compris dans index.html, brief/index.html et 404.html : relancer build.py après toute modification d'un fichier de assets/, sinon les navigateurs gardent l'ancienne version en cache.
 - Le rendu d'un brief est dans assets/brief.js (plus dans build.py) : c'est lui qui doit rester rétrocompatible avec les anciens briefs (champs absents, anciens briefs sans consulted). Les libellés de type et de catégorie viennent de data/index.json, donc de build.py.
 - Toute modification de build.py doit garder la rétrocompatibilité avec les briefs existants (champs absents, anciens briefs sans consulted).
 - Français correct avec tous les accents et toutes les apostrophes, dans le code comme dans les textes. Jamais le caractère « — ».

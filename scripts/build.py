@@ -8,6 +8,7 @@ Les pages index.html et brief/index.html sont des coquilles statiques écrites �
 main : elles chargent les JSON en JavaScript, build.py n'y touche pas.
 Uniquement la bibliothèque standard de Python.
 """
+import hashlib
 import html
 import json
 import re
@@ -395,6 +396,31 @@ def render_about(briefs):
     return "\n".join(out)
 
 
+# Numéro de version des fichiers de assets/ (empreinte de leur contenu), ajouté en ?v=... à chaque
+# lien : un navigateur ou le cache de GitHub Pages ne sert plus une ancienne version après une mise à jour.
+ASSET_RE = re.compile(r'(assets/([a-z-]+\.(?:css|js)))(\?v=[0-9a-f]+)?"')
+
+
+def asset_version(name):
+    f = ROOT / "assets" / name
+    return hashlib.sha1(f.read_bytes()).hexdigest()[:10] if f.exists() else ""
+
+
+def versioned(text):
+    return ASSET_RE.sub(lambda m: f'{m.group(1)}?v={asset_version(m.group(2))}"' if asset_version(m.group(2)) else m.group(0), text)
+
+
+def version_shells():
+    """Met à jour les ?v= des coquilles statiques écrites à la main."""
+    for rel in ("index.html", "brief/index.html", "404.html"):
+        f = ROOT / rel
+        if f.exists():
+            old = f.read_text(encoding="utf-8")
+            new = versioned(old)
+            if new != old:
+                f.write_text(new, encoding="utf-8")
+
+
 def main():
     briefs = load()
     if not briefs:
@@ -411,7 +437,8 @@ def main():
     (ROOT / "feed.xml").write_text(render_feed(briefs), encoding="utf-8")
     about = ROOT / "comment-c-est-fait" / "index.html"
     about.parent.mkdir(exist_ok=True)
-    about.write_text(render_about(briefs), encoding="utf-8")
+    about.write_text(versioned(render_about(briefs)), encoding="utf-8")
+    version_shells()
     print(f"{len(briefs)} briefs indexés.")
 
 
