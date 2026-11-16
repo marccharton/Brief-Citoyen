@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief citoyen</title>
+<meta name="description" content="Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.">
+<meta property="og:site_name" content="Brief citoyen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Brief citoyen">
+<meta property="og:description" content="Un sujet de politique française chaque matin de semaine, expliqué depuis les bases, avec les arguments des deux côtés et des sources pour creuser.">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" title="Brief citoyen" href="../feed.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231A2B42'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h9' stroke='%23B0C4DE' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,650;1,7..72,500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<!-- Coquille d'un brief : le contenu est chargé par assets/brief.js depuis data/briefs/<id>.json (adresse : brief/?id=AAAA-MM-JJ). -->
+<header class="band"><div class="wrap">
+<a class="back" href="../">← Tous les briefs</a>
+<p class="eyebrow" id="eyebrow"><span>Brief citoyen</span></p>
+<h1 id="title">Chargement du brief…</h1>
+<p class="subject" id="subject" hidden></p>
+<div class="tools" id="tools" hidden>
+<button class="tool" type="button" id="share">Partager le lien</button>
+<button class="tool" type="button" id="pdf">Télécharger le PDF</button>
+<span class="toast" id="toast" role="status"></span>
+</div>
+</div></header>
+<main class="wrap article" id="content"></main>
+<noscript><main class="wrap article"><p>Cette page a besoin de JavaScript pour afficher le brief. Les données brutes sont dans le dossier data/briefs du dépôt GitHub.</p></main></noscript>
+<footer class="foot"><div class="wrap">
+<p>Brief citoyen est entièrement rédigé par une intelligence artificielle, à partir de sources publiques citées dans chaque brief. C'est un outil de vulgarisation : il peut contenir des imprécisions, et les sources font foi.</p>
+<p><a href="../">Tous les briefs</a> · <a href="../comment-c-est-fait/">Comment c'est fait</a> · <a href="../feed.xml">Flux RSS</a> · <a href="https://marccharton.github.io/">Marc Charton</a></p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="../assets/brief-pdf.js" defer></script>
+<script src="../assets/common.js" defer></script>
+<script src="../assets/brief.js" defer></script>
+</body>
+</html>

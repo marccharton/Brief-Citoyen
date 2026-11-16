@@ -2,7 +2,10 @@
 """Construit le site Brief citoyen à partir de data/briefs/*.json.
 
 Usage : python3 scripts/build.py
-Produit : index.html (liste), <id>/index.html (un brief), feed.xml (flux RSS).
+Produit : data/index.json (liste légère lue par index.html et brief/index.html),
+feed.xml (flux RSS) et comment-c-est-fait/index.html.
+Les pages index.html et brief/index.html sont des coquilles statiques écrites à la
+main : elles chargent les JSON en JavaScript, build.py n'y touche pas.
 Uniquement la bibliothèque standard de Python.
 """
 import html
@@ -75,11 +78,6 @@ def date_long(s):
     return f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]} {d.year}"
 
 
-def date_short(s):
-    d = parse_date(s)
-    return f"{d.day} {MOIS[d.month - 1]}"
-
-
 def is_https(u):
     return isinstance(u, str) and u.startswith("https://")
 
@@ -139,183 +137,26 @@ FOOT = """<footer class="foot"><div class="wrap">
 """
 
 
-def render_brief(b, prev_b, next_b):
-    prefix = "../"
-    url = f"{SITE_URL}{b['id']}/"
-    is_inst = btype(b) == "institutions"
-    title = f"{b['title']} · {SITE_NAME}"
-    out = [head(title, b.get("subject") or SITE_DESC, url, prefix, "article")]
-
-    theme = f'<span class="dot">·</span><span>{e(TYPES[btype(b)])}</span>' + "".join(f'<span class="dot">·</span><span>{e(c)}</span>' for c in bcats(b))
-    out.append(f"""<header class="band"><div class="wrap">
-<a class="back" href="{prefix}">← Tous les briefs</a>
-<p class="eyebrow"><span>Brief citoyen</span><span class="dot">·</span><time datetime="{e(b['date'])}">{e(date_long(b['date']))}</time>{theme}</p>
-<h1>{e(b['title'])}</h1>
-{f'<p class="subject">{e(b["subject"])}</p>' if b.get('subject') else ''}
-<div class="tools">
-<button class="tool" type="button" id="share">Partager le lien</button>
-<button class="tool" type="button" id="pdf">Télécharger le PDF</button>
-<span class="toast" id="toast" role="status"></span>
-</div>
-</div></header>
-<main class="wrap article">""")
-
-    basics, terms = lst(b.get("basics")), [t for t in lst(b.get("terms")) if isinstance(t, dict) and t.get("term")]
-    if basics or terms:
-        out.append('<section class="basics' + (' with-terms' if terms else '') + '">')
-        out.append(f'<div class="prose"><h2 class="kicker">{"L’éclairage" if is_inst else "Les bases"}</h2>')
-        out += [f"<p>{e(p)}</p>" for p in basics]
-        out.append("</div>")
-        if terms:
-            out.append('<aside class="terms"><h2 class="kicker">Les mots à connaître</h2><dl>')
-            out += [f"<div><dt>{e(t['term'])}</dt><dd>{e(t.get('def', ''))}</dd></div>" for t in terms]
-            out.append("</dl></aside>")
-        out.append("</section>")
-
-    stakes = lst(b.get("stakes"))
-    if stakes:
-        out.append(f'<section class="box stakes"><h2 class="kicker">{"Pourquoi ça compte" if is_inst else "Ce qui se joue"}</h2>')
-        out += [f"<p>{e(p)}</p>" for p in stakes]
-        out.append("</section>")
-
-    pro, con = b.get("pro") or {}, b.get("con") or {}
-    if lst(pro.get("args")) or lst(con.get("args")):
-        out.append('<section class="sides">')
-        for cls, s, default in (("pro", pro, "Pour"), ("con", con, "Contre")):
-            if not lst(s.get("args")):
-                continue
-            out.append(f'<div class="side {cls}"><h2>{e(s.get("label") or default)}</h2>')
-            if s.get("who"):
-                out.append(f'<p class="who">{e(s["who"])}</p>')
-            out.append("<ul>" + "".join(f"<li>{e(a)}</li>" for a in lst(s.get("args"))) + "</ul></div>")
-        out.append("</section>")
-
-    local = lst(b.get("local"))
-    if local:
-        out.append('<section class="box local"><h2 class="kicker">À Toulouse et en Occitanie</h2>')
-        out += [f"<p>{e(p)}</p>" for p in local]
-        out.append("</section>")
-
-    sources = [s for s in lst(b.get("sources")) if isinstance(s, dict) and s.get("name")]
-    if sources:
-        out.append('<section class="sources"><h2 class="kicker">Sources à creuser</h2><ul>')
-        for s in sources:
-            lean = str(s.get("lean") or "")
-            cls = "l" if "gauche" in lean.lower() else "r" if "droite" in lean.lower() else "n"
-            name = (f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a>'
-                    if is_https(s.get("url")) else e(s["name"]))
-            host = re.sub(r"^https://(www\.)?", "", s["url"]).split("/")[0] if is_https(s.get("url")) else ""
-            out.append(f'<li class="{cls}"><span class="lean">{e(lean)}</span><span class="name">{name}</span>'
-                       + (f'<span class="note">{e(s["note"])}</span>' if s.get("note") else "")
-                       + (f'<span class="host">{e(host)}</span>' if host else "") + "</li>")
-        out.append("</ul></section>")
-
-    if b.get("question"):
-        out.append(f'<section class="question"><h2 class="kicker">Pour se faire un avis</h2><p>{e(b["question"])}</p></section>')
-
-    consulted = [s for s in lst(b.get("consulted")) if isinstance(s, dict) and s.get("name")]
-    used, note = consulted, ""
-    if not used:
-        used = sources
-        note = ("La liste complète des sources consultées n'a pas été conservée pour ce brief, publié avant "
-                "l'ajout de cette rubrique : seules les sources citées plus haut sont indiquées.")
-    if used:
-        items = []
-        for s in used:
-            label = e(s["name"])
-            if is_https(s.get("url")):
-                host = re.sub(r"^https://(www\.)?", "", s["url"]).split("/")[0]
-                items.append(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{label}</a> <span class="h">{e(host)}</span></li>')
-            else:
-                items.append(f"<li>{label}</li>")
-        out.append('<section class="used"><h2 class="kicker">Sources utilisées pour ce brief</h2>'
-                   + (f'<p class="note">{e(note)}</p>' if note else
-                      '<p class="note">Toutes les pages consultées pour construire ce brief, y compris celles qui ne sont pas citées plus haut.</p>')
-                   + '<ol>' + "".join(items) + '</ol></section>')
-
-    nav = []
-    if next_b:
-        nav.append(f'<a class="nav-prev" href="{prefix}{next_b["id"]}/"><span>Brief suivant</span>{e(next_b["title"])}</a>')
-    if prev_b:
-        nav.append(f'<a class="nav-next" href="{prefix}{prev_b["id"]}/"><span>Brief précédent</span>{e(prev_b["title"])}</a>')
-    if nav:
-        out.append('<nav class="pager">' + "".join(nav) + "</nav>")
-    out.append("</main>")
-
-    data = {k: v for k, v in b.items() if k not in ("imported", "id")}
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    out.append(f"""<script type="application/json" id="brief-data">{payload}</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-<script src="{prefix}assets/brief-pdf.js" defer></script>
-<script src="{prefix}assets/brief.js" defer></script>""")
-    out.append(FOOT.format(prefix=prefix))
-    return "\n".join(out)
+def brief_url(bid):
+    return f"{SITE_URL}brief/?id={bid}"
 
 
-def render_index(briefs):
-    prefix = ""
-    out = [head(f"{SITE_NAME} · un sujet politique expliqué chaque matin", SITE_DESC, SITE_URL, prefix)]
-    used = {c for b in briefs for c in bcats(b)}
-    cats = [c for c in CATEGORY_NAMES if c in used]
-    type_chips = "".join(f'<button class="chip" type="button" data-type="{k}" aria-pressed="false">{e(v)}</button>' for k, v in TYPES.items())
-    cat_chips = "".join(f'<button class="chip" type="button" data-cat="{e(c)}" aria-pressed="false">{e(c)}</button>' for c in cats)
-    out.append(f"""<header class="band home"><div class="wrap">
-<p class="eyebrow"><span>Politique française</span><span class="dot">·</span><span>{len(briefs)} brief{'s' if len(briefs) > 1 else ''}</span></p>
-<h1>{SITE_NAME}</h1>
-<p class="subject">{e(SITE_DESC)}</p>
-<p class="howto"><a href="comment-c-est-fait/">Comment c'est fait, et ses limites →</a></p>
-</div></header>
-<main class="wrap">
-<div class="filters" id="filters">
-<div class="frow" data-group="type"><span class="flabel">Type</span><button class="chip" type="button" data-type="" aria-pressed="true">Tous</button>{type_chips}</div>
-<div class="frow" data-group="cat"><span class="flabel">Catégorie</span><button class="chip" type="button" data-cat="" aria-pressed="true">Toutes</button>{cat_chips}</div>
-</div>
-<ol class="list" id="list">""")
-    month = None
-    for b in briefs:
-        d = parse_date(b["date"])
-        m = f"{MOIS[d.month - 1].capitalize()} {d.year}"
-        if m != month:
-            out.append(f'<li class="month">{e(m)}</li>')
-            month = m
-        out.append(f"""<li class="item" data-type="{btype(b)}" data-cats="{e('|'.join(bcats(b)))}"><a href="{b['id']}/">
-<span class="when"><span class="d">{JOURS[d.weekday()][:3]}.</span><span class="n">{d.day}</span></span>
-<span class="body"><span class="meta"><span class="type {btype(b)}">{e(TYPES[btype(b)])}</span>{''.join(f'<span class="cat">{e(c)}</span>' for c in bcats(b))}</span><span class="t">{e(b['title'])}</span><span class="s">{e(b.get('subject', ''))}</span></span>
-</a></li>""")
-    out.append("""</ol>
-</main>
-<script>
-(function(){
-  var box = document.getElementById('filters'); if (!box) return;
-  var sel = {type: '', cat: ''};
-  box.addEventListener('click', function(ev){
-    var c = ev.target.closest('.chip'); if (!c) return;
-    var row = c.closest('.frow'), g = row.getAttribute('data-group');
-    sel[g] = c.getAttribute(g === 'type' ? 'data-type' : 'data-cat');
-    row.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
-    document.querySelectorAll('#list .item').forEach(function(it){
-      var okT = !sel.type || it.getAttribute('data-type') === sel.type;
-      var okC = !sel.cat || it.getAttribute('data-cats').split('|').indexOf(sel.cat) >= 0;
-      it.hidden = !(okT && okC);
-    });
-    document.querySelectorAll('#list .month').forEach(function(mo){
-      var n = mo.nextElementSibling, any = false;
-      while (n && !n.classList.contains('month')){ if (!n.hidden) any = true; n = n.nextElementSibling; }
-      mo.hidden = !any;
-    });
-  });
-})();
-</script>""")
-    out.append(FOOT.format(prefix=prefix))
-    return "\n".join(out)
+def render_index_json(briefs):
+    """Liste légère, du plus récent au plus ancien, avec les libellés communs."""
+    return json.dumps({
+        "types": TYPES,
+        "categories": [{"name": c, "desc": d} for c, d in CATEGORIES],
+        "briefs": [{"id": b["id"], "date": b["date"], "title": b["title"], "subject": b.get("subject", ""),
+                    "type": btype(b), "categories": bcats(b)} for b in briefs],
+    }, ensure_ascii=False, indent=1) + "\n"
 
 
 def render_feed(briefs):
     items = []
     for b in briefs[:30]:
         d = parse_date(b["date"]).replace(hour=7, minute=47, tzinfo=timezone.utc)
-        items.append(f"""<item><title>{e(b['title'])}</title><link>{SITE_URL}{b['id']}/</link>
-<guid isPermaLink="true">{SITE_URL}{b['id']}/</guid><pubDate>{format_datetime(d)}</pubDate>
+        items.append(f"""<item><title>{e(b['title'])}</title><link>{e(brief_url(b['id']))}</link>
+<guid isPermaLink="true">{e(brief_url(b['id']))}</guid><pubDate>{format_datetime(d)}</pubDate>
 <description>{e(b.get('subject', ''))}</description>{''.join(f"<category>{e(c)}</category>" for c in bcats(b))}</item>""")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>{SITE_NAME}</title><link>{SITE_URL}</link>
@@ -479,26 +320,20 @@ def main():
     briefs = load()
     if not briefs:
         sys.exit("Aucun brief trouvé dans data/briefs/")
-    keep = {b["id"] for b in briefs}
+    # Anciennes pages générées (<id>/index.html à la racine) : remplacées par brief/?id=<id>.
     for d in ROOT.iterdir():
-        if d.is_dir() and ID_RE.match(d.name) and d.name not in keep:
+        if d.is_dir() and ID_RE.match(d.name):
             (d / "index.html").unlink(missing_ok=True)
             try:
                 d.rmdir()
             except OSError:
                 pass
-    for i, b in enumerate(briefs):
-        nxt = briefs[i - 1] if i > 0 else None
-        prv = briefs[i + 1] if i + 1 < len(briefs) else None
-        page = ROOT / b["id"] / "index.html"
-        page.parent.mkdir(exist_ok=True)
-        page.write_text(render_brief(b, prv, nxt), encoding="utf-8")
-    (ROOT / "index.html").write_text(render_index(briefs), encoding="utf-8")
+    (ROOT / "data" / "index.json").write_text(render_index_json(briefs), encoding="utf-8")
     (ROOT / "feed.xml").write_text(render_feed(briefs), encoding="utf-8")
     about = ROOT / "comment-c-est-fait" / "index.html"
     about.parent.mkdir(exist_ok=True)
     about.write_text(render_about(briefs), encoding="utf-8")
-    print(f"{len(briefs)} briefs construits.")
+    print(f"{len(briefs)} briefs indexés.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,156 @@
+{
+ "types": {
+  "actualite": "Actualité",
+  "institutions": "Comprendre les institutions"
+ },
+ "categories": [
+  {
+   "name": "Économie et budget",
+   "desc": "Finances publiques, impôts, pouvoir d'achat, entreprises, emploi."
+  },
+  {
+   "name": "Protection sociale",
+   "desc": "Retraites, santé, Sécurité sociale, chômage, aides sociales."
+  },
+  {
+   "name": "Vie démocratique",
+   "desc": "Élections, partis, Parlement, Constitution, fonctionnement des institutions."
+  },
+  {
+   "name": "Justice et sécurité",
+   "desc": "Justice, police, ordre public, libertés publiques."
+  },
+  {
+   "name": "Environnement et énergie",
+   "desc": "Climat, biodiversité, énergie, agriculture."
+  },
+  {
+   "name": "Territoires et quotidien",
+   "desc": "Collectivités locales, transports, logement, Toulouse et Occitanie."
+  },
+  {
+   "name": "Europe et international",
+   "desc": "Union européenne, relations internationales, défense."
+  },
+  {
+   "name": "Éducation et culture",
+   "desc": "École, université, recherche, culture, médias."
+  },
+  {
+   "name": "Société",
+   "desc": "Mobilisations, égalité, immigration, numérique, vie quotidienne."
+  }
+ ],
+ "briefs": [
+  {
+   "id": "2026-11-02",
+   "date": "2026-11-02",
+   "title": "Le mouvement lycéen de 2026",
+   "subject": "Depuis la mi-septembre 2026, des lycéens se mobilisent dans toute la France pour réclamer plus de moyens dans leurs établissements : davantage d'enseignants remplaçants, des classes moins chargées et des bâtiments rénovés. Les lycées rouvrent ce lundi 2 novembre après deux semaines de vacances de la Toussaint, et une grande journée de grève intersectorielle est annoncée pour le 5 novembre.",
+   "type": "actualite",
+   "categories": [
+    "Éducation et culture",
+    "Société"
+   ]
+  },
+  {
+   "id": "2026-10-29",
+   "date": "2026-10-29",
+   "title": "La Constitution : le texte fondamental",
+   "subject": "La Constitution française, adoptée le 4 octobre 1958, est le texte de loi suprême qui organise les institutions de la République et garantit les droits fondamentaux.",
+   "type": "institutions",
+   "categories": [
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-10-28",
+   "date": "2026-10-28",
+   "title": "La loi casseurs payeurs",
+   "subject": "Le Sénat a adopté le 28 octobre 2026 un projet de loi prévu pour mieux sanctionner les violences en manifestation, comportant trois nouvelles mesures : la saisie possible des prestations sociales, l'élargissement des interdictions de manifester et la faculté de bloquer temporairement des réseaux sociaux.",
+   "type": "actualite",
+   "categories": [
+    "Justice et sécurité",
+    "Protection sociale",
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-10-27",
+   "date": "2026-10-27",
+   "title": "Glucksmann et la primaire de la gauche",
+   "subject": "Raphaël Glucksmann a remporté la primaire de la gauche unitaire le 11 octobre 2026 avec 66 % des voix, se positionnant comme candidat de la gauche non-insoumise pour l'élection présidentielle de 2027.",
+   "type": "actualite",
+   "categories": [
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-10-26",
+   "date": "2026-10-26",
+   "title": "La retraite à 64 ans suspendue",
+   "subject": "La réforme des retraites de 2023, qui avait repoussé l'âge légal de départ à 64 ans, a été suspendue par le gouvernement Bayrou en 2026, sans que la question du financement du système soit résolue.",
+   "type": "actualite",
+   "categories": [
+    "Protection sociale",
+    "Économie et budget"
+   ]
+  },
+  {
+   "id": "2026-10-23",
+   "date": "2026-10-23",
+   "title": "Le budget de la Sécurité sociale 2027",
+   "subject": "L'Assemblée nationale examine le projet de loi de financement de la Sécurité sociale pour 2027, qui prévoit de réduire de moitié le déficit en limitant la hausse des pensions de retraite et certaines prestations familiales.",
+   "type": "actualite",
+   "categories": [
+    "Protection sociale",
+    "Économie et budget"
+   ]
+  },
+  {
+   "id": "2026-10-22",
+   "date": "2026-10-22",
+   "title": "Le budget 2027 en débat à l'Assemblée",
+   "subject": "Le projet de loi de finances pour 2027 est examiné à l'Assemblée nationale depuis début octobre 2026, avec un effort budgétaire de 54 milliards d'euros pour réduire le déficit public.",
+   "type": "actualite",
+   "categories": [
+    "Économie et budget",
+    "Vie démocratique"
+   ]
+  },
+  {
+   "id": "2026-10-19-b",
+   "date": "2026-10-19",
+   "title": "Qui doit financer les transports en commun ?",
+   "subject": "Les réseaux de transports en commun des grandes agglomérations françaises font face à une crise de financement : les coûts augmentent, les collectivités locales peinent à suivre, et le débat sur la répartition de l'effort entre usagers, employeurs, collectivités et État est relancé.",
+   "type": "actualite",
+   "categories": [
+    "Territoires et quotidien",
+    "Économie et budget"
+   ]
+  },
+  {
+   "id": "2026-10-19",
+   "date": "2026-10-19",
+   "title": "La mobilisation « vie chère » du 17 octobre",
+   "subject": "Le samedi 17 octobre, des cortèges ont défilé dans toute la France contre la hausse du coût de la vie, et la journée a été marquée par des violences dans plusieurs villes.",
+   "type": "actualite",
+   "categories": [
+    "Société",
+    "Économie et budget",
+    "Justice et sécurité"
+   ]
+  },
+  {
+   "id": "2026-10-16",
+   "date": "2026-10-16",
+   "title": "Budget 2027 : retraites, arrêts maladie et APL dans la balance",
+   "subject": "Le gouvernement présente son projet de budget pour 2027 avec des mesures concrètes sur les pensions de retraite, les indemnités en cas d'arrêt maladie et les aides au logement, ce qui ouvre un débat sur la répartition des efforts.",
+   "type": "actualite",
+   "categories": [
+    "Économie et budget",
+    "Protection sociale"
+   ]
+  }
+ ]
+}

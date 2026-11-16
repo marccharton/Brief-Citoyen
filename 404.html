@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page introuvable · Brief citoyen</title>
+<script>
+// Anciennes adresses (/Brief-Citoyen/AAAA-MM-JJ/) : redirection vers la nouvelle page brief/?id=AAAA-MM-JJ.
+(function(){
+  var m = location.pathname.match(/^(.*?\/)(\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)?)\/?(index\.html)?$/);
+  if (m) location.replace(m[1] + 'brief/?id=' + m[2]);
+})();
+</script>
+<link rel="stylesheet" href="/Brief-Citoyen/assets/style.css">
+</head>
+<body>
+<header class="band"><div class="wrap">
+<a class="back" href="/Brief-Citoyen/">← Tous les briefs</a>
+<h1>Page introuvable</h1>
+<p class="subject">Cette adresse ne correspond à aucune page du site.</p>
+</div></header>
+</body>
+</html>

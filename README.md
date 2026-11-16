@@ -8,10 +8,11 @@ Site : https://marccharton.github.io/Brief-Citoyen/
 
 - Supabase, table `public.briefs` : la source de vérité. Une ligne par brief (`id`, `data` avec le JSON complet ; `date`, `type` et `categories` en sont recopiés automatiquement et contrôlés par la base). Lecture publique, écriture réservée au serveur.
 - `scripts/fetch_supabase.py` : recopie la table dans `data/briefs/<id>.json` (Python standard, sans dépendance).
-- `scripts/build.py` : génère le site à partir des JSON.
-- `.github/workflows/build.yml` : GitHub Action qui enchaîne les deux scripts puis pousse sur `main`, du lundi au vendredi après la rédaction, ou à la demande (onglet Actions, « Run workflow »).
-- `index.html`, `<AAAA-MM-JJ>/index.html`, `feed.xml` : fichiers générés, publiés par GitHub Pages.
-- `assets/` : style, script de la page, générateur de PDF (jsPDF).
+- `scripts/build.py` : génère `data/index.json` (liste légère des briefs), `feed.xml` et la page « Comment c'est fait ».
+- `.github/workflows/build.yml` : GitHub Action qui enchaîne les deux scripts puis pousse sur `main` : du lundi au vendredi après la rédaction, un passage de rattrapage chaque jour à 17 h 23 UTC, à la demande (onglet Actions, « Run workflow ») ou par un `repository_dispatch` de type `brief-publie`.
+- `index.html` et `brief/index.html` : coquilles statiques, écrites à la main. Elles chargent les JSON en JavaScript : la liste lit `data/index.json`, un brief s'affiche à l'adresse `brief/?id=AAAA-MM-JJ` et lit `data/briefs/<id>.json`.
+- `404.html` : redirige les anciennes adresses `/<AAAA-MM-JJ>/` vers `brief/?id=AAAA-MM-JJ`.
+- `assets/` : style, scripts des pages (`common.js`, `index.js`, `brief.js`), générateur de PDF (jsPDF).
 
 Ajouter un brief : insérer une ligne dans la table `briefs` (`insert into public.briefs (id, data) values (...)`), puis attendre la GitHub Action ou la lancer à la main. Une tâche planifiée Claude rédige un brief chaque matin de semaine.
 
