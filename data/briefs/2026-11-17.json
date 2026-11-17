@@ -1,0 +1,103 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-17",
+ "type": "institutions",
+ "fiche": {
+  "choix": "Les notions 01 à 05 (Constitution, Président de la République, Premier ministre, Assemblée nationale, Sénat) ont déjà été publiées, la première notion de la progression non encore traitée est donc la 06, Voter une loi.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [],
+  "candidats": [],
+  "consignes": "v1",
+  "recherches": [],
+  "progression": "Notion 06 sur 20 : Voter une loi"
+ },
+ "local": [],
+ "terms": [
+  {
+   "def": "Va-et-vient d’un texte entre l’Assemblée nationale et le Sénat, jusqu’à ce que les deux assemblées votent le même texte.",
+   "term": "Navette"
+  },
+  {
+   "def": "Proposition de modification d’un texte de loi, déposée par un parlementaire ou par le Gouvernement.",
+   "term": "Amendement"
+  },
+  {
+   "def": "Groupe de sept députés et sept sénateurs chargé de proposer un texte de compromis entre les deux assemblées.",
+   "term": "Commission mixte paritaire (CMP)"
+  },
+  {
+   "def": "Acte par lequel le Président de la République signe la loi votée pour la rendre exécutoire.",
+   "term": "Promulgation"
+  }
+ ],
+ "title": "Voter une loi : le parcours d’un texte",
+ "basics": [
+  "Une loi ressemble à un règlement de copropriété qui ne devient applicable qu’après plusieurs votes et une signature. [IA] Tout commence par une initiative : un texte proposé par le Gouvernement s’appelle un projet de loi, et un texte proposé par des députés ou des sénateurs s’appelle une proposition de loi. [1] Un projet de loi est délibéré en Conseil des ministres après avis du Conseil d’État, puis déposé sur le bureau de l’Assemblée nationale ou du Sénat. [2]",
+  "Le texte passe d’abord en commission, un petit groupe de parlementaires spécialisés, comparable à un atelier de relecture avant la grande réunion. [IA] Un rapporteur y présente un rapport, et les membres de la commission adoptent des amendements puis votent sur l’ensemble du texte. [1] Le texte est ensuite discuté en séance publique : discussion générale, examen article par article, puis vote sur l’ensemble avant transmission à l’autre assemblée. [1] En première lecture, cette discussion ne peut avoir lieu qu’après un délai de six semaines devant la première assemblée et de quatre semaines devant la seconde, sauf procédure accélérée et pour certains textes comme les lois de finances. [2]",
+  "Pour devenir une loi, le texte doit être voté dans les mêmes termes par l’Assemblée nationale et par le Sénat, d’où les allers-retours appelés navette, comme deux relecteurs qui se renvoient un document jusqu’à tomber d’accord. [1,2] En cas de désaccord, le Premier ministre (ou, pour une proposition de loi, les présidents des deux assemblées) peut convoquer une commission mixte paritaire de sept députés et sept sénateurs, chargée de proposer un texte de compromis. [1,2] Si ce compromis n’aboutit pas, le Gouvernement peut demander à l’Assemblée nationale de statuer définitivement, après une nouvelle lecture dans chaque assemblée. [2] Selon le Sénat, depuis 1959, sept lois sur huit ont été adoptées par accord entre les deux assemblées, et environ une sur huit après un dernier mot de l’Assemblée nationale. [1]",
+  "Une fois le texte adopté, il peut être déféré au Conseil constitutionnel avant sa promulgation par le Président de la République, le Premier ministre, le président de l’Assemblée nationale, le président du Sénat, soixante députés ou soixante sénateurs. [2] Le Conseil statue dans le délai d’un mois, et sa saisine suspend le délai de promulgation. [2] Les lois organiques doivent obligatoirement lui être soumises avant leur promulgation. [2]",
+  "Le Président de la République dispose ensuite de quinze jours pour promulguer la loi, c’est-à-dire la signer pour la rendre exécutoire. [3] Il ne peut pas refuser cette promulgation, mais il peut demander au Parlement une nouvelle délibération, qui ne peut être refusée et qui n’a été utilisée qu’en 1983, 1985 et 2003 selon la fiche de Vie publique mise à jour en janvier 2024. [2,3] La loi entre en vigueur à la date qu’elle fixe ou, à défaut, le lendemain de sa publication au Journal officiel. [3] Les projets de loi de finances et de financement de la sécurité sociale sont soumis en premier lieu à l’Assemblée nationale et suivent des délais particuliers : si le Parlement ne s’est pas prononcé en soixante-dix jours, le projet de loi de finances peut être mis en vigueur par ordonnance. [2]"
+ ],
+ "stakes": [
+  "Comprendre ce mécanisme aide à suivre les débats sur le budget de l’État qui reviennent dans l’actualité. [IA]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958",
+   "note": "Articles 10, 39, 42, 45, 47 et 61 sur le parcours de la loi."
+  },
+  {
+   "url": "https://www.senat.fr/fileadmin/Seance/Documents/Infographies/NAVETTE_PARLEMENTAIRE_VF.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Sénat : la navette parlementaire (infographie)",
+   "note": "Les étapes de l’examen d’un texte, de la commission à la promulgation."
+  },
+  {
+   "url": "https://www.vie-publique.fr/fiches/19532-quand-la-loi-entre-t-elle-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Vie publique : quand la loi entre-t-elle en vigueur ?",
+   "note": "Promulgation, délai de quinze jours, publication au Journal officiel."
+  }
+ ],
+ "subject": "Une loi suit un parcours en plusieurs étapes, du dépôt du texte à sa promulgation par le Président de la République.",
+ "question": "Où placer le curseur entre le temps nécessaire à l’examen approfondi d’un texte et la rapidité demandée pour répondre à l’actualité ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.senat.fr/fileadmin/Seance/Documents/Infographies/NAVETTE_PARLEMENTAIRE_VF.pdf",
+   "name": "Sénat : La navette parlementaire (infographie)",
+   "type": "Source officielle",
+   "extrait": "une commission mixte paritaire (CMP), composée de 7 députés et 7 sénateurs, est convoquée"
+  },
+  {
+   "n": 2,
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "type": "Source officielle",
+   "extrait": "examiné successivement dans les deux assemblées du Parlement en vue de l'adoption d'un texte identique"
+  },
+  {
+   "n": 3,
+   "url": "https://www.vie-publique.fr/fiches/19532-quand-la-loi-entre-t-elle-en-vigueur",
+   "name": "Vie publique : Quand la loi entre-t-elle en vigueur ?",
+   "type": "Source officielle",
+   "extrait": "le président de la République dispose alors de quinze jours pour la promulguer"
+  }
+ ],
+ "generated": "2026-11-17",
+ "categories": [
+  "Vie démocratique"
+ ]
+}
