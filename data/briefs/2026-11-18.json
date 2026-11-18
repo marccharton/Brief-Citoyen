@@ -1,0 +1,296 @@
+{
+ "con": {
+  "who": "Groupes de gauche et, sur certains points, commission des affaires sociales du Sénat et gouvernement",
+  "args": [
+   "Les socialistes jugent que le délai d’un an de résidence imposé à certains étrangers pour les prestations familiales pose un problème éthique et politique. [6]",
+   "Selon la commission des affaires sociales du Sénat, le texte du gouvernement est essentiellement comptable et n’apporte pas de réponse durable aux déséquilibres des comptes sociaux. [2]",
+   "La même commission appelle à ne pas faire de la politique familiale une variable d’ajustement des politiques sociales. [2]",
+   "Elle estime que l’amélioration affichée du déficit de la branche maladie repose en partie sur des jeux d’écriture, car un transfert de 1,3 milliard d’euros d’indemnités de maternité en représente près de 30 %. [2]",
+   "Le gouvernement s’est fermement opposé au rétablissement de la réforme des retraites de 2023 voté par la majorité sénatoriale. [5]"
+  ],
+  "label": "Contre"
+ },
+ "pro": {
+  "who": "Gouvernement et majorité sénatoriale de droite et du centre, sur la nécessité de réduire rapidement le déficit",
+  "args": [
+   "Sans mesure nouvelle, le déficit de la Sécurité sociale grimperait à 22,6 milliards d’euros en 2027, selon le gouvernement. [1]",
+   "La dette publique a atteint 115,7 points de PIB en 2025, et le taux d’intérêt à dix ans de la France est d’environ 5 %, selon la commission des affaires sociales du Sénat. [2]",
+   "Selon cette commission, avec une dette de 120 points de PIB, un taux durablement à 5 % ferait payer plus de 6 points de PIB par an aux créanciers, autant en moins pour la protection sociale ou les services publics. [2]",
+   "Les sénateurs de la majorité affirment vouloir redresser les comptes sociaux sans nouvelles taxes. [5]",
+   "Selon la commission, rétablir la réforme des retraites de 2023 permet une économie de 600 millions d’euros sur l’année 2027. [2]"
+  ],
+  "label": "Pour"
+ },
+ "date": "2026-11-18",
+ "type": "actualite",
+ "fiche": {
+  "choix": "Le sujet retenu est le budget de la Sécurité sociale 2027 au Sénat, avec 9 points. Le candidat le mieux noté, l’encadrement des loyers avec 10 points, est écarté par la règle des 14 jours, faute de rebondissement acquis avant le vote prévu ce 18 novembre. Aucun média perçu plutôt à gauche n’a pu être ouvert avec les outils disponibles : les arguments de gauche reposent sur des propos rapportés par LCP et Public Sénat, et le critère sur les deux côtés est resté à 0 pour tous les candidats.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [],
+  "candidats": [
+   {
+    "score": {
+     "local": 1,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 2,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Encadrement des loyers : vote des députés sur la prolongation de deux ans",
+    "total": 10,
+    "raison": "Sujet traité le 4 novembre, soit 14 jours, et le vote des députés prévu ce 18 novembre n’avait pas encore eu lieu à l’heure de rédaction, donc aucun rebondissement acquis.",
+    "decision": "écarté",
+    "categorie": "Territoires et quotidien",
+    "nb_sources": 8
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 2,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Budget de la Sécurité sociale 2027 : le Sénat réécrit le texte du gouvernement",
+    "total": 9,
+    "raison": "Meilleur total parmi les sujets non écartés, effet direct sur pensions, remboursements et allocations (impact 2, jugement), et distinct du brief du 16 novembre qui portait sur le budget de l’État.",
+    "decision": "retenu",
+    "categorie": "Protection sociale",
+    "nb_sources": 11
+   },
+   {
+    "score": {
+     "local": 1,
+     "impact": 1,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Mobilisation sociale du 14 novembre (acte V contre la vie chère)",
+    "total": 8,
+    "raison": "Total inférieur à celui du sujet retenu, et mouvement déjà traité le 9 novembre.",
+    "decision": "écarté",
+    "categorie": "Société",
+    "nb_sources": 7
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": -1
+    },
+    "sujet": "Budget de l’État 2027 au Sénat (projet de loi de finances)",
+    "total": 7,
+    "raison": "Sujet traité le 16 novembre, soit 2 jours, sans rebondissement avant l’ouverture de l’examen en séance le 20 novembre, et catégorie identique au dernier brief Actualité.",
+    "decision": "écarté",
+    "categorie": "Économie et budget",
+    "nb_sources": 7
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 1,
+     "fraicheur": 2,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Primaire de la droite et du centre : Attal, Retailleau et Lisnard sans Édouard Philippe",
+    "total": 6,
+    "raison": "Sujet récent mais sans effet direct sur l’argent, les services publics ou les droits des personnes.",
+    "decision": "écarté",
+    "categorie": "Vie démocratique",
+    "nb_sources": 6
+   },
+   {
+    "score": {
+     "local": 1,
+     "impact": 1,
+     "variete": 1,
+     "fraicheur": 1,
+     "couverture": 2,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Violences dans les lycées : propos sur de possibles complicités de personnels",
+    "total": 6,
+    "raison": "Couverture plus faible, déclarations de plus de 48 heures et enquêtes encore en cours.",
+    "decision": "écarté",
+    "categorie": "Éducation et culture",
+    "nb_sources": 4
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 1,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Fausses alertes à la bombe en Europe et piste d’une ingérence étrangère",
+    "total": 5,
+    "raison": "Peu d’effet direct sur l’argent, les services ou les droits, et origine des alertes non établie.",
+    "decision": "écarté",
+    "categorie": "Justice et sécurité",
+    "nb_sources": 6
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 1,
+     "fraicheur": 1,
+     "couverture": 2,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Mélenchon et Panot interdits d’entrée en Israël",
+    "total": 4,
+    "raison": "Sujet de portée surtout diplomatique et partisane, sans effet concret identifiable pour les habitants.",
+    "decision": "écarté",
+    "categorie": "Europe et international",
+    "nb_sources": 4
+   }
+  ],
+  "consignes": "v1",
+  "recherches": [
+   "actualité politique France 18 novembre 2026",
+   "Assemblée nationale cette semaine",
+   "Sénat cette semaine",
+   "gouvernement annonce",
+   "Toulouse Occitanie politique",
+   "encadrement des loyers Assemblée nationale vote prolongation novembre 2026",
+   "primaire Attal Philippe Retailleau présidentielle 2027 17 novembre",
+   "budget 2027 Sénat commission des finances 17 novembre 2026",
+   "Lecornu 16 novembre 2026",
+   "Mélenchon Israël interdit territoire réaction gouvernement",
+   "Nuñez annonce 13 novembre 2026"
+  ],
+  "progression": ""
+ },
+ "local": [],
+ "terms": [
+  {
+   "def": "Projet de loi de financement de la Sécurité sociale : le texte qui fixe chaque année les recettes et les dépenses de l’assurance maladie, des retraites, de la famille et de l’autonomie.",
+   "term": "PLFSS"
+  },
+  {
+   "def": "Fait de ne pas augmenter une pension ou une allocation au rythme de l’inflation, c’est-à-dire de la hausse des prix.",
+   "term": "Désindexation"
+  },
+  {
+   "def": "Réduction appliquée aux pensions de retraite pour calculer l’impôt sur le revenu, dont le montant maximal est fixé par la loi.",
+   "term": "Abattement de 10 %"
+  },
+  {
+   "def": "Texte pris par le gouvernement seul, sans vote du Parlement, dans les cas prévus par la Constitution.",
+   "term": "Ordonnance"
+  },
+  {
+   "def": "Réunion de députés et de sénateurs chargée de rédiger un texte commun quand les deux assemblées ne sont pas d’accord.",
+   "term": "Commission mixte paritaire"
+  }
+ ],
+ "title": "Budget de la Sécu 2027 : ce que change le Sénat",
+ "basics": [
+  "Chaque année, le Parlement vote deux budgets : celui de l’État et celui de la Sécurité sociale, qui finance l’assurance maladie, les retraites, les allocations familiales et l’aide à l’autonomie. [IA] Pour 2027, le gouvernement veut ramener le déficit de la Sécurité sociale à 12,7 milliards d’euros, contre 21,8 milliards en 2026. [1]",
+  "L’Assemblée nationale a rejeté ce texte en première lecture le 23 octobre, par 115 voix contre 1 sur la partie recettes, ce qui revient à rejeter l’ensemble. [2,3] Le Sénat est donc reparti du texte initial du gouvernement, qu’il examine en séance du 9 au 18 novembre, avec un vote solennel sur l’ensemble prévu le 18 novembre. [2,4]",
+  "Le Sénat est dominé par la droite et le centre, qui se sont engagés à adopter le texte. [5] Le 13 novembre, ils ont adopté la partie recettes par 200 voix contre 110, les groupes de gauche et le groupe RN-UDR votant contre. [5]",
+  "La Constitution laisse 50 jours au Parlement pour se prononcer sur ce budget ; au-delà, le gouvernement peut le mettre en œuvre par ordonnance, et ce délai arrive à échéance le 26 novembre. [2,4] Après le Sénat, une commission mixte paritaire, réunissant députés et sénateurs, cherchera une version commune. [3]"
+ ],
+ "stakes": [
+  "Le texte du gouvernement ne prévoyait de revaloriser en janvier 2027 selon l’inflation que les pensions des retraités touchant au plus 1 260 euros par mois, base et complémentaire comprises. [1] Les sénateurs ont supprimé cette disposition à l’unanimité, et le ministre du Travail s’est dit prêt à suivre leur avis. [5] La majorité sénatoriale compte compenser cette perte en supprimant l’abattement fiscal dont bénéficient les retraités, mesure qu’elle proposera dans le projet de loi de finances, débattu à partir du 20 novembre. [5] Le texte du gouvernement prévoit lui aussi de ramener de 4 439 à 3 000 euros le plafond de cet abattement. [1] Ces votes ne changent pas immédiatement les règles. [IA] Le texte doit encore faire l’objet d’une version commune avec l’Assemblée nationale, au sein d’une commission mixte paritaire. [3]",
+  "Les sénateurs ont aussi symboliquement rétabli le calendrier de la réforme des retraites de 2023, que la loi de financement de la Sécurité sociale adoptée fin 2025 avait suspendu, contre l’avis du gouvernement. [5] Le Sénat a supprimé par 339 voix contre 1 la reconduction en 2027 de la taxe de 2,05 % sur les complémentaires santé, soit 1,1 milliard d’euros de recettes en moins pour la Sécurité sociale. [4,5] La majorité sénatoriale veut compenser cette perte en transférant aux complémentaires santé des dépenses de prévention d’un montant équivalent. [2,5] Le Sénat a aussi inscrit, par 195 voix contre 129, une négociation sur l’augmentation du temps de travail, avec les 37 heures en exemple. [4] Enfin, le texte prévoit un an de résidence régulière avant de toucher certaines prestations familiales pour les étrangers non européens, mesure dont la commission des affaires sociales du Sénat se félicite. [2,6]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.senat.fr/lessentiel/plfss2027.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Sénat : Projet de loi de financement de la sécurité sociale pour 2027 (L’essentiel)",
+   "note": "Synthèse de la commission des affaires sociales du Sénat du 4 novembre, avec chiffres, mesures et propositions."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-le-senat-adopte-un-volet-recettes-affaibli",
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat : Budget 2027 de la Sécurité sociale, le Sénat adopte un volet recettes affaibli",
+   "note": "Compte rendu du vote du 13 novembre sur les recettes, avec les positions de la majorité et de la gauche."
+  },
+  {
+   "url": "https://lcp.fr/actualites/budget-2027-le-gouvernement-prevoit-d-instaurer-un-delai-avant-l-acces-aux-prestations",
+   "lean": "Neutre / fact-check",
+   "name": "LCP : Budget 2027, délai avant l’accès aux prestations familiales pour certains étrangers",
+   "note": "Explication de la mesure, des prestations concernées et des réactions politiques."
+  },
+  {
+   "url": "https://www.sudradio.fr/societe/projet-de-budget-de-la-securite-sociale-les-principales-mesures",
+   "lean": "Plutôt à droite",
+   "name": "Sud Radio (dépêche AFP) : PLFSS 2027, le gouvernement prévoit des économies majeures",
+   "note": "Principales mesures du texte présenté par le gouvernement le 1er octobre."
+  }
+ ],
+ "subject": "Le Sénat achève l’examen du budget de la Sécurité sociale pour 2027, avec un vote solennel prévu le 18 novembre, un texte qui touche aux pensions de retraite, aux remboursements de santé et aux allocations.",
+ "question": "Où placer le curseur entre réduction rapide du déficit de la Sécurité sociale et protection du pouvoir d’achat des retraités, des familles et des malades ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.sudradio.fr/societe/projet-de-budget-de-la-securite-sociale-les-principales-mesures",
+   "name": "Sud Radio (dépêche AFP) : PLFSS 2027, le gouvernement prévoit des économies majeures",
+   "type": "Agence de presse",
+   "extrait": "ramener à 12,7 milliards le déficit de la Sécurité sociale en 2027, contre 21,8 milliards en 2026"
+  },
+  {
+   "n": 2,
+   "url": "https://www.senat.fr/lessentiel/plfss2027.pdf",
+   "name": "Sénat : Projet de loi de financement de la sécurité sociale pour 2027 (L’essentiel)",
+   "type": "Source officielle",
+   "extrait": "geler la revalorisation des pensions au-delà du seuil de 1 260 euros de pension par mois"
+  },
+  {
+   "n": 3,
+   "url": "https://selectra.info/finance/actualites/marche/budget-secu-rejete-senat-pensions-janvier",
+   "name": "Selectra : Retraites de plus de 1 260 € par mois, ce scénario qui réduirait ou supprimerait la hausse de janvier",
+   "type": "Autre",
+   "extrait": "rejeté la partie recettes du budget de la Sécurité sociale pour 2027 par 115 voix contre 1"
+  },
+  {
+   "n": 4,
+   "url": "https://nosparlementaires.fr/budget-2027",
+   "name": "NosParlementaires : Budget 2027, le dossier",
+   "type": "Autre",
+   "extrait": "le Sénat a inscrit dans le budget de la Sécu 2027 une négociation sur l’augmentation du temps de travail"
+  },
+  {
+   "n": 5,
+   "url": "https://www.publicsenat.fr/actualites/politique/budget-2027-de-la-securite-sociale-le-senat-adopte-un-volet-recettes-affaibli",
+   "name": "Public Sénat : Budget 2027 de la Sécurité sociale, le Sénat adopte un volet recettes affaibli",
+   "type": "Média public",
+   "extrait": "Cette partie a été adoptée par 200 voix contre 110."
+  },
+  {
+   "n": 6,
+   "url": "https://lcp.fr/actualites/budget-2027-le-gouvernement-prevoit-d-instaurer-un-delai-avant-l-acces-aux-prestations",
+   "name": "LCP : Budget 2027, délai avant l’accès aux prestations familiales pour certains étrangers",
+   "type": "Média public",
+   "extrait": "Il fixe l'accès à certaines de ces prestations à une durée d'un an de résidence régulière en France."
+  }
+ ],
+ "generated": "2026-11-18",
+ "categories": [
+  "Protection sociale",
+  "Économie et budget"
+ ]
+}
