@@ -1,0 +1,97 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-19",
+ "type": "institutions",
+ "fiche": {
+  "choix": "Les notions 01 à 06 ayant déjà été publiées (la dernière, Voter une loi, le 17 novembre), la notion 07 est la première non traitée de la progression.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [],
+  "candidats": [],
+  "consignes": "v1",
+  "recherches": [],
+  "progression": "Notion 07 sur 20 : Le Conseil constitutionnel"
+ },
+ "local": [],
+ "terms": [
+  {
+   "def": "Vérification qu’une loi respecte la Constitution, texte placé au sommet des règles françaises.",
+   "term": "Contrôle de constitutionnalité"
+  },
+  {
+   "def": "Démarche qui consiste à demander au Conseil constitutionnel d’examiner un texte.",
+   "term": "Saisine"
+  },
+  {
+   "def": "Acte du Président de la République qui rend une loi officielle et applicable.",
+   "term": "Promulgation"
+  },
+  {
+   "def": "Question posée à l’occasion d’un procès pour contester une loi déjà en vigueur au nom des droits et libertés garantis par la Constitution.",
+   "term": "Question prioritaire de constitutionnalité (QPC)"
+  }
+ ],
+ "title": "Le Conseil constitutionnel : le gardien des règles",
+ "basics": [
+  "Le Conseil constitutionnel est une institution créée par la Constitution du 4 octobre 1958. [1] Il a notamment la charge de vérifier qu’une loi est conforme à la Constitution, le texte qui fixe les règles du jeu. [1] On peut le comparer à un arbitre qui relit le règlement de base : il ne joue pas la partie, mais il peut dire qu’une règle votée ne respecte pas ce règlement. [IA]",
+  "Il est composé de neuf membres nommés pour neuf ans, sans possibilité de renouvellement. [2] Trois sont nommés par le Président de la République, trois par le président de l’Assemblée nationale et trois par le président du Sénat. [2] Le Conseil se renouvelle par tiers tous les trois ans. [2] Les anciens Présidents de la République en font aussi partie de droit, à vie. [2] Aucune qualification d’âge ou de profession n’est exigée pour y siéger. [1]",
+  "Le premier rôle du Conseil s’exerce avant la promulgation d’une loi. [1] Les lois organiques lui sont obligatoirement soumises. [1] Pour une loi ordinaire, il faut que quelqu’un le saisisse : le Président de la République, le Premier ministre, le président de l’Assemblée nationale, le président du Sénat, ou soixante députés ou soixante sénateurs. [2] Le Conseil doit alors statuer dans un délai d’un mois, ramené à huit jours en cas d’urgence à la demande du Gouvernement, et la saisine suspend le délai de promulgation. [2]",
+  "Depuis le 1er mars 2010, un second chemin existe : la question prioritaire de constitutionnalité, ou QPC. [1] Elle permet, à l’occasion d’un procès en cours, de soutenir qu’une loi déjà en application porte atteinte aux droits et libertés garantis par la Constitution. [1,2] Le Conseil est alors saisi sur renvoi du Conseil d’État ou de la Cour de cassation, et il dispose de trois mois pour rendre sa décision. [1] Le Conseil veille aussi à la régularité de l’élection du Président de la République et des opérations de référendum, et il juge la régularité de l’élection des parlementaires. [1]",
+  "Les décisions du Conseil ne sont susceptibles d’aucun recours et s’imposent aux pouvoirs publics et à toutes les autorités administratives et juridictionnelles. [1,2] Une disposition déclarée inconstitutionnelle avant la promulgation ne peut être ni promulguée ni mise en application. [2] Après une QPC, la disposition déclarée inconstitutionnelle est abrogée à compter de la publication de la décision ou d’une date ultérieure fixée par celle-ci. [1,2] Ce contrôle avant promulgation est très sollicité : en 2025, le Conseil a été saisi à 26 reprises sur des lois, soit une dizaine de recours de plus que la moyenne des quinze dernières années, selon Public Sénat. [3]"
+ ],
+ "stakes": [
+  "Comprendre ce mécanisme aide à suivre les débats sur les recours contre les lois votées au Parlement qui reviennent dans l’actualité. [IA]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-conseil-constitutionnel/presentation-generale",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : Présentation générale",
+   "note": "Page officielle du Conseil sur sa composition, ses compétences et les effets de ses décisions."
+  },
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "note": "Texte officiel, voir le titre VII (articles 56 à 63) consacré au Conseil constitutionnel."
+  }
+ ],
+ "subject": "Le Conseil constitutionnel est l’institution qui vérifie qu’une loi respecte la Constitution, avant sa promulgation ou à l’occasion d’un procès.",
+ "question": "Un organe de neuf membres nommés doit-il pouvoir écarter une loi votée par des élus, et où placer la limite de ce pouvoir ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.conseil-constitutionnel.fr/le-conseil-constitutionnel/presentation-generale",
+   "name": "Conseil constitutionnel : Présentation générale",
+   "type": "Source officielle",
+   "extrait": "Les décisions s'imposent aux pouvoirs publics et à toutes les autorités administratives et juridictionnelles."
+  },
+  {
+   "n": 2,
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "type": "Source officielle",
+   "extrait": "Le Conseil constitutionnel comprend neuf membres, dont le mandat dure neuf ans et n'est pas renouvelable."
+  },
+  {
+   "n": 3,
+   "url": "https://www.publicsenat.fr/actualites/politique/le-conseil-constitutionnel-est-il-devenu-un-arbitre-sursollicite",
+   "name": "Public Sénat : Le Conseil constitutionnel est-il devenu un arbitre sursollicité ?",
+   "type": "Média public",
+   "extrait": "En 2025, il a été saisi à 26 reprises pour contrôler des lois avant leur promulgation"
+  }
+ ],
+ "generated": "2026-11-19",
+ "categories": [
+  "Vie démocratique"
+ ]
+}
