@@ -1,0 +1,304 @@
+{
+ "con": {
+  "who": "La gauche (socialistes, écologistes, communistes, insoumis), de nombreuses associations de défense des droits humains, le syndicat CGT-Intérieur et une partie du centre. La Défenseure des droits a aussi émis des réserves.",
+  "args": [
+   "La charge de la preuve est renversée : ce ne serait plus au policier de justifier son tir, mais à la justice ou aux familles de démontrer qu’il n’aurait pas dû tirer. [4]",
+   "Les premières heures d’une enquête sont décisives : sans garde à vue systématique, des preuves comme les images de caméras ou les communications radio pourraient ne pas être recueillies à temps, car ces enregistrements s’effacent en général au bout de trente jours selon la présidente de la Ligue des droits de l’Homme. [5]",
+   "La Défenseure des droits a estimé, dans son avis du 26 juin, que la présomption pourrait laisser croire aux agents qu’ils disposent de possibilités élargies d’usage des armes, alors que les exigences d’absolue nécessité et de stricte proportionnalité restent applicables. [5]",
+   "Le texte pourrait modifier les comportements : selon le chercheur Sebastian Roché, cité par Politis, une étude de 2022 montre que le nombre de tirs mortels sur des véhicules en mouvement a été multiplié par cinq après la loi de 2017. [5]",
+   "Le texte serait un mauvais signal dans le contexte actuel : une sénatrice centriste y voit un message de défiance envers les jeunes qui manifestent, et la gauche accuse le gouvernement et la droite de courir derrière le RN, qui voulait inscrire le texte dans son espace réservé avant que l’exécutif ne le devance. [3,4]"
+  ],
+  "label": "Contre"
+ },
+ "pro": {
+  "who": "Le gouvernement, Les Républicains, le Rassemblement national, une grande partie du bloc central et la plupart des syndicats de police.",
+  "args": [
+   "Les agressions contre les forces de l’ordre augmentent alors que l’usage des armes reste stable ou diminue : 6 625 agressions physiques contre des policiers nationaux en 2024, dont 1 289 avec une arme, et des tirs opérationnels visant des véhicules ou des personnes passés de 338 en 2017 à 176 en 2025, selon les chiffres cités par le Sénat. [2]",
+   "Le cadre légal actuel serait très largement respecté : sur 14 enquêtes relatives à des usages mortels d’armes à feu en 2024, l’autorité judiciaire a conclu à la légitimité de l’emploi dans 12 procédures, deux étant encore en cours, d’après l’inspection générale de la police nationale. [2]",
+   "La présomption ne créerait aucun nouveau cas d’usage des armes et ne supprimerait pas l’enquête : elle resterait renversable par tout élément de preuve contraire et l’enquête serait toujours menée à charge et à décharge. [2]",
+   "Elle répondrait à une insécurité juridique : le gouvernement veut corriger le réflexe de mettre en cause par principe l’agent qui a tiré, et la rapporteure du texte affirme que cette incertitude peut conduire certains agents à hésiter à utiliser leur arme. [2,4]",
+   "Le texte répondrait à une demande ancienne des policiers, que les organisations syndicales de police attendent selon le ministre de l’Intérieur, et enverrait un message de soutien aux forces de l’ordre dans une période de fortes tensions. [3,4]"
+  ],
+  "label": "Pour"
+ },
+ "date": "2026-11-23",
+ "type": "actualite",
+ "fiche": {
+  "choix": "Le sujet retenu est l’adoption définitive de la présomption d’usage légal des armes, avec 9 points : couverture large, sources de gauche et de droite, effet direct sur les droits. Trois sujets suivent avec 8 points : le budget 2027 au Sénat, l’encadrement des loyers et les fuites au ministère de l’Intérieur, qui n’atteignent pas le même total. Aucun effet identifiable à Toulouse ou en Occitanie n’a été trouvé pour le sujet retenu.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [
+   {
+    "url": "https://www.publicsenat.fr/archives/2026/11/20",
+    "name": "Public Sénat, archives des articles du 20 novembre 2026"
+   },
+   {
+    "url": "https://www.publicsenat.fr/archives/2026/11/19",
+    "name": "Public Sénat, archives des articles du 19 novembre 2026"
+   }
+  ],
+  "candidats": [
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 1,
+     "repetition": 0
+    },
+    "sujet": "Présomption d’usage légal des armes pour les forces de l’ordre, adoptée définitivement le 20 novembre",
+    "total": 9,
+    "raison": "Meilleur total : adoption définitive récente, très large couverture, sources de gauche et de droite, effet direct sur les droits des personnes.",
+    "decision": "retenu",
+    "categorie": "Justice et sécurité",
+    "nb_sources": 12
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Prolongation de l’encadrement des loyers jusqu’en 2028",
+    "total": 8,
+    "raison": "Écarté au score (8 contre 9) : aucune source de presse perçue plutôt à droite retrouvée et aucun effet identifié à Toulouse.",
+    "decision": "écarté",
+    "categorie": "Territoires et quotidien",
+    "nb_sources": 8
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Budget 2027 : début de l’examen du projet de loi de finances au Sénat",
+    "total": 8,
+    "raison": "Écarté au score (8 contre 9) : sujet déjà traité le 16 novembre et début d’examen qui n’est pas un rebondissement majeur.",
+    "decision": "écarté",
+    "categorie": "Économie et budget",
+    "nb_sources": 6
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 1,
+     "variete": 2,
+     "fraicheur": 2,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Fuites au ministère de l’Intérieur et enquête visant le RN autour du préfet Moutouh",
+    "total": 8,
+    "raison": "Écarté au score (8 contre 9) : enquête judiciaire en cours dont les faits ne sont pas établis, effet concret limité sur les droits ou les services publics.",
+    "decision": "écarté",
+    "categorie": "Justice et sécurité",
+    "nb_sources": 7
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 2,
+     "deux_cotes": 0,
+     "repetition": -1
+    },
+    "sujet": "Budget de la Sécurité sociale 2027 adopté par le Sénat",
+    "total": 6,
+    "raison": "Écarté : sujet traité le 18 novembre et catégorie principale proche de celle du dernier brief Actualité.",
+    "decision": "écarté",
+    "categorie": "Protection sociale",
+    "nb_sources": 5
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Primaire à droite et au centre pour la présidentielle de 2027",
+    "total": 6,
+    "raison": "Écarté au score : sujet d’organisation partisane sans effet direct sur l’argent, les services publics ou les droits.",
+    "decision": "écarté",
+    "categorie": "Vie démocratique",
+    "nb_sources": 8
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 1,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Pérennisation des titres-restaurant pour les courses alimentaires",
+    "total": 6,
+    "raison": "Écarté au score : couverture plus faible, avec seulement trois sources distinctes retrouvées.",
+    "decision": "écarté",
+    "categorie": "Économie et budget",
+    "nb_sources": 3
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Coalition autour de Jean-Luc Mélenchon proposée par Marine Tondelier",
+    "total": 6,
+    "raison": "Écarté au score : question d’alliances partisanes sans effet concret direct.",
+    "decision": "écarté",
+    "categorie": "Vie démocratique",
+    "nb_sources": 6
+   }
+  ],
+  "consignes": "v1",
+  "recherches": [
+   "actualité politique France 23 novembre 2026",
+   "Assemblée nationale cette semaine novembre 2026",
+   "Sénat cette semaine novembre 2026",
+   "gouvernement annonce 22 novembre 2026",
+   "Toulouse Occitanie politique novembre 2026",
+   "encadrement des loyers prolongation Assemblée nationale vote 24 novembre",
+   "budget 2027 Sénat vote solennel première partie 22 novembre",
+   "présomption de légitime défense forces de l'ordre loi adoptée définitivement Sénat",
+   "primaire droite Zemmour Lisnard Attal Philippe Retailleau",
+   "Hugues Moutouh fuites Rassemblement national ministère Intérieur",
+   "titres-restaurant produits alimentaires Sénat pérennisation",
+   "Tondelier Mélenchon coalition Jadot quitte Écologistes",
+   "légitime défense policiers loi Toulouse Occitanie syndicats police réaction",
+   "Le Figaro présomption d'usage légal des armes policiers Parlement adopte définitivement",
+   "Le Figaro encadrement des loyers prolongé deux ans Parlement propriétaires",
+   "L'Humanité Libération présomption usage légal armes police loi définitivement adoptée permis de tuer",
+   "présomption usage légal armes policiers gendarmes Sénat adopte"
+  ],
+  "progression": ""
+ },
+ "local": [],
+ "terms": [
+  {
+   "def": "Un fait est tenu pour vrai tant qu’aucune preuve contraire n’est apportée. Ici, l’agent qui a tiré est présumé avoir respecté la loi, sauf preuve du contraire.",
+   "term": "Présomption simple"
+  },
+  {
+   "def": "Obligation de démontrer un fait devant la justice. Inverser la charge de la preuve revient à changer la partie qui doit prouver.",
+   "term": "Charge de la preuve"
+  },
+  {
+   "def": "Situation où une personne qui riposte à une agression injustifiée, de façon nécessaire et proportionnée, n’est pas pénalement responsable.",
+   "term": "Légitime défense"
+  },
+  {
+   "def": "Mesure qui permet de retenir une personne soupçonnée d’une infraction pendant l’enquête, avec des droits comme l’assistance d’un avocat.",
+   "term": "Garde à vue"
+  },
+  {
+   "def": "Institution qui vérifie qu’une loi respecte la Constitution, avant sa promulgation ou à l’occasion d’un procès.",
+   "term": "Conseil constitutionnel"
+  }
+ ],
+ "title": "Usage des armes par la police : la présomption d’usage légal est adoptée",
+ "basics": [
+  "Le 20 novembre 2026, le Parlement a définitivement adopté une proposition de loi qui change la façon dont la justice apprécie l’usage des armes par les policiers et les gendarmes : le Sénat l’a votée par 205 voix contre 110, dans les mêmes termes que l’Assemblée nationale. [1]",
+  "Déposé en décembre 2024 par des députés Les Républicains, le texte promettait au départ une présomption de légitime défense, avant d’être réécrit par le gouvernement devant l’Assemblée nationale, qui l’a adopté le 7 juillet 2026. [1,2]",
+  "Depuis 2017, les policiers et les gendarmes peuvent utiliser leur arme dans cinq cas précis, en cas d’absolue nécessité et de manière strictement proportionnée, selon l’article L. 435-1 du code de la sécurité intérieure. [2] Le nouveau texte n’ajoute aucun cas, mais prévoit qu’un agent qui a fait usage de son arme est présumé avoir agi dans le cadre de la loi, ce qui inverse la charge de la preuve. [2,3] Cette présomption est dite simple : tout élément de preuve contraire peut la renverser, et elle n’empêche pas l’ouverture d’une enquête judiciaire. [2]",
+  "Le titre du texte reste trompeur : le ministre de l’Intérieur a reconnu qu’il donne une image qui n’est pas celle de son contenu, et il doit disparaître une fois la disposition insérée dans le code de la sécurité intérieure. [1]"
+ ],
+ "stakes": [
+  "Concrètement, la présomption doit changer les premières heures d’une enquête : selon le ministre de l’Intérieur, elle lèvera l’automaticité de la garde à vue du policier ou du gendarme qui a fait usage de son arme. [4] La commission des lois du Sénat y voit aussi un moyen d’inciter les parquets à préférer l’audition libre et à classer plus facilement sans suite lorsque l’enquête ne révèle aucun élément en faveur d’un usage non conforme. [2] Le texte supprime en outre l’obligation de porter l’uniforme ou un insigne pour utiliser son arme afin d’interrompre un périple meurtrier. [2]",
+  "Le débat s’inscrit dans un contexte de mobilisation lycéenne et sociale, et de mobilisation des policiers pour obtenir une revalorisation de leur prime de risque. [3] La gauche a annoncé qu’elle saisirait le Conseil constitutionnel avant la promulgation. [1] Tant que cette saisine n’a pas été tranchée, la promulgation du texte reste en attente. [IA]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.senat.fr/rap/l26-167/l26-1671.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Sénat, rapport n° 167 de la commission des lois",
+   "note": "Le rapport officiel détaille le droit actuel, les chiffres des inspections générales de la police et de la gendarmerie et le contenu du texte."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/la-proposition-de-loi-instaurant-une-presomption-de-legitime-defense-pour-les-forces-de-lordre-definitivement-adoptee-par-le-parlement-apres-le-vote-du-senat",
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat, la proposition de loi définitivement adoptée après le vote du Sénat",
+   "note": "Compte rendu du vote du 20 novembre et des positions des groupes politiques."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/07/permis-de-tuer-comment-la-presomption-de-legitime-defense-fabrique-limpunite-des-policiers/",
+   "lean": "Plutôt à gauche",
+   "name": "Politis, Permis de tuer : comment la présomption de légitime défense fabrique l’impunité des policiers",
+   "note": "Article qui présente les critiques de juristes, d’associations et de la Défenseure des droits."
+  },
+  {
+   "url": "https://www.sudradio.fr/societe/usage-des-armes-par-la-police-un-vote-sous-haute-tension-au-senat",
+   "lean": "Plutôt à droite",
+   "name": "Sud Radio (dépêche AFP), Usage légitime des armes par la police : le Sénat se fracture",
+   "note": "Dépêche qui rapporte les arguments du ministre de l’Intérieur, de la droite et du RN face à la gauche."
+  }
+ ],
+ "subject": "Le Parlement a définitivement adopté, le 20 novembre 2026, un texte qui présume que policiers et gendarmes respectent la loi quand ils utilisent leur arme, sauf preuve du contraire.",
+ "question": "Comment concilier la protection juridique des policiers et des gendarmes qui font usage de leur arme avec la garantie d’une enquête rapide et indépendante sur chaque tir ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.publicsenat.fr/actualites/politique/la-proposition-de-loi-instaurant-une-presomption-de-legitime-defense-pour-les-forces-de-lordre-definitivement-adoptee-par-le-parlement-apres-le-vote-du-senat",
+   "name": "Public Sénat, La proposition de loi instaurant une présomption de légitime défense pour les forces de l’ordre définitivement adoptée par le Parlement, après le vote du Sénat",
+   "type": "Média public",
+   "extrait": "le Sénat a finalement adopté par 205 voix contre 110 une proposition de loi"
+  },
+  {
+   "n": 2,
+   "url": "https://www.senat.fr/rap/l26-167/l26-1671.pdf",
+   "name": "Sénat, Rapport n° 167 (2026-2027) de la commission des lois sur la proposition de loi visant à reconnaître une présomption de légitime défense pour les forces de l’ordre",
+   "type": "Source officielle",
+   "extrait": "pourra être renversée par tout élément de preuve contraire"
+  },
+  {
+   "n": 3,
+   "url": "https://www.publicsenat.fr/actualites/politique/presomption-de-legitime-defense-pour-les-forces-de-lordre-le-senat-se-divise-sur-cette-proposition-de-loi-polemique",
+   "name": "Public Sénat, Présomption de légitime défense pour les forces de l’ordre : le Sénat se divise sur cette proposition de loi polémique",
+   "type": "Média public",
+   "extrait": "Il procède ainsi à une inversion de la charge de la preuve"
+  },
+  {
+   "n": 4,
+   "url": "https://www.sudradio.fr/societe/usage-des-armes-par-la-police-un-vote-sous-haute-tension-au-senat",
+   "name": "Sud Radio (dépêche AFP), Usage légitime des armes par la police : le Sénat se fracture, le vote repoussé à vendredi",
+   "type": "Agence de presse",
+   "extrait": "Appuyée par le gouvernement, une grande partie du bloc central et le Rassemblement national"
+  },
+  {
+   "n": 5,
+   "url": "https://www.politis.fr/articles/2026/07/permis-de-tuer-comment-la-presomption-de-legitime-defense-fabrique-limpunite-des-policiers/",
+   "name": "Politis, Permis de tuer : comment la présomption de légitime défense fabrique l’impunité des policiers",
+   "type": "Presse nationale",
+   "extrait": "Le risque immédiat, c’est de changer le comportement des policiers"
+  }
+ ],
+ "generated": "2026-11-23",
+ "categories": [
+  "Justice et sécurité",
+  "Vie démocratique"
+ ]
+}
