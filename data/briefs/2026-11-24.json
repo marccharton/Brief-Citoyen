@@ -1,0 +1,97 @@
+{
+ "con": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "pro": {
+  "who": "",
+  "args": [],
+  "label": ""
+ },
+ "date": "2026-11-24",
+ "type": "institutions",
+ "fiche": {
+  "choix": "Les notions 01 à 07 de la progression ont déjà fait l’objet d’un brief, la première notion non traitée est donc la huitième, la motion de censure.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [],
+  "candidats": [],
+  "consignes": "v1",
+  "recherches": [],
+  "progression": "Notion 08 sur 20 : La motion de censure"
+ },
+ "local": [],
+ "terms": [
+  {
+   "def": "Vote des députés par lequel l’Assemblée nationale peut mettre fin au gouvernement en place.",
+   "term": "Motion de censure"
+  },
+  {
+   "def": "Plus de la moitié de tous les sièges de l’Assemblée, que les députés soient présents ou non.",
+   "term": "Majorité des membres composant l’Assemblée"
+  },
+  {
+   "def": "Procédure qui permet au Premier ministre de faire adopter un texte sans vote, sauf si une motion de censure est votée.",
+   "term": "Article 49, alinéa 3"
+  },
+  {
+   "def": "Période où le Parlement se réunit de plein droit, du premier jour ouvrable d’octobre au dernier jour ouvrable de juin.",
+   "term": "Session ordinaire"
+  }
+ ],
+ "title": "La motion de censure : comment renverser un gouvernement",
+ "basics": [
+  "La Constitution précise que le Gouvernement est responsable devant le Parlement, dans les conditions prévues par les articles 49 et 50. [1] C’est un peu comme un conseil d’administration qui pourrait retirer sa confiance à la direction d’une entreprise. [IA]",
+  "Les députés peuvent déposer une motion de censure de leur propre initiative : elle n’est recevable que si elle est signée par un dixième au moins d’entre eux, soit 58 députés lorsque tous les sièges sont pourvus. [1,2] Le vote ne peut avoir lieu que quarante-huit heures après le dépôt, et un député ne peut signer plus de trois motions au cours d’une même session ordinaire. [1]",
+  "Seuls les votes favorables à la motion sont recensés, et elle n’est adoptée qu’à la majorité des membres composant l’Assemblée nationale. [1] Un député absent ou qui s’abstient n’ajoute donc aucune voix à la censure. [IA] Si la motion est adoptée, le Premier ministre doit remettre au Président de la République la démission du Gouvernement. [1]",
+  "Une seule motion déposée à l’initiative des députés a été votée sous la Ve République, en 1962. [2] Aujourd’hui, elle sert surtout à l’opposition pour provoquer un débat solennel, car le fait majoritaire a limité sa portée. [2] Une seconde voie existe : si le Premier ministre engage la responsabilité du Gouvernement sur un projet de loi de finances ou de financement de la Sécurité sociale (article 49, alinéa 3), le texte est considéré comme adopté, sauf si une motion déposée dans les vingt-quatre heures est votée. [1] Une motion de ce type a été adoptée en décembre 2024 et a entraîné la démission du gouvernement Barnier. [2]",
+  "En juillet 2026, une motion déposée par les Écologistes contre le gouvernement de Sébastien Lecornu a été rejetée : seuls 132 députés l’ont soutenue, sur les 289 nécessaires. [3]"
+ ],
+ "stakes": [
+  "Comprendre ce mécanisme aide à suivre les débats sur le budget de l’État et sur la stabilité des gouvernements qui reviennent dans l’actualité. [IA]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "lean": "Neutre / fact-check",
+   "name": "Conseil constitutionnel : texte intégral de la Constitution du 4 octobre 1958",
+   "note": "Articles 20, 49 et 50 : la responsabilité du Gouvernement et la motion de censure."
+  },
+  {
+   "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629167/file/Fiche%2064%20-%20Responsabilit%C3%A9%20du%20Gouvernement.pdf",
+   "lean": "Neutre / fact-check",
+   "name": "Assemblée nationale : fiche n° 64, La mise en cause de la responsabilité du Gouvernement",
+   "note": "Procédure, pratique et exemples de motions de censure depuis 1958."
+  }
+ ],
+ "subject": "La motion de censure est un vote des députés qui peut obliger le gouvernement à démissionner, à condition de réunir la majorité des membres de l’Assemblée nationale.",
+ "question": "Quel équilibre trouver entre la possibilité de renverser un gouvernement et la stabilité de l’action publique ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "name": "Conseil constitutionnel : Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+   "type": "Source officielle",
+   "extrait": "Le vote ne peut avoir lieu que quarante-huit heures après son dépôt."
+  },
+  {
+   "n": 2,
+   "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629167/file/Fiche%2064%20-%20Responsabilit%C3%A9%20du%20Gouvernement.pdf",
+   "name": "Assemblée nationale : Fiche n° 64, La mise en cause de la responsabilité du Gouvernement",
+   "type": "Source officielle",
+   "extrait": "Aujourd’hui, celle-ci est principalement une arme de procédure permettant à l’opposition de provoquer un débat solennel."
+  },
+  {
+   "n": 3,
+   "url": "https://fr.euronews.com/2026/07/06/france-la-motion-de-censure-deposee-par-les-ecologistes-largement-rejetee",
+   "name": "Euronews : France : la motion de censure déposée par les Écologistes largement rejetée",
+   "type": "Autre",
+   "extrait": "Seuls 132 députés sur les 289 nécessaires ont soutenu cette motion"
+  }
+ ],
+ "generated": "2026-11-24",
+ "categories": [
+  "Vie démocratique"
+ ]
+}
