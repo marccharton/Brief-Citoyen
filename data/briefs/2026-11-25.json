@@ -1,0 +1,259 @@
+{
+ "con": {
+  "who": "Rassemblement national, Droite républicaine et UDR au vote, une partie du camp présidentiel, fédérations de propriétaires et professionnels de l’immobilier (FNAIM)",
+  "args": [
+   "Pour ses opposants, le plafonnement risque de décourager les propriétaires et d’aggraver la pénurie de logements. [1]",
+   "L’ancien ministre du Logement Guillaume Kasbarian estime que le dispositif ne créera aucun logement supplémentaire et ne fera qu’allonger la file d’attente. [1]",
+   "Arnaud Hacquart, président-fondateur d’Imodirect, observe des propriétaires qui vendent ou renoncent à remettre leur bien en location. [1]",
+   "La FNAIM avait demandé en septembre au gouvernement de ne pas prolonger le dispositif. [1]",
+   "Le recours à l’article 44, alinéa 2, a suscité des critiques de députés qui reprochaient au gouvernement de ne pas l’avoir utilisé lors de précédentes situations d’obstruction. [1]"
+  ],
+  "label": "Contre"
+ },
+ "pro": {
+  "who": "Groupe Socialistes (rapporteur Iñaki Echaniz), gauche, Les Démocrates et LIOT au vote, Ville de Paris, Que Choisir Ensemble",
+  "args": [
+   "Sans le texte, l’expérimentation aurait pris fin en novembre 2026, alors qu’elle concerne 1,2 million de locataires dans quelque 70 communes. [2]",
+   "Un vote identique à celui du Sénat permettait d’éviter une nouvelle navette avant l’expiration de l’expérimentation. [1]",
+   "Deux années supplémentaires permettent de poursuivre l’évaluation du dispositif avant de décider de son sort durable. [1]",
+   "Des acteurs de terrain y voient un soulagement : la Ville de Paris a parlé d’une victoire majeure, et Que Choisir Ensemble d’un soulagement pour plus d’un million de locataires. [1]"
+  ],
+  "label": "Pour"
+ },
+ "date": "2026-11-25",
+ "type": "actualite",
+ "fiche": {
+  "choix": "Le sujet retenu totalise 9 points, devant le mouvement lycéen et Parcoursup et le budget 2027 au Sénat (8 chacun), puis la grève des agents publics et le budget de la Sécurité sociale (7). Le budget 2027 et le budget de la Sécurité sociale sont écartés par le délai de 14 jours, des briefs ayant été publiés les 16 et 18 novembre sans rebondissement majeur depuis. Aucune source perçue plutôt à gauche ou plutôt à droite n’a pu être ouverte pendant la recherche : la case « couvert des deux côtés » vaut donc 0 pour tous les candidats, et les sources à creuser sont toutes classées « Neutre / fact-check ». La page de la loi sur Légifrance, bloquée à l’ouverture, n’a pas pu être vérifiée : la date de promulgation vient de la presse spécialisée.",
+  "modele": "Claude Sonnet 5.5",
+  "genere_a": "7 h 48",
+  "reperage": [
+   {
+    "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-prolonge-l-experimentation-du-dispositif-au-terme-d",
+    "name": "LCP : Encadrement des loyers, l'Assemblée prolonge l'expérimentation du dispositif"
+   },
+   {
+    "url": "https://www.mysweetimmo.com/2026/11/19/encadrement-loyers-prolonge-deux-ans/",
+    "name": "MySweetImmo : L’encadrement des loyers prolongé jusqu’en 2028"
+   },
+   {
+    "url": "https://www.publicsenat.fr/emission/100-senat/le-senat-prolonge-de-deux-ans-lexperimentation-de-lencadrement-des-loyers-e18",
+    "name": "Public Sénat : Le Sénat prolonge de deux ans l'expérimentation de l'encadrement des loyers"
+   },
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/10062",
+    "name": "Assemblée nationale : scrutin n°10062"
+   }
+  ],
+  "candidats": [
+   {
+    "score": {
+     "local": 1,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Encadrement des loyers : prolongation de deux ans définitivement adoptée",
+    "total": 9,
+    "raison": "Vote définitif le 19 novembre et promulgation le 21, dernier brief sur le sujet le 4 novembre (hors du délai de 14 jours) ; impact concret sur les plafonds de loyers de 1,2 million de locataires, dont Montpellier en Occitanie.",
+    "decision": "retenu",
+    "categorie": "Territoires et quotidien",
+    "nb_sources": 11
+   },
+   {
+    "score": {
+     "local": 1,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 0,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Mouvement lycéen : remplacement de Parcoursup et comité de réforme",
+    "total": 8,
+    "raison": "Aucun fait nouveau daté de la semaine retrouvé, un point de moins que le sujet retenu.",
+    "decision": "écarté",
+    "categorie": "Éducation et culture",
+    "nb_sources": 10
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Budget 2027 : examen du projet de loi de finances au Sénat",
+    "total": 8,
+    "raison": "Déjà traité les 16 et 18 novembre (délai de 14 jours), sans vote ni décision nouvelle avant le 9 décembre.",
+    "decision": "écarté",
+    "categorie": "Économie et budget",
+    "nb_sources": 6
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 0,
+     "couverture": 3,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Salaires des agents publics : grève du 17 novembre et absence de dégel du point d’indice",
+    "total": 7,
+    "raison": "Faits datés du 13 au 17 novembre, plus anciens que la semaine, total inférieur.",
+    "decision": "écarté",
+    "categorie": "Économie et budget",
+    "nb_sources": 8
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 2,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 2,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Budget de la Sécurité sociale 2027 : adoption au Sénat et commission mixte paritaire du 26 novembre",
+    "total": 7,
+    "raison": "Déjà traité le 18 novembre (délai de 14 jours) et la commission mixte paritaire n’a pas encore eu lieu.",
+    "decision": "écarté",
+    "categorie": "Protection sociale",
+    "nb_sources": 5
+   },
+   {
+    "score": {
+     "local": 0,
+     "impact": 0,
+     "variete": 2,
+     "fraicheur": 1,
+     "couverture": 2,
+     "deux_cotes": 0,
+     "repetition": 0
+    },
+    "sujet": "Primaire à droite et au centre : réunions des équipes Attal, Retailleau et Lisnard",
+    "total": 5,
+    "raison": "Stratégie de partis sans effet direct sur l’argent, les services publics ou les droits, couverture plus faible.",
+    "decision": "écarté",
+    "categorie": "Vie démocratique",
+    "nb_sources": 5
+   }
+  ],
+  "consignes": "v1",
+  "recherches": [
+   "actualité politique France 25 novembre 2026",
+   "Assemblée nationale cette semaine novembre 2026",
+   "Sénat cette semaine novembre 2026",
+   "gouvernement annonce 24 novembre 2026",
+   "Toulouse Occitanie politique novembre 2026"
+  ],
+  "progression": ""
+ },
+ "local": [
+  "Montpellier figure parmi les communes déjà couvertes par le dispositif. [1] Cette commune de l’Hérault, en Occitanie, reste donc soumise à des plafonds de loyers jusqu’en novembre 2028. [IA]"
+ ],
+ "terms": [
+  {
+   "def": "Règle qui fixe, pour chaque commune concernée, un loyer de référence majoré que le propriétaire ne peut pas dépasser lors d’une nouvelle location, sauf complément de loyer justifié. Le plafond varie selon le quartier, le nombre de pièces et l’époque de construction du logement.",
+   "term": "Encadrement des loyers"
+  },
+  {
+   "def": "Dispositif appliqué pour une durée limitée et dans un nombre limité de territoires, afin d’évaluer ses effets avant de décider de le généraliser, de l’arrêter ou de le prolonger.",
+   "term": "Expérimentation"
+  },
+  {
+   "def": "Journée réservée chaque année à l’ordre du jour d’un groupe parlementaire, qui y choisit les textes débattus à l’Assemblée nationale.",
+   "term": "Niche parlementaire"
+  },
+  {
+   "def": "Disposition de la Constitution qui permet au gouvernement de s’opposer à l’examen d’un amendement qui n’a pas été soumis auparavant à la commission compétente.",
+   "term": "Article 44, alinéa 2"
+  },
+  {
+   "def": "Adoption par la seconde chambre d’un texte dans les mêmes termes que la première, ce qui met fin à la navette parlementaire sans nouvelle lecture.",
+   "term": "Vote conforme"
+  }
+ ],
+ "title": "Loyers : l’encadrement prolongé jusqu’en 2028",
+ "basics": [
+  "L’encadrement des loyers plafonne le loyer de base demandé lors de la mise en location d’un logement, dans certains territoires où la demande locative est forte. [1] Ce dispositif expérimental a été créé par la loi Élan de 2018. [1]",
+  "L’expérimentation devait s’achever en novembre 2026 sans intervention du législateur. [1,2] Une proposition de loi du député socialiste Iñaki Echaniz, examinée dans la niche parlementaire du groupe Socialistes, a servi de véhicule pour la prolonger. [2] Dans sa version initiale, ce texte proposait de rendre le dispositif permanent et de l’ouvrir à d’autres communes volontaires. [1] Le Sénat a préféré, le 21 octobre, une prolongation de deux ans sans élargissement du périmètre. [3]",
+  "Le 19 novembre 2026, l’Assemblée nationale a adopté ce texte dans les mêmes termes que le Sénat, par 148 voix contre 95. [2,4] Cette adoption conforme a mis fin au parcours législatif du texte, examiné en procédure accélérée. [2] La loi a ensuite été promulguée le 21 novembre et publiée au Journal officiel le 22 novembre, selon la presse spécialisée. [1]"
+ ],
+ "stakes": [
+  "La prolongation maintient les plafonds de loyers dans les quelque 70 communes déjà couvertes, dont Paris, Lyon, Bordeaux et Lille, sans extension à de nouvelles communes. [1,2] Environ 1,2 million de locataires vivent dans ces territoires. [1] La loi crée une possibilité de sortie anticipée pour une collectivité, modifie des délais de contestation et élargit aux maires la délégation de certains pouvoirs de contrôle et de sanction. [1] Le délai pour contester un complément de loyer passe ainsi de trois mois à un an, tandis que celui pour demander la baisse d’un loyer supérieur au plafond passe de trois ans à un an. [1] Plusieurs de ces changements entrent en vigueur le 1er janvier 2027, une date dont l’articulation avec l’échéance de novembre 2026 appelle, selon MySweetImmo, une clarification officielle. [1] La question d’une pérennisation ou d’un élargissement reste ouverte à l’approche de l’échéance de 2028. [1]",
+  "Au scrutin public, les groupes Socialistes, La France insoumise, Écologiste et Social, Les Démocrates, Gauche démocrate et républicaine et LIOT ont voté pour, tandis que les députés du Rassemblement national, de la Droite républicaine et de l’UDR qui ont pris part au vote se sont prononcés contre. [4] Le groupe Ensemble pour la République s’est partagé, avec 6 voix pour et 7 contre, et Horizons s’est abstenu. [4] Pendant l’examen, le gouvernement a invoqué l’article 44, alinéa 2, de la Constitution pour écarter des sous-amendements déposés par le RN, qualifiés d’obstruction par la gauche et le gouvernement. [2] Le RN a dénoncé un accord entre les socialistes et le gouvernement, ce que le rapporteur a démenti. [2]"
+ ],
+ "sources": [
+  {
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/10062",
+   "lean": "Neutre / fact-check",
+   "name": "Assemblée nationale, scrutin public n°10062 du 19 novembre 2026",
+   "note": "Résultat officiel du vote définitif et position de chaque groupe."
+  },
+  {
+   "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-prolonge-l-experimentation-du-dispositif-au-terme-d",
+   "lean": "Neutre / fact-check",
+   "name": "LCP, « Encadrement des loyers : l'Assemblée prolonge l'expérimentation du dispositif »",
+   "note": "Compte rendu de la séance du 19 novembre : obstruction, article 44.2, vote."
+  },
+  {
+   "url": "https://www.publicsenat.fr/emission/100-senat/le-senat-prolonge-de-deux-ans-lexperimentation-de-lencadrement-des-loyers-e18",
+   "lean": "Neutre / fact-check",
+   "name": "Public Sénat, 100 % Sénat : « Le Sénat prolonge de deux ans l'expérimentation de l'encadrement des loyers »",
+   "note": "Le vote du Sénat du 21 octobre, qui a fixé la version finale du texte."
+  },
+  {
+   "url": "https://www.mysweetimmo.com/2026/11/19/encadrement-loyers-prolonge-deux-ans/",
+   "lean": "Neutre / fact-check",
+   "name": "MySweetImmo avec AFP, « L’encadrement des loyers prolongé jusqu’en 2028, ce qui change »",
+   "note": "Contenu de la loi, promulgation, arguments des opposants et des soutiens."
+  }
+ ],
+ "subject": "Le Parlement a définitivement adopté, le 19 novembre 2026, la prolongation de deux ans de l’encadrement des loyers, un dispositif qui concerne environ 1,2 million de locataires dans quelque 70 communes.",
+ "question": "Après deux ans d’évaluation, sur quels critères juger si plafonner les loyers protège les locataires sans réduire l’offre de logements ?",
+ "consulted": [
+  {
+   "n": 1,
+   "url": "https://www.mysweetimmo.com/2026/11/19/encadrement-loyers-prolonge-deux-ans/",
+   "name": "MySweetImmo avec AFP, « L’encadrement des loyers prolongé jusqu’en 2028, ce qui change »",
+   "type": "Autre",
+   "extrait": "Pour ses opposants, l’encadrement des loyers risque de décourager les propriétaires et d’aggraver la pénurie de logements."
+  },
+  {
+   "n": 2,
+   "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-prolonge-l-experimentation-du-dispositif-au-terme-d",
+   "name": "LCP, « Encadrement des loyers : l'Assemblée prolonge l'expérimentation du dispositif »",
+   "type": "Média public",
+   "extrait": "L'encadrement des loyers concerne 1,2 million de locataires dans quelque 70 communes, dont Paris, Lyon, Bordeaux et Lille."
+  },
+  {
+   "n": 3,
+   "url": "https://www.publicsenat.fr/emission/100-senat/le-senat-prolonge-de-deux-ans-lexperimentation-de-lencadrement-des-loyers-e18",
+   "name": "Public Sénat, 100 % Sénat : « Le Sénat prolonge de deux ans l'expérimentation de l'encadrement des loyers »",
+   "type": "Média public",
+   "extrait": "Le Sénat a revu la copie de l'Assemblée nationale, prolongeant l'expérimentation de deux ans, sans en élargir le périmètre."
+  },
+  {
+   "n": 4,
+   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/10062",
+   "name": "Assemblée nationale, scrutin public n°10062 du 19 novembre 2026",
+   "type": "Source officielle",
+   "extrait": "proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs (deuxième lecture)"
+  }
+ ],
+ "generated": "2026-11-25",
+ "categories": [
+  "Territoires et quotidien",
+  "Économie et budget"
+ ]
+}
